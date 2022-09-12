@@ -1,0 +1,15 @@
+/*progress*/
+#progress {
+  line-height: 0 !important;
+}
+
+/* feather sizes */
+.feather-xs {
+  width: 1rem;
+  height: 1rem;
+}
+
+.feather-md {
+  width: 2rem;
+  height: 2rem;
+}

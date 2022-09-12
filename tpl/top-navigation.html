@@ -1,0 +1,64 @@
+
+
+<nav class="navbar navbar-expand-lg py-3" role="top-navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand ps-3" href="#" title="المتجر الإفتراضي">
+      <img src="assets/img/zid-logo.png" alt="logo" style="width:80px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+      
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-2">
+
+        <li class="nav-item dropdown ps-2">
+          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="الشحن">
+            <i data-feather="package"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0">
+            
+            <li><a class="dropdown-item py-2" href="#">المملكة العربية السعودية</a></li>
+ 
+            <li><a class="dropdown-item py-2 href="#">سلطة عمان</a></li>
+     
+            <li><a class="dropdown-item py-2" href="#">الإمارات العربية المتحدة</a></li>
+          </ul>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" title="دخول" href="#">
+            <i data-feather="user"></i>
+          </a>
+        </li>
+
+        <li class="nav-item pe-2">
+          <!-- OffCanvs -->
+          <a class="nav-link position-relative" title="السلة" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" href="#">
+            <i data-feather="shopping-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+              6
+            <span class="visually-hidden">6 منتجات</span>
+            </span>
+          </a>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <input class="form-control ms-2 rounded-0 border-end-0" type="search" placeholder="البحث في المتجر"" aria-label="Search">
+        <button class="btn btn-dark rounded-0 border" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+<?php include_once 'cart.html' ?>

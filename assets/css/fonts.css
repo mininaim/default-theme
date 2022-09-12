@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "FFShamel Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+
+  src: url("https://zid.sa/wp-content/uploads/2022/05/FFShamelFamily-SansOneRegular-1.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "FFShamel Bold";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("https://zid.sa/wp-content/uploads/2022/05/FFShamelFamily-SansOneBold-1.ttf")
+    format("truetype");
+}
