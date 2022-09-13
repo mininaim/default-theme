@@ -4,7 +4,7 @@
 - replace slick to get rid of jquery dependecie (or use jquery slim)
 - generate color pallete
 - add animation
-- change images of products and categories
+- change photos of products, categories, slider
 - replace node packages with unpkg/jsdelivr resources
 
 ### Credits
