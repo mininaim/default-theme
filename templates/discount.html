@@ -1,0 +1,70 @@
+<!-- Discount -->
+<section class="alert-secondary px-4 py-5" role="discount">
+  <div class="container">
+
+      <!-- Section Title -->
+      <h4 class="pb-2 border-bottom">
+        <span class="px-2"><i data-feather="gift"></i></span> العروض المخفضة
+      </h4>
+  
+      <!-- Products Inner -->
+      <div class="row row-cols-1 row-cols-lg-4 flex-row flex-nowrap align-items-stretch g-4 py-5">
+
+      <!-- Loop of Products -->
+      <?php for($i = 1; $i < 5; $i++)  { ?>
+        <div class="col">
+  
+          <div class="card shadow border-0">
+
+              <!-- Product Image -->
+              <img src="media/discount/img-<?php echo $i ?>.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title text-dark">حذاء فلات بيج نسائي</h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong>500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+        <?php } ?>
+
+      </div> 
+      <!-- End of Products Inner -->
+
+      <!-- Link to See All -->
+      <div class="d-flex">
+        <div class="flex-grow-1">
+            <!-- Any data or summary here -->
+        </div>
+        <div class="flex-shrink-0">
+            <a href="#" class="btn btn-primary" title=""> 
+                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+            </a>
+        </div>
+     </div>
+
+    </div>
+  </section>
+  <!-- End of Discount -->

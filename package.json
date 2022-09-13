@@ -1,7 +1,7 @@
 {
   "name": "pulse",
   "version": "1.0.0",
-  "description": "### todo - fix colors - add animation",
+  "description": "Pulse - Default theme for Zid Catalog",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss:assets/css"
@@ -17,6 +17,7 @@
     "bootstrap": "^5.2.1",
     "feather-icons": "^4.29.0",
     "postcss": "^8.4.16",
-    "postcss-cli": "^10.0.0"
+    "postcss-cli": "^10.0.0",
+    "progressbar.js": "^1.1.0"
   }
 }

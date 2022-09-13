@@ -12,32 +12,6 @@
     <meta name="author" content="">
     <meta name="generator" content="">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
-        integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Slick -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <link rel="stylesheet" href="assets/css/global.css">
-
-    <!-- CSS Modules -->
-    <link rel="stylesheet" href="assets/css/slider.css">
-    <link rel="stylesheet" href="assets/css/categories.css">
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -58,6 +32,31 @@
     <meta property="og:locale" content="ar_AR">
     <meta property="og:locale:alternate" content="en_US">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Iconoir & Feather -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/categories.css">
+
     <!-- Title -->
     <title>زد - القالب الإفتراضي</title>
 
@@ -65,40 +64,38 @@
 
 <body>
 
-    <!-- Bar Progress -->
+    <!-- Progress Loader -->
     <div id="progress"></div>
 
     <!-- Components -->
-    <?php include 'tpl/alert.html'; ?>
-    <?php include 'tpl/top-navigation.html'; ?>
-    <?php include 'tpl/main-navigation.html'; ?>
-    <?php include 'tpl/slider.html'; ?>
-    <?php include 'tpl/intro.html'; ?>
-    <?php include 'tpl/categories.html'; ?>
-    <?php include 'tpl/featured.html'; ?>
-    <?php include 'tpl/discount.html'; ?>
-    <?php include 'tpl/best-seller.html'; ?>
-    <?php include 'tpl/recently-arrived.html'; ?>
-    <?php include 'tpl/footer.html'; ?>
-
-    <!-- jQuery Dependecies -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <!-- Slick -->
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <?php include_once 'templates/alert.html'; ?>
+    <?php include_once 'templates/top-navigation.html'; ?>
+    <?php include_once 'templates/main-navigation.html'; ?>
+    <?php include_once 'templates/slider.html'; ?>
+    <?php include_once 'templates/intro.html'; ?>
+    <?php include_once 'templates/categories.html'; ?>
+    <?php include_once 'templates/featured.html'; ?>
+    <?php include_once 'templates/discount.html'; ?>
+    <?php include_once 'templates/best-seller.html'; ?>
+    <?php include_once 'templates/recently-arrived.html'; ?>
+    <?php include_once 'templates/footer.html'; ?>
+    <!-- End of Components -->
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 
-    <!-- Libs  -->
-    <script src="assets/libs/progressbar.min.js"></script>
+    <!-- jQuery Dependecies -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <!-- JS -->
+    <!-- JS Libraries -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
+
+    <!-- JS Application -->
     <script src="assets/js/app.js"></script>
-    <!-- <script src="assets/js/categories.js"></script> -->
 
 </body>
 

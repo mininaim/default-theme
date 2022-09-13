@@ -1,0 +1,64 @@
+<!-- OffCanvas Cart -->
+<div class="offcanvas offcanvas-end" tabindex="-1" data-bs-scroll="true" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasCartLabel">
+        <i data-feather="shopping-bag"></i> سلة المشتريات
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Sep -->
+    <hr>
+
+    <!-- Cart Content -->
+    <div class="offcanvas-body p-0">
+      <div>
+
+        <ul class="list-group list-group-flush">
+          
+          <!-- Loop of Placeholder Products -->
+          <?php for($i = 1; $i < 5; $i++)  { ?>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              
+              <div class="ms-2 me-auto">
+                <!-- Product Title -->
+                <div class="fw-light">جاكيت بليزر أسود رجالي</div>
+                <small class="text-muted">المقاس: 50</small>
+                <!-- Product Price -->
+                <div class="text-muted ltr py-2">
+                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                </div>
+              </div>
+
+              <!-- Product Deletion -->
+              <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="حذف">
+                <i data-feather="trash-2" class="feather-xs"></i>
+              </a>
+
+            </li>
+
+            <?php } ?>
+
+          </ul>
+
+      </div>
+    </div>
+
+    <!-- Total -->
+    <div class="p-4 sticky-bottom bg-floor-dark">
+        <div class="d-flex">
+            <div class="flex-grow-1">
+                <h5 class="mb-0">المجموع</h5>
+                <p class="mb-0">500 SAR</p>
+            </div>
+            <div class="flex-shrink-0">
+                <a href="#" class="btn btn-primary" title="">
+                  إتمام الشراء <span class="px-2"><i data-feather="arrow-up-left"></i></span>
+                </a>
+            </div>
+        </div>
+      </div>
+      
+  </div>
+  <!-- End of OffCanvas Cart -->
