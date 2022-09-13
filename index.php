@@ -2,6 +2,7 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,25 +16,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-
-
-    <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap"
-        rel="stylesheet"> -->
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
 
-
-    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- Slick -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -48,7 +38,6 @@
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/categories.css">
 
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -57,9 +46,7 @@
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#8662a3">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-
-    <link rel="icon" href="assets/favicon/favicon.ico">
-
+    <!-- <link rel="icon" href="assets/favicon/favicon.ico"> -->
 
     <!-- Open Graph -->
     <meta property="og:title" content="">
@@ -76,9 +63,9 @@
 
 </head>
 
-<body data-theme="default">
+<body>
 
-    <!-- Progress -->
+    <!-- Bar Progress -->
     <div id="progress"></div>
 
     <!-- Components -->
@@ -90,37 +77,29 @@
     <?php include 'tpl/categories.html'; ?>
     <?php include 'tpl/featured.html'; ?>
     <?php include 'tpl/discount.html'; ?>
+    <?php include 'tpl/best-seller.html'; ?>
+    <?php include 'tpl/recently-arrived.html'; ?>
+    <?php include 'tpl/footer.html'; ?>
 
-    <!-- get rid of jQuery -->
+    <!-- jQuery Dependecies -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-
+    <!-- Slick -->
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 
-
-    <!-- get rid of jQuery -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
     <!-- Libs  -->
     <script src="assets/libs/progressbar.min.js"></script>
-
-
 
     <!-- JS -->
     <script src="assets/js/app.js"></script>
     <!-- <script src="assets/js/categories.js"></script> -->
+
 </body>
 
 </html>

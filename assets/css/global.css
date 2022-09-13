@@ -1,3 +1,4 @@
+/* global styles */
 body {
   /* font-family: "IBM Plex Sans Arabic", sans-serif; */
   /* font-family: "FFShamel Regular", sans-serif; */
@@ -18,8 +19,26 @@ h6 {
 
 /* bootstrap inherit */
 .btn-close:focus {
-  /* box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25); */
   box-shadow: none;
+}
+
+/* navbar-brand  */
+.navbar-brand {
+  transition: 0.2s ease-in-out transform;
+}
+.navbar-brand:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+/* custom backgrounds */
+.bg-gradient {
+  background: linear-gradient(
+      289.12deg,
+      rgb(236, 238, 255) 20.74%,
+      rgba(224, 227, 255, 0) 121.42%
+    ),
+    rgb(219, 255, 73);
+  padding: 8px 16px;
 }
 
 /* ltr */
