@@ -1,0 +1,1767 @@
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Extra Meta-->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#8662a3">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- <link rel="icon" href="assets/favicon/favicon.ico"> -->
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Iconoir & Feather -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+    <script src="unpkg/feather-icons/dist/feather.min.js"></script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <!-- Components -->
+    <link rel="stylesheet" href="assets/css/components/component-01.css">
+
+    <!-- Title -->
+    <title>زد - القالب الإفتراضي</title>
+
+</head>
+
+<body>
+
+    <!-- Tomporary alert for Mobile Devices -->
+    <section class="d-block d-lg-none">
+        <div class="alert bg-gradient d-flex flex-column text-center" role="alert">
+            <i class="iconoir-hand-brake iconoir-lg"></i>
+
+            <p class="lead mt-3">
+                فضلا التصفح من شاشة جهاز كمبيوتر، أو متصفح بأبعاد كبيرة، الموبايل قادم في القريب العاجل
+            </p>
+        </div>
+    </section>
+
+    <!-- Tomporary wrapper for Desktop & large Screens -->
+    <section class="d-none d-lg-block">
+
+        <!-- Progress Loader -->
+        <div id="progress"></div>
+
+        <!-- Components -->
+        <!-- Alert -->
+<div class="alert bg-alternate alert-dismissible fade show rounded-0 border-0 mb-0 text-center" role="alert">
+  <div class="container-fluid"></div>
+      <strong>خصم محدود</strong> موسم العودة للمدارس, استخدم كوبون الخصم مدارس
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+</div>
+<!-- End of Alert -->
+        <!-- Top Navigation -->
+<nav class="navbar navbar-expand-lg py-3" role="top-navigation">
+  <div class="container-fluid">
+    
+     <!-- Logo -->
+    <a class="navbar-brand ps-3" href="#" title="المتجر الإفتراضي">
+        <img src="assets/img/store-logo.png" alt="المتجر الإفتراضي" style="width:80px">
+    </a>
+
+    <!-- Toggle for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+      
+        <li class="nav-item dropdown px-2">
+          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="تغيير اللغة">
+            <i data-feather="globe"></i> <span class="visually-hidden">اللغة</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0">
+            <li><a class="dropdown-item disabled py-2" href="#" title="">العربية</a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">English</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown px-2">
+          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="الشحن">
+            <i data-feather="package"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0">
+            <li><h6 class="dropdown-header">خيارات الشحن</h6></li>
+            <li><a class="dropdown-item py-2" href="#" title="">المملكة العربية السعودية</a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">سلطة عمان</a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">الإمارات العربية المتحدة</a></li>
+          </ul>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" title="تسجيل دخول" href="#">
+            <i data-feather="user"></i>
+          </a>
+        </li>
+
+        <!-- Anchor to open the OffCanvas -->
+        <li class="nav-item px-2">
+          <a class="nav-link position-relative" title="سلة التسوق" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" href="#">
+            <i data-feather="shopping-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+               6 <span class="visually-hidden">6 منتجات</span>
+            </span>
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- Search Form -->
+      <form class="d-flex ms-3" role="search">
+        <input class="form-control ms-2 rounded-0" type="search" placeholder="البحث في المتجر" aria-label="Search">
+        <button class="btn btn-dark rounded-0 border" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+       <!-- End of Search Form -->
+
+    </div>
+  </div>
+</nav>
+<!-- End of Top Navigation -->
+
+<!-- Wrap or include the OffCanvas Cart -->
+<!-- OffCanvas Cart -->
+<div class="offcanvas offcanvas-end" tabindex="-1" data-bs-scroll="true" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasCartLabel">
+        <i data-feather="shopping-bag"></i> سلة المشتريات
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Sep -->
+    <hr>
+
+    <!-- Cart Content -->
+    <div class="offcanvas-body p-0">
+      <div>
+
+        <ul class="list-group list-group-flush">
+          
+          <!-- Loop of Placeholder Products -->
+          
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              
+              <div class="ms-2 me-auto">
+                <!-- Product Title -->
+                <div class="fw-light">جاكيت بليزر أسود رجالي</div>
+                <small class="text-muted">المقاس: 50</small>
+                <!-- Product Price -->
+                <div class="text-muted ltr py-2">
+                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                </div>
+              </div>
+
+              <!-- Product Deletion -->
+              <a href="#" class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="left" title="حذف">
+                <i data-feather="trash-2" class="feather-xs"></i>
+              </a>
+
+            </li>
+
+            
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              
+              <div class="ms-2 me-auto">
+                <!-- Product Title -->
+                <div class="fw-light">جاكيت بليزر أسود رجالي</div>
+                <small class="text-muted">المقاس: 50</small>
+                <!-- Product Price -->
+                <div class="text-muted ltr py-2">
+                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                </div>
+              </div>
+
+              <!-- Product Deletion -->
+              <a href="#" class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="left" title="حذف">
+                <i data-feather="trash-2" class="feather-xs"></i>
+              </a>
+
+            </li>
+
+            
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              
+              <div class="ms-2 me-auto">
+                <!-- Product Title -->
+                <div class="fw-light">جاكيت بليزر أسود رجالي</div>
+                <small class="text-muted">المقاس: 50</small>
+                <!-- Product Price -->
+                <div class="text-muted ltr py-2">
+                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                </div>
+              </div>
+
+              <!-- Product Deletion -->
+              <a href="#" class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="left" title="حذف">
+                <i data-feather="trash-2" class="feather-xs"></i>
+              </a>
+
+            </li>
+
+            
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              
+              <div class="ms-2 me-auto">
+                <!-- Product Title -->
+                <div class="fw-light">جاكيت بليزر أسود رجالي</div>
+                <small class="text-muted">المقاس: 50</small>
+                <!-- Product Price -->
+                <div class="text-muted ltr py-2">
+                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                </div>
+              </div>
+
+              <!-- Product Deletion -->
+              <a href="#" class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="left" title="حذف">
+                <i data-feather="trash-2" class="feather-xs"></i>
+              </a>
+
+            </li>
+
+            
+          </ul>
+
+      </div>
+    </div>
+
+    <!-- Total -->
+    <div class="p-4 sticky-bottom bg-floor-dark">
+        <div class="d-flex align-items-center">
+            <div class="flex-grow-1">
+                <h5 class="mb-0">المجموع</h5>
+                <p class="mb-0 mt-2">500 SAR</p>
+            </div>
+            <div class="flex-shrink-0">
+                <a href="#" class="btn btn-primary" title="">
+                  إتمام الشراء <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+                </a>
+            </div>
+        </div>
+      </div> 
+  </div>
+  <!-- End of OffCanvas Cart -->        <!-- Main Navigation -->
+<section class="bg-floor-dark py-3" role="main-navigation">
+  <div class="container-fluid d-flex justify-content-between">
+
+    <!-- Navigation Items -->
+    <ul class="nav">
+
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#" title="">
+          الرئيسية
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" title="">
+          المنتجات
+        </a>
+      </li>
+    
+      <!-- e.g: Item with Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link @dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" title="">
+          النساء <i data-feather="chevron-down" class="feather-xs"></i>
+        </a>
+        <ul class="dropdown-menu shadow-lg border-0 rounded-0">
+          <li><a class="dropdown-item py-2" href="#" title="">جاكيط ومعاطف نسائي</a></li>
+          <li><a class="dropdown-item py-2" href="#" title="">بلايز نسائي</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item py-2" href="#" title="">تصفح الكل</a></li>
+        </ul>
+      </li>
+
+      <!-- e.g: Item with Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link @dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" title="">
+          الرجال <i data-feather="chevron-down" class="feather-xs"></i>
+        </a>
+        <ul class="dropdown-menu shadow-lg border-0 rounded-0">
+          <li><a class="dropdown-item py-2" href="#" title="">جاكيت ومعاطف رجالي</a></li>
+          <li><a class="dropdown-item py-2" href="#" title="">قمصان رجالي</a></li>
+          <li><a class="dropdown-item py-2" href="#" title="">بناطيل رجالي</a></li>
+          <li><a class="dropdown-item py-2" href="#" title="">كنزات رجالي</a></li>
+          <li><a class="dropdown-item py-2" href="#" title="">سويت شريت رجالي</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item py-2" href="#" title="">تصفح الكل</a></li>
+        </ul>
+      </li>
+
+      <!-- // ... more items -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" title="">أحذية للجنسين</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" title="">أحذية للنساء</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" title="">شنط نسائي</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" title="">تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span></a>
+      </li>
+
+    </ul>
+
+    <!-- Link to Another Page -->
+    <ul class="nav">
+
+      <li class="nav-item">
+        <a class="nav-link px-0" href="#" title="">
+          <span class="px-2"><i class="iconoir-delivery-truck iconoir-md"></i></span> خيارات الدفع والتوصيل
+
+          <!-- #todo: Implement Lottie library to animate SVG icon -->
+          <!-- <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+          <lord-icon
+              src="https://cdn.lordicon.com/zzcjjxew.json"
+              trigger="hover"
+              colors="primary:#454545,secondary:#8d5ea7"
+              style="width:32px;height:32px">
+          </lord-icon>
+
+          خيارات الدفع والتوصيل  -->
+
+        </a>
+      </li>
+    </ul>
+
+    <!-- <a href="" class="btn btn-outline-dark text-decoration-none rounded" title="">
+        <span class="px-2"><i data-feather="truck" class="feather-xs"></i></span> خيارات الدفع والتوصيل
+    </a> -->
+
+  </div>
+</section> 
+<!-- End of Main Navigation -->        <!-- Hero Slider -->
+<section role="slider">
+  <div id="hero-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- Carousel Item Active -->
+      <div class="carousel-item active">
+        <img src="https://media.zid.store/cdn-cgi/image/q=85,f=auto/https://media.zid.store/cada0eba-1b92-45dd-92d2-486b3ba9674c/0b40ca98-eef3-43a9-95ca-776e61a805a7.jpg" class="d-block w-100" alt="">
+        
+        <!-- Caption and Subtitle, they will be here -->
+        
+        <!-- <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Carousel Item -->
+      <div class="carousel-item">
+        <img src="https://media.zid.store/cdn-cgi/image/q=85,f=auto/https://media.zid.store/cada0eba-1b92-45dd-92d2-486b3ba9674c/66488c22-47db-45ba-bb81-50b1809895f7.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.zid.store/cdn-cgi/image/q=85,f=auto/https://media.zid.store/cada0eba-1b92-45dd-92d2-486b3ba9674c/e9b533da-b25a-43a8-aec7-00263775d6ce.jpg" class="d-block w-100" alt="">
+      </div>
+
+    </div>
+    
+    <!-- Carousel Control -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-slider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</section>
+<!-- End of Hero Slider -->        <!-- Intro -->
+<section class="@bg-overlay p-5 text-center" role="intro">
+  <div class="container d-flex flex-column align-content-center">
+
+    <!-- Logo of the Store or an Image -->
+    <img class="d-block mx-auto mb-4" src="media/intro/logo.svg" alt="" width="60">
+
+    <!-- Store Title -->
+    <h1 class="display-6 fw-bold my-4">
+      متجر افتراضي
+    </h1>
+
+    <div class="col-lg-6 mx-auto">
+      
+      <!-- Store Desc -->
+      <p class="lead mb-3">
+        متجر افتراضي للتجربة والتعلم لمنصة Zid Store للتجارة الإلكترونية والتسويق الإلكتروني والتسويق عبر الإنترنت  والتسويق عبر الهواتف الذكية   
+      </p>
+
+       <!-- Social Icons -->
+      <ul class="nav d-flex align-content-center justify-content-center my-3 p-4">
+        <li class="mx-2">
+          <a class="link-dark link-effect" href="#" title="">
+              <i class="iconoir-twitter iconoir-md"></i>
+          </a>
+        </li>
+        <li class="mx-2 hstack" hidden>
+          <div class="vr"></div>
+        </li>
+        <li class="mx-2">
+          <a class="link-dark" href="#" title="">
+            <i class="iconoir-instagram iconoir-md"></i>
+          </a>
+        </li>
+        <li class="mx-2 hstack" hidden>
+          <div class="vr"></div>
+        </li>
+        <li class="mx-2">
+          <a class="link-dark" href="#" title="">
+            <i class="iconoir-facebook iconoir-md"></i>
+          </a>
+        </li>
+        <li class="mx-2 hstack" hidden>
+          <div class="vr"></div>
+        </li>
+        <!-- <li class="mx-2">
+          <a class="" href="#" title="">
+            <i class="iconoir-snapchat iconoir-md"></i>
+          </a>
+        </li> -->
+        <li class="mx-2">
+          <a class="link-dark" href="#" title="">
+            <i class="iconoir-tiktok iconoir-md"></i>
+          </a>
+        </li>
+        <li class="mx-2 hstack" hidden>
+          <div class="vr"></div>
+        </li>
+        <li class="mx-2">
+          <a class="link-dark" href="#" title="">
+            <i class="iconoir-phone iconoir-md"></i>
+          </a>
+        </li>
+        <li class="mx-2 hstack" hidden>
+          <div class="vr"></div>
+        </li>
+        <li class="mx-2">
+          <a class="link-dark" href="#" title="">
+            <i class="iconoir-mail-opened iconoir-md"></i>
+          </a>
+        </li>
+        <li class="mx-2 hstack" hidden>
+          <div class="vr"></div>
+        </li>
+        <li class="mx-2">
+          <a class="link-dark" href="#" title="">
+            <i class="iconoir-globe iconoir-md"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Options & Links -->
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="btn btn-primary btn-lg px-4 gap-3" href="#" title="">
+         إستعرض الآن <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+        </a>
+        <!-- <a class="btn btn-primary btn-lg px-4 gap-3" href="#" title="">
+          <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> سلة التسوق
+        </a> -->
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End of Intro -->        <!-- Categories -->
+<section class="diagonal-section diagonal-section--flip-x alert-secondary p-5" role="categories">
+  <div class="container py-5">
+
+      <!-- Section Title -->
+      <div class="d-flex border-bottom">
+        <div class="flex-grow-1">
+          <h4 class="pb-2">
+            <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> التصانيف
+          </h4>
+        </div>
+        <div class="flex-shrink-0">
+            <a href="#" class="btn btn-primary" title=""> 
+                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+            </a>
+        </div>
+      </div>
+
+      <!-- Categories List -->
+      <div class="row row-cols-1 row-cols-lg-4 flex-row flex-nowrap align-items-stretch g-4 py-5">
+        
+        <!-- Category Loop -->
+                
+        <div class="col">
+
+          <div class="card shadow border-0">
+            <div class="row g-0">
+              <div class="col">
+                <img src="media/categories/img-1.png" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col">
+                <div class="card-body h-100 d-flex flex-column-reverse">
+                  <h5 class="card-title">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        شنط نسائي
+                    </a>
+                  </h5>
+
+                  <ul class="d-flex list-unstyled">
+                    <li class="d-flex align-items-start">
+                      <a href="#" class="link-dark" title="">                       
+                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                      </a>
+                    </li>
+                    <!-- More options here -->
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Card -->
+
+        </div>
+
+                
+        <div class="col">
+
+          <div class="card shadow border-0">
+            <div class="row g-0">
+              <div class="col">
+                <img src="media/categories/img-2.png" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col">
+                <div class="card-body h-100 d-flex flex-column-reverse">
+                  <h5 class="card-title">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        شنط نسائي
+                    </a>
+                  </h5>
+
+                  <ul class="d-flex list-unstyled">
+                    <li class="d-flex align-items-start">
+                      <a href="#" class="link-dark" title="">                       
+                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                      </a>
+                    </li>
+                    <!-- More options here -->
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Card -->
+
+        </div>
+
+                
+        <div class="col">
+
+          <div class="card shadow border-0">
+            <div class="row g-0">
+              <div class="col">
+                <img src="media/categories/img-3.png" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col">
+                <div class="card-body h-100 d-flex flex-column-reverse">
+                  <h5 class="card-title">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        شنط نسائي
+                    </a>
+                  </h5>
+
+                  <ul class="d-flex list-unstyled">
+                    <li class="d-flex align-items-start">
+                      <a href="#" class="link-dark" title="">                       
+                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                      </a>
+                    </li>
+                    <!-- More options here -->
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Card -->
+
+        </div>
+
+                
+        <div class="col">
+
+          <div class="card shadow border-0">
+            <div class="row g-0">
+              <div class="col">
+                <img src="media/categories/img-4.png" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col">
+                <div class="card-body h-100 d-flex flex-column-reverse">
+                  <h5 class="card-title">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        شنط نسائي
+                    </a>
+                  </h5>
+
+                  <ul class="d-flex list-unstyled">
+                    <li class="d-flex align-items-start">
+                      <a href="#" class="link-dark" title="">                       
+                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                      </a>
+                    </li>
+                    <!-- More options here -->
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Card -->
+
+        </div>
+
+        
+      </div> 
+      <!-- End of Categories List -->
+  
+    </div>
+  </section>
+  <!-- End of Categories -->        <!-- Featured -->
+<section class="p-5" role="featured">
+  <div class="container">
+    
+      <!-- Section Title -->
+      <h4 class="pb-2 border-bottom">
+        <span class="px-2"><i class="iconoir-doc-star-alt"></i></span> منتجات مميزة
+      </h4>
+  
+      <!-- Products Inner -->
+      <div class="row row-cols-1 row-cols-lg-5 flex-row flex-nowrap align-items-stretch g-4 py-5">
+
+      <!-- Loop of Products -->
+              <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/featured/img-1.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء أزرق أبيض برباط نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small>
+                        <del class="text-danger">
+                          620 SAR
+                        </del>
+                      </small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/featured/img-2.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء أزرق أبيض برباط نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small>
+                        <del class="text-danger">
+                          620 SAR
+                        </del>
+                      </small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/featured/img-3.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء أزرق أبيض برباط نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small>
+                        <del class="text-danger">
+                          620 SAR
+                        </del>
+                      </small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/featured/img-4.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء أزرق أبيض برباط نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small>
+                        <del class="text-danger">
+                          620 SAR
+                        </del>
+                      </small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/featured/img-5.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء أزرق أبيض برباط نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small>
+                        <del class="text-danger">
+                          620 SAR
+                        </del>
+                      </small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+        
+      </div> 
+      <!-- End of Products Inner -->
+
+      <!-- Link to See All -->
+      <div class="d-flex">
+        <div class="flex-grow-1">
+            <!-- Any data or summary here -->
+        </div>
+        <div class="flex-shrink-0">
+            <a href="#" class="btn btn-primary" title=""> 
+                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+            </a>
+        </div>
+     </div>
+
+    </div>
+  </section>
+  <!-- End of Featured -->        <!-- Discount -->
+<section class="bg-floor-darker p-5" role="discount">
+  <div class="container">
+
+      <!-- Section Title -->
+      <h4 class="pb-2 border-bottom">
+        <span class="px-2"><i class="iconoir-percentage-round"></i></span> العروض المخفضة
+      </h4>
+  
+      <!-- Products Inner -->
+      <div class="row row-cols-1 row-cols-lg-5 flex-row flex-nowrap align-items-stretch g-4 py-5">
+
+      <!-- Loop of Products -->
+              <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/discount/img-1.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء فلات بيج نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/discount/img-2.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء فلات بيج نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/discount/img-3.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء فلات بيج نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/discount/img-4.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء فلات بيج نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0 h-100">
+
+              <!-- Product Image -->
+              <img src="media/discount/img-5.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                      حذاء فلات بيج نسائي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+        
+      </div> 
+      <!-- End of Products Inner -->
+
+      <!-- Link to See All -->
+      <div class="d-flex">
+        <div class="flex-grow-1">
+            <!-- Any data or summary here -->
+        </div>
+        <div class="flex-shrink-0">
+            <a href="#" class="btn btn-outline-primary" title=""> 
+                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+            </a>
+        </div>
+     </div>
+
+    </div>
+  </section>
+  <!-- End of Discount -->        <!-- Best Seller -->
+<section class="bg-white p-5" role="best-seller">
+    <div class="container">
+
+        <!-- Section Title -->
+        <h4 class="pb-2 border-bottom">
+          <span class="px-2"><i class="iconoir-stat-up"></i></span> الأكثر مبيعا
+        </h4>
+    
+        <!-- Products Inner -->
+        <div class="row row-cols-1 row-cols-lg-5 flex-row flex-nowrap align-items-stretch g-4 py-5">
+
+        <!-- Loop of Products -->
+                  <div class="col">
+    
+            <div class="card shadow border-0 @h-100">
+
+                <!-- Product Image -->
+                <img src="media/best-seller/img-1.jpg" class="card-img-top" alt="">
+    
+                <div class="card-body">
+                    <!-- Product Title -->
+                    <h6 class="card-title text-dark py-2">
+                      <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                      </a>
+                    </h6>
+                    <!-- Product Caption -->
+                    <p class="card-text text-dark">
+                        <small class="text-muted">
+                          <i class="iconoir-message-alert iconoir-sm"></i> متوفر بعدة خيارات
+                        </small>
+                    </p>
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                      
+                      <!-- Add to Cart -->
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                        </button>
+                      </div>
+                
+                      <!-- Product Price -->
+                      <small class="text-muted d-flex flex-column align-items-end">
+                        <!-- <small><del class="text-danger">620 SAR</del></small> -->
+                        <strong class="fs-6">500 SAR</strong>
+                      </small>
+
+                    </div>
+                  </div>
+    
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 @h-100">
+
+                <!-- Product Image -->
+                <img src="media/best-seller/img-2.jpg" class="card-img-top" alt="">
+    
+                <div class="card-body">
+                    <!-- Product Title -->
+                    <h6 class="card-title text-dark py-2">
+                      <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                      </a>
+                    </h6>
+                    <!-- Product Caption -->
+                    <p class="card-text text-dark">
+                        <small class="text-muted">
+                          <i class="iconoir-message-alert iconoir-sm"></i> متوفر بعدة خيارات
+                        </small>
+                    </p>
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                      
+                      <!-- Add to Cart -->
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                        </button>
+                      </div>
+                
+                      <!-- Product Price -->
+                      <small class="text-muted d-flex flex-column align-items-end">
+                        <!-- <small><del class="text-danger">620 SAR</del></small> -->
+                        <strong class="fs-6">500 SAR</strong>
+                      </small>
+
+                    </div>
+                  </div>
+    
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 @h-100">
+
+                <!-- Product Image -->
+                <img src="media/best-seller/img-3.jpg" class="card-img-top" alt="">
+    
+                <div class="card-body">
+                    <!-- Product Title -->
+                    <h6 class="card-title text-dark py-2">
+                      <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                      </a>
+                    </h6>
+                    <!-- Product Caption -->
+                    <p class="card-text text-dark">
+                        <small class="text-muted">
+                          <i class="iconoir-message-alert iconoir-sm"></i> متوفر بعدة خيارات
+                        </small>
+                    </p>
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                      
+                      <!-- Add to Cart -->
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                        </button>
+                      </div>
+                
+                      <!-- Product Price -->
+                      <small class="text-muted d-flex flex-column align-items-end">
+                        <!-- <small><del class="text-danger">620 SAR</del></small> -->
+                        <strong class="fs-6">500 SAR</strong>
+                      </small>
+
+                    </div>
+                  </div>
+    
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 @h-100">
+
+                <!-- Product Image -->
+                <img src="media/best-seller/img-4.jpg" class="card-img-top" alt="">
+    
+                <div class="card-body">
+                    <!-- Product Title -->
+                    <h6 class="card-title text-dark py-2">
+                      <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                      </a>
+                    </h6>
+                    <!-- Product Caption -->
+                    <p class="card-text text-dark">
+                        <small class="text-muted">
+                          <i class="iconoir-message-alert iconoir-sm"></i> متوفر بعدة خيارات
+                        </small>
+                    </p>
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                      
+                      <!-- Add to Cart -->
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                        </button>
+                      </div>
+                
+                      <!-- Product Price -->
+                      <small class="text-muted d-flex flex-column align-items-end">
+                        <!-- <small><del class="text-danger">620 SAR</del></small> -->
+                        <strong class="fs-6">500 SAR</strong>
+                      </small>
+
+                    </div>
+                  </div>
+    
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 @h-100">
+
+                <!-- Product Image -->
+                <img src="media/best-seller/img-5.jpg" class="card-img-top" alt="">
+    
+                <div class="card-body">
+                    <!-- Product Title -->
+                    <h6 class="card-title text-dark py-2">
+                      <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                      </a>
+                    </h6>
+                    <!-- Product Caption -->
+                    <p class="card-text text-dark">
+                        <small class="text-muted">
+                          <i class="iconoir-message-alert iconoir-sm"></i> متوفر بعدة خيارات
+                        </small>
+                    </p>
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                      
+                      <!-- Add to Cart -->
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                        </button>
+                      </div>
+                
+                      <!-- Product Price -->
+                      <small class="text-muted d-flex flex-column align-items-end">
+                        <!-- <small><del class="text-danger">620 SAR</del></small> -->
+                        <strong class="fs-6">500 SAR</strong>
+                      </small>
+
+                    </div>
+                  </div>
+    
+              </div>
+          </div>
+    
+          
+        </div> 
+        <!-- End of Products Inner -->
+
+        <!-- Link to See All -->
+        <div class="d-flex">
+          <div class="flex-grow-1">
+              <!-- Any data or summary here -->
+          </div>
+          <div class="flex-shrink-0">
+              <a href="#" class="btn btn-primary" title=""> 
+                  تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+              </a>
+          </div>
+       </div>
+
+    </div>
+</section>
+<!-- End of Best Seller -->        <!-- Recently Arrived -->
+<section class="p-5" role="recently-arrived">
+  <div class="container">
+
+      <!-- Section Title -->
+      <h4 class="pb-2 border-bottom">
+        <span class="px-2"><i class="iconoir-fire-flame"></i></span> وصل حديثا
+      </h4>
+  
+      <!-- Products Inner -->
+      <!-- Support Masonry -->
+      <div class="row row-cols-1 row-cols-lg-5 flex-row flex-nowrap align-items-stretch g-4 py-5" data-masonry='{"percentPosition": true }'>
+
+      <!-- Loop of Products -->
+              <div class="col">
+  
+          <div class="card shadow border-0">
+
+              <!-- Product Image -->
+              <img src="media/recently-arrived/img-1.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title text-dark py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0">
+
+              <!-- Product Image -->
+              <img src="media/recently-arrived/img-1.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title text-dark py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0">
+
+              <!-- Product Image -->
+              <img src="media/recently-arrived/img-1.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title text-dark py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0">
+
+              <!-- Product Image -->
+              <img src="media/recently-arrived/img-1.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title text-dark py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+                <div class="col">
+  
+          <div class="card shadow border-0">
+
+              <!-- Product Image -->
+              <img src="media/recently-arrived/img-1.jpg" class="card-img-top" alt="">
+  
+              <div class="card-body">
+                  <!-- Product Title -->
+                  <h6 class="card-title text-dark py-2">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                    </a>
+                  </h6>
+                  <!-- Product Caption -->
+                  <p class="card-text text-dark">
+                      <small>متوفر بعدة خيارات</small>
+                  </p>
+                  
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <!-- Add to Cart -->
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-primary">
+                          <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                      </button>
+                    </div>
+              
+                    <!-- Product Price -->
+                    <small class="text-muted d-flex flex-column align-items-end">
+                      <small><del class="text-danger">620 SAR</del></small>
+                      <strong class="fs-6">500 SAR</strong>
+                    </small>
+
+                  </div>
+                </div>
+  
+            </div>
+        </div>
+  
+        
+      </div> 
+      <!-- End of Products Inner -->
+
+      <!-- Link to See All -->
+      <div class="d-flex">
+        <div class="flex-grow-1">
+            <!-- Any data or summary here -->
+        </div>
+        <div class="flex-shrink-0">
+            <a href="#" class="btn btn-primary" title=""> 
+                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+            </a>
+        </div>
+     </div>
+
+  </div>
+</section>
+<!-- End of Recently Arrived -->        <!--  Partners -->
+<section class="diagonal-section diagonal-section--flip-x bg-floor-dark p-5" role="partners">
+    <div class="container py-5">
+
+        <!-- Section Title -->
+        <h4 class="pb-2 border-bottom">
+          <span class="px-2"><i class="iconoir-leaderboard-star"></i></span> شركائنا
+        </h4>
+    
+        <!-- Products Inner -->
+        <div class="row g-4 py-5">
+
+        <!-- Loop of Products -->
+
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-1.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-2.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-3.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-4.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-5.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-6.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-7.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-8.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-9.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+                    <div class="col">
+    
+            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
+                <!-- Product Image -->
+                <img src="media/partners/img-10.svg" class="card-img img-fluid" alt="">
+              </div>
+          </div>
+    
+          
+        </div> 
+        <!-- End of Products Inner -->
+
+    </div>
+</section>
+<!-- End of Partners -->
+                <!-- End of Components -->
+
+    </section>
+    <!-- Tomporary wrapper for Desktop & large Screens -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+
+    <!-- jQuery Dependecies -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="unpkg/progressbar.js/dist/progressbar.min.js"></script>
+
+    <!-- JS Application -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

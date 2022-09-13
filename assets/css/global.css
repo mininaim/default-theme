@@ -1,9 +1,7 @@
 /* global styles */
 body {
-  /* font-family: "IBM Plex Sans Arabic", sans-serif; */
-  /* font-family: "FFShamel Regular", sans-serif; */
-
-  font-family: "Readex Pro", sans-serif;
+  /* font-family: "Readex Pro", sans-serif; */
+  font-family: "FS Albert Arabic", sans-serif;
 }
 
 h1,
@@ -12,36 +10,130 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "FFShamel Bold", sans-serif; */
-  font-family: "Readex Pro", sans-serif;
+  font-family: "FS Albert Arabic", sans-serif;
   font-weight: 600;
 }
 
-/* bootstrap inherit */
+/* btn-close */
 .btn-close:focus {
   box-shadow: none;
 }
 
-/* navbar-brand  */
+/* navbar brand */
 .navbar-brand {
   transition: 0.2s ease-in-out transform;
 }
 .navbar-brand:hover {
   transform: rotate(-5deg) scale(1.1);
 }
+/* tooltip */
+.tooltip {
+  font-family: "FS Albert Arabic", sans-serif;
+}
+/* carousel */
+.carousel {
+  margin-bottom: 1rem;
+}
+.carousel-item {
+  height: 34rem;
+}
 
-/* custom backgrounds */
+/* carousel caption if any */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+/* iconoir sizes */
+*[class^="iconoir-"],
+*[class*=" iconoir-"],
+*[class^="iconoir-"]::before,
+*[class*=" iconoir-"]::before {
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+*[class^="iconoir-xs"]::before,
+*[class*=" iconoir-xs"]::before {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+*[class^="iconoir-md"]::before,
+*[class*=" iconoir-md"]::before {
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+}
+*[class^="iconoir-lg"]::before,
+*[class*=" iconoir-lg"]::before {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+/* backgrounds */
+.bg-alternate {
+  background: rgb(219, 255, 73);
+}
 .bg-gradient {
-  background: linear-gradient(
-      289.12deg,
-      rgb(236, 238, 255) 20.74%,
-      rgba(224, 227, 255, 0) 121.42%
-    ),
-    rgb(219, 255, 73);
-  padding: 8px 16px;
+  background-image: linear-gradient(
+    to left,
+    #ffd14b,
+    #ffc696,
+    #ffd2de,
+    #ffebff,
+    #ffffff
+  ) !important;
+}
+.bg-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../media/intro/backgrounds/bg-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
 }
 
-/* ltr */
-.ltr {
-  direction: ltr !important;
+/* progress */
+#progress {
+  line-height: 0 !important;
 }
+
+/* feather sizes */
+.feather-xs {
+  width: 1rem;
+  height: 1rem;
+}
+
+.feather-md {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* filters  */
+.filter-white {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(14%)
+    hue-rotate(236deg) brightness(103%) contrast(103%);
+}
+
+/* utilities */
+.ltr {
+  direction: ltr;
+}
+.rtl {
+  direction: rtl;
+}
+
+/* links effect */
+/* .link-effect {
+  transition: 0.2s ease-in-out transform;
+}
+.link-effect:hover {
+  transform: rotate(-5deg) scale(1.2);
+} */

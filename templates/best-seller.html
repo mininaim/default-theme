@@ -1,37 +1,43 @@
 <!-- Best Seller -->
-<section class="bg-white px-4 py-5" role="best-seller">
+<section class="bg-white p-5" role="best-seller">
     <div class="container">
 
         <!-- Section Title -->
         <h4 class="pb-2 border-bottom">
-          <span class="px-2"><i data-feather="trending-up"></i></span> الأكثر مبيعا
+          <span class="px-2"><i class="iconoir-stat-up"></i></span> الأكثر مبيعا
         </h4>
     
         <!-- Products Inner -->
-        <div class="row row-cols-1 row-cols-lg-4 flex-row flex-nowrap align-items-stretch g-4 py-5">
+        <div class="row row-cols-1 row-cols-lg-5 flex-row flex-nowrap align-items-stretch g-4 py-5">
 
         <!-- Loop of Products -->
-        <?php for($i = 1; $i < 5; $i++)  { ?>
+        <?php for($i = 1; $i < 6; $i++)  { ?>
           <div class="col">
     
-            <div class="card shadow border-0">
+            <div class="card shadow border-0 @h-100">
 
                 <!-- Product Image -->
                 <img src="media/best-seller/img-<?php echo $i ?>.jpg" class="card-img-top" alt="">
     
                 <div class="card-body">
                     <!-- Product Title -->
-                    <h6 class="card-title text-dark"> معطف كاشيه ملون رجالي</h6>
+                    <h6 class="card-title text-dark py-2">
+                      <a href="#" title="" class="link-dark text-decoration-none">
+                        معطف كاشيه ملون رجالي
+                      </a>
+                    </h6>
                     <!-- Product Caption -->
                     <p class="card-text text-dark">
-                        <small>متوفر بعدة خيارات</small>
+                        <small class="text-muted">
+                          <i class="iconoir-message-alert iconoir-sm"></i> متوفر بعدة خيارات
+                        </small>
                     </p>
                     
                     <div class="d-flex justify-content-between align-items-center">
                       
                       <!-- Add to Cart -->
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-primary">
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-outline-primary">
                             <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
                         </button>
                       </div>
@@ -39,7 +45,7 @@
                       <!-- Product Price -->
                       <small class="text-muted d-flex flex-column align-items-end">
                         <!-- <small><del class="text-danger">620 SAR</del></small> -->
-                        <strong>500 SAR</strong>
+                        <strong class="fs-6">500 SAR</strong>
                       </small>
 
                     </div>

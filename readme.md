@@ -6,6 +6,7 @@
 - add animation
 - change photos of products, categories, slider
 - replace node packages with unpkg/jsdelivr resources
+- integrate vite
 
 ### Credits
 - [Bootstrap](https://getbootstrap.com/)

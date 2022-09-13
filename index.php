@@ -52,10 +52,10 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="assets/css/plugins.css">
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/slider.css">
-    <link rel="stylesheet" href="assets/css/categories.css">
+
+    <!-- Components -->
+    <link rel="stylesheet" href="assets/css/components/component-01.css">
 
     <!-- Title -->
     <title>زد - القالب الإفتراضي</title>
@@ -64,22 +64,43 @@
 
 <body>
 
-    <!-- Progress Loader -->
-    <div id="progress"></div>
+    <!-- Tomporary alert for Mobile Devices -->
+    <section class="d-block d-lg-none">
+        <div class="alert bg-gradient d-flex flex-column text-center" role="alert">
+            <i class="iconoir-hand-brake iconoir-lg"></i>
 
-    <!-- Components -->
-    <?php include_once 'templates/alert.html'; ?>
-    <?php include_once 'templates/top-navigation.html'; ?>
-    <?php include_once 'templates/main-navigation.html'; ?>
-    <?php include_once 'templates/slider.html'; ?>
-    <?php include_once 'templates/intro.html'; ?>
-    <?php include_once 'templates/categories.html'; ?>
-    <?php include_once 'templates/featured.html'; ?>
-    <?php include_once 'templates/discount.html'; ?>
-    <?php include_once 'templates/best-seller.html'; ?>
-    <?php include_once 'templates/recently-arrived.html'; ?>
-    <?php include_once 'templates/footer.html'; ?>
-    <!-- End of Components -->
+            <p class="lead mt-3">
+                فضلا التصفح من شاشة جهاز كمبيوتر، أو متصفح بأبعاد كبيرة، الموبايل قادم في القريب العاجل
+            </p>
+        </div>
+    </section>
+
+    <!-- Tomporary wrapper for Desktop & large Screens -->
+    <section class="d-none d-lg-block">
+
+        <!-- Progress Loader -->
+        <div id="progress"></div>
+
+        <!-- Components -->
+        <?php include_once 'templates/alert.html'; ?>
+        <?php include_once 'templates/top-navigation.html'; ?>
+        <?php include_once 'templates/main-navigation.html'; ?>
+        <?php include_once 'templates/slider.html'; ?>
+        <?php include_once 'templates/intro.html'; ?>
+        <?php include_once 'templates/categories.html'; ?>
+        <?php include_once 'templates/featured.html'; ?>
+        <?php include_once 'templates/discount.html'; ?>
+        <?php include_once 'templates/best-seller.html'; ?>
+        <?php include_once 'templates/recently-arrived.html'; ?>
+        <?php include_once 'templates/partners.html'; ?>
+
+        <?php
+        //include_once 'templates/footer.html'; 
+        ?>
+        <!-- End of Components -->
+
+    </section>
+    <!-- Tomporary wrapper for Desktop & large Screens -->
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -91,6 +112,9 @@
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
 

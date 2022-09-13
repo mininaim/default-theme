@@ -1,11 +1,20 @@
 <!-- Categories -->
-<section class="bg-floor-dark px-4 py-5" role="categories">
-  <div class="container">
+<section class="diagonal-section diagonal-section--flip-x alert-secondary p-5" role="categories">
+  <div class="container py-5">
 
       <!-- Section Title -->
-      <h4 class="pb-2 border-bottom">
-        <span class="px-2"><i data-feather="wind"></i></span> التصانيف
-      </h4>
+      <div class="d-flex border-bottom">
+        <div class="flex-grow-1">
+          <h4 class="pb-2">
+            <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> التصانيف
+          </h4>
+        </div>
+        <div class="flex-shrink-0">
+            <a href="#" class="btn btn-primary" title=""> 
+                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+            </a>
+        </div>
+      </div>
 
       <!-- Categories List -->
       <div class="row row-cols-1 row-cols-lg-4 flex-row flex-nowrap align-items-stretch g-4 py-5">
@@ -14,44 +23,42 @@
         <?php for($i = 1; $i < 5; $i++)  { ?>
         
         <div class="col">
-          <!-- Category Card -->
-          <div class="card card-cover h-100 overflow-hidden rounded-3 border-0" style="background-image: url('media/categories/img-<?php echo $i ?>.png');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              
-              <!-- Category Title -->
-              <h3 class="pt-5 mt-5 mb-2 lh-1 fw-bold">شنط نسائي</h3>
-              
-              <!-- Category Caption -->
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="d-flex align-items-center me-3">
-                  <a href="#" class="text-white text-decoration-none stretched-link">
-                      <small>إستعرض</small> 
-                      <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
-                  </a>
-                </li>
-                <!-- More options here -->
-              </ul>
 
+          <div class="card shadow border-0">
+            <div class="row g-0">
+              <div class="col">
+                <img src="media/categories/img-<?php echo $i ?>.png" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col">
+                <div class="card-body h-100 d-flex flex-column-reverse">
+                  <h5 class="card-title">
+                    <a href="#" title="" class="link-dark text-decoration-none">
+                        شنط نسائي
+                    </a>
+                  </h5>
+
+                  <ul class="d-flex list-unstyled">
+                    <li class="d-flex align-items-start">
+                      <a href="#" class="link-dark" title="">                       
+                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                      </a>
+                    </li>
+                    <!-- More options here -->
+                  </ul>
+
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Category Card -->
+
         </div>
 
         <?php } ?>
 
       </div> 
       <!-- End of Categories List -->
-
-      <!-- Link to See All -->
-      <div class="d-flex">
-          <div class="flex-grow-1">
-              <!-- Any data or summary here -->
-          </div>
-          <div class="flex-shrink-0">
-              <a href="#" class="btn btn-primary" title=""> 
-                  تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
-              </a>
-          </div>
-      </div>
   
     </div>
   </section>
