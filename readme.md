@@ -1,12 +1,19 @@
 ## Default Theme for Zid catalog
 
 ### Todo
+- [ ] Clean codebase
+- [ ] Implement a better way to handle the sliders
+- [ ] Responsiveness
+- [ ] Add a link to the demo
+
+### Upcoming
 - replace slick to get rid of jquery dependecie (or use jquery slim)
 - generate color pallete
 - add animation
 - change photos of products, categories, slider
-- replace node packages with unpkg/jsdelivr resources
+- replace node-modules with unpkg/jsdelivr resources
 - integrate vite
+- replcae /addons/ with unpkg/jsdelivr resources 
 
 ### Credits
 - [Bootstrap](https://getbootstrap.com/)

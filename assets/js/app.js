@@ -24,7 +24,7 @@ let bar = new ProgressBar.Line('#progress', {
     strokeWidth: 1,
     easing: 'easeInOut',
     duration: 1400,
-    color: '#ffffff',
+    color: '#FFD14B',
     trailColor: '#8d5ea7',
     trailWidth: 0,
     svgStyle: { width: '100%', height: '3px' },

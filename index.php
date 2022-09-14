@@ -47,7 +47,7 @@
 
     <!-- Iconoir & Feather -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
-    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
+    <script src="addons/feather-icons/dist/feather.min.js"></script>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/fonts.css">
@@ -55,7 +55,9 @@
     <link rel="stylesheet" href="assets/css/global.css">
 
     <!-- Components -->
-    <link rel="stylesheet" href="assets/css/components/component-01.css">
+    <link rel="stylesheet" href="assets/css/components/triangle.css">
+    <link rel="stylesheet" href="assets/css/components/effects.css">
+    <link rel="stylesheet" href="assets/css/components/snap.css">
 
     <!-- Title -->
     <title>زد - القالب الإفتراضي</title>
@@ -93,10 +95,13 @@
         <?php include_once 'templates/best-seller.html'; ?>
         <?php include_once 'templates/recently-arrived.html'; ?>
         <?php include_once 'templates/partners.html'; ?>
+        <?php include_once 'templates/reviews.html'; ?>
 
         <?php
-        //include_once 'templates/footer.html'; 
+        //include_once 'templates/snap-scrolling-test.html'; 
         ?>
+
+        <?php include_once 'templates/footer.html'; ?>
         <!-- End of Components -->
 
     </section>
@@ -116,7 +121,7 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
+    <script src="addons/progressbar.js/dist/progressbar.min.js"></script>
 
     <!-- JS Application -->
     <script src="assets/js/app.js"></script>

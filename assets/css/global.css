@@ -15,6 +15,9 @@ h6 {
 }
 
 /* btn-close */
+.btn-close {
+  color: #ffd14b !important;
+}
 .btn-close:focus {
   box-shadow: none;
 }
@@ -99,6 +102,23 @@ h6 {
   background-position: center center;
   color: #ffffff;
 }
+.bg-overlay a {
+  color: #ffffff !important;
+}
+
+.bg-animated-gradient {
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(90deg, #ffd14b, #8d5ea7, #ffd14b, #8d5ea7);
+  background-size: 300% 100%;
+}
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
 
 /* progress */
 #progress {
@@ -137,3 +157,7 @@ h6 {
 .link-effect:hover {
   transform: rotate(-5deg) scale(1.2);
 } */
+
+.text-yellow {
+  color: #ffd14b !important;
+}

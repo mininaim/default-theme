@@ -1,0 +1,66 @@
+/* snap scrolling  */
+.snap {
+  width: 100%;
+  max-width: 100%;
+}
+
+.snap-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.snap-wrapper .card {
+  display: inline-block;
+}
+
+.snap-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.snap-wrapper-flexbox .card {
+  flex: 0 0 auto;
+}
+
+.snap-wrapper .card {
+  width: 150px;
+}
+
+.snap-wrapper,
+.snap-wrapper-flexbox {
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.snap-wrapper::-webkit-scrollbar,
+.snap-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}
+
+/* item-scrolling */
+#scrolling {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-scrolling {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: bannermove 15s linear infinite;
+}
+
+.item-scrolling img {
+  margin: 0 1.5em;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}

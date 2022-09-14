@@ -1,27 +1,25 @@
-<!--  Partners -->
-<section class="diagonal-section diagonal-section--flip-x bg-floor-dark p-5" role="partners">
-    <div class="container py-5">
+<!-- Partners -->
+<section class="p-5" role="partners">
+    <div class="container">
 
         <!-- Section Title -->
         <h4 class="pb-2 border-bottom">
-          <span class="px-2"><i class="iconoir-leaderboard-star"></i></span> شركائنا
+          <span class="px-2"><i class="iconoir-shopping-bag-check"></i></span> شركائنا
         </h4>
     
         <!-- Products Inner -->
         <div class="row g-4 py-5">
 
-        <!-- Loop of Products -->
-
-          <?php for($i = 1; $i < 11; $i++)  { ?>
-          <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-<?php echo $i ?>.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-          <?php } ?>
+           <!-- Loop of Products -->
+            <?php for($i = 1; $i < 8; $i++)  { ?>
+            <div class="col">
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
+                  <a href="#" title="" class="link-dark text-decoration-none">
+                    <img src="media/partners/img-<?php echo $i ?>.svg" class="card-img img-fluid" alt="">
+                  </a>
+                </div>
+            </div>
+            <?php } ?>
 
         </div> 
         <!-- End of Products Inner -->
