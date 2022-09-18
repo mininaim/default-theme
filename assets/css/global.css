@@ -84,6 +84,18 @@ h6 {
 .bg-alternate {
   background: rgb(219, 255, 73);
 }
+
+/* #todo: export to a class */
+.bg-primary-dark {
+  background: #714990;
+  color: #c8b7d5 !important;
+}
+.bg-primary-dark a {
+  color: #c8b7d5 !important;
+}
+.bg-primary-dark a:hover {
+  color: #fff !important;
+}
 .bg-gradient {
   background-image: linear-gradient(
     to left,
