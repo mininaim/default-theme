@@ -38,22 +38,27 @@
 
 /* item-scrolling */
 #scrolling {
-  height: 180px;
+  min-height: 280px;
   position: relative;
   overflow: hidden;
 }
 
 .item-scrolling {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 60px;
+  left: 0px;
+  bottom: 60px;
   overflow: hidden;
   white-space: nowrap;
-  animation: bannermove 15s linear infinite;
+  animation: bannermove 30s linear infinite;
 }
 
+.item-scrolling a {
+  display: inline-block;
+}
 .item-scrolling img {
   margin: 0 1.5em;
+  width: 160px;
 }
 
 @keyframes bannermove {

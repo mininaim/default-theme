@@ -6,24 +6,19 @@
         <h4 class="pb-2 border-bottom">
           <span class="px-2"><i class="iconoir-shopping-bag-check"></i></span> شركائنا
         </h4>
-    
-        <!-- Products Inner -->
-        <div class="row g-4 py-5">
 
-           <!-- Loop of Products -->
-            <?php for($i = 1; $i < 8; $i++)  { ?>
-            <div class="col">
-                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
-                  <a href="#" title="" class="link-dark text-decoration-none">
-                    <img src="media/partners/img-<?php echo $i ?>.svg" class="card-img img-fluid" alt="">
-                  </a>
-                </div>
+        <div class="snap">
+            <div class="snap-wrapper">
+                <?php for($i = 1; $i < 11; $i++)  { ?>
+                    <div class="card border-0 m-4 grow">
+                        <a href="#" title="" class="link-dark text-decoration-none">
+                          <!-- Product Image -->
+                          <img src="media/partners/img-<?php echo $i ?>.svg" class="img-fluid" alt="">
+                        </a>
+                      </div>
+                <?php } ?>
             </div>
-            <?php } ?>
-
-        </div> 
-        <!-- End of Products Inner -->
-
+        </div>
     </div>
 </section>
 <!-- End of Partners -->

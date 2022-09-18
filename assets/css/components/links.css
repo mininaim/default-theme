@@ -1,0 +1,97 @@
+/*  custom links */
+
+*[class^="custom-link"] {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+
+  /* #todo: to be removed */
+  padding: 0.375rem 0.75rem;
+  color: #8661a3;
+}
+
+.custom-link-1 {
+  background: linear-gradient(#8661a3 0 0) bottom / 100% var(--distance, 0px)
+    no-repeat;
+  transition: 0.5s;
+}
+
+.custom-link-1:hover {
+  --distance: 10px;
+}
+
+.custom-link-2 {
+  background: linear-gradient(#8661a3 0 0) 50% calc(-3px - 100%) /
+    var(--distance, 0%) 200% no-repeat;
+  transition: 0.3s, background-size 0.3s 0.3s;
+}
+.custom-link-2:hover {
+  --distance: 100%;
+  background-position: 50% 0%;
+  color: #fff !important;
+  transition: 0.3s, background-position 0.3s 0.3s, color 0.3s 0.3s;
+}
+
+.custom-link-3 {
+  background: linear-gradient(#8661a3 0 0) 0% calc(-3px - 100%) /
+    var(--distance, 0%) 200% no-repeat;
+  transition: 0.3s, background-size 0.3s 0.3s;
+}
+.custom-link-3:hover {
+  --distance: 100%;
+  background-position: 50% 0%;
+  color: #fff !important;
+  transition: 0.3s, background-position 0.3s 0.3s, color 0.3s 0.3s;
+}
+
+.custom-link-4 {
+  background: linear-gradient(#8661a3 0 0) right / var(--distance, 0%) 100%
+      no-repeat,
+    linear-gradient(#8661a3 0 0) left / var(--distance, 0%) 100% no-repeat;
+  transition: 0.5s;
+}
+.custom-link-4:hover {
+  --distance: 100%;
+  color: #fff !important;
+}
+
+.custom-link-5 {
+  background: linear-gradient(#8661a3 0 0) top / 100% var(--distance, 0%)
+      no-repeat,
+    linear-gradient(#8661a3 0 0) bottom / 100% var(--distance, 0%) no-repeat;
+  transition: 0.5s;
+}
+.custom-link-5:hover {
+  --distance: 100%;
+  color: #fff !important;
+}
+
+.custom-link-6 {
+  background: linear-gradient(#8661a3 0 0) right / 100% var(--distance, 0%)
+    no-repeat;
+  transition: 0.5s;
+}
+.custom-link-6:hover {
+  --distance: 100%;
+  color: #fff !important;
+}
+
+.custom-link-7 {
+  background: linear-gradient(#8661a3 0 0) right / var(--distance, 0%) 100%
+    no-repeat;
+  transition: 0.5s;
+}
+.custom-link-7:hover {
+  --distance: 100%;
+  color: #fff !important;
+}
+
+.custom-link-8 {
+  background: linear-gradient(#8661a3 0 0) top / 100% var(--distance, 0%)
+    no-repeat;
+  transition: 0.5s;
+}
+.custom-link-8:hover {
+  --distance: 100%;
+  color: #fff !important;
+}

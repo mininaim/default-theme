@@ -58,6 +58,8 @@
     <link rel="stylesheet" href="assets/css/components/triangle.css">
     <link rel="stylesheet" href="assets/css/components/effects.css">
     <link rel="stylesheet" href="assets/css/components/snap.css">
+    <link rel="stylesheet" href="assets/css/components/links.css">
+    <link rel="stylesheet" href="assets/css/components/decorators.css">
 
     <!-- Title -->
     <title>زد - القالب الإفتراضي</title>
@@ -94,7 +96,7 @@
         <?php include_once 'templates/discount.html'; ?>
         <?php include_once 'templates/best-seller.html'; ?>
         <?php include_once 'templates/recently-arrived.html'; ?>
-        <?php include_once 'templates/partners.html'; ?>
+        <?php include_once 'templates/partners-snap.html'; ?>
         <?php include_once 'templates/reviews.html'; ?>
 
         <?php

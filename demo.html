@@ -48,7 +48,7 @@
 
     <!-- Iconoir & Feather -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
-    <script src="unpkg/feather-icons/dist/feather.min.js"></script>
+    <script src="addons/feather-icons/dist/feather.min.js"></script>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/fonts.css">
@@ -56,7 +56,9 @@
     <link rel="stylesheet" href="assets/css/global.css">
 
     <!-- Components -->
-    <link rel="stylesheet" href="assets/css/components/component-01.css">
+    <link rel="stylesheet" href="assets/css/components/triangle.css">
+    <link rel="stylesheet" href="assets/css/components/effects.css">
+    <link rel="stylesheet" href="assets/css/components/snap.css">
 
     <!-- Title -->
     <title>زد - القالب الإفتراضي</title>
@@ -84,10 +86,15 @@
 
         <!-- Components -->
         <!-- Alert -->
-<div class="alert bg-alternate alert-dismissible fade show rounded-0 border-0 mb-0 text-center" role="alert">
-  <div class="container-fluid"></div>
+<div class="alert bg-primary text-white alert-dismissible fade show rounded-0 border-0 mb-0 text-center" role="alert">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="text-center flex-grow-1">
+      <!-- <i class="iconoir-bell-notification px-2"></i>  -->
       <strong>خصم محدود</strong> موسم العودة للمدارس, استخدم كوبون الخصم مدارس
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <button type="button" class="btn btn-primary text-yellow" data-bs-dismiss="alert" aria-label="Close">
+        <i class="iconoir-cancel iconoir-md"></i> 
+    </button>
   </div>
 </div>
 <!-- End of Alert -->
@@ -446,7 +453,7 @@
        <!-- Social Icons -->
       <ul class="nav d-flex align-content-center justify-content-center my-3 p-4">
         <li class="mx-2">
-          <a class="link-dark link-effect" href="#" title="">
+          <a class="link-dark grow" href="#" title="">
               <i class="iconoir-twitter iconoir-md"></i>
           </a>
         </li>
@@ -454,7 +461,7 @@
           <div class="vr"></div>
         </li>
         <li class="mx-2">
-          <a class="link-dark" href="#" title="">
+          <a class="link-dark grow" href="#" title="">
             <i class="iconoir-instagram iconoir-md"></i>
           </a>
         </li>
@@ -462,7 +469,7 @@
           <div class="vr"></div>
         </li>
         <li class="mx-2">
-          <a class="link-dark" href="#" title="">
+          <a class="link-dark grow" href="#" title="">
             <i class="iconoir-facebook iconoir-md"></i>
           </a>
         </li>
@@ -475,7 +482,7 @@
           </a>
         </li> -->
         <li class="mx-2">
-          <a class="link-dark" href="#" title="">
+          <a class="link-dark grow" href="#" title="">
             <i class="iconoir-tiktok iconoir-md"></i>
           </a>
         </li>
@@ -483,7 +490,7 @@
           <div class="vr"></div>
         </li>
         <li class="mx-2">
-          <a class="link-dark" href="#" title="">
+          <a class="link-dark grow" href="#" title="">
             <i class="iconoir-phone iconoir-md"></i>
           </a>
         </li>
@@ -491,7 +498,7 @@
           <div class="vr"></div>
         </li>
         <li class="mx-2">
-          <a class="link-dark" href="#" title="">
+          <a class="link-dark grow" href="#" title="">
             <i class="iconoir-mail-opened iconoir-md"></i>
           </a>
         </li>
@@ -499,7 +506,7 @@
           <div class="vr"></div>
         </li>
         <li class="mx-2">
-          <a class="link-dark" href="#" title="">
+          <a class="link-dark grow" href="#" title="">
             <i class="iconoir-globe iconoir-md"></i>
           </a>
         </li>
@@ -519,7 +526,7 @@
   </div>
 </section>
 <!-- End of Intro -->        <!-- Categories -->
-<section class="diagonal-section diagonal-section--flip-x alert-secondary p-5" role="categories">
+<section class="triangle-section triangle-section--flip-x alert-secondary p-5" role="categories">
   <div class="container py-5">
 
       <!-- Section Title -->
@@ -543,7 +550,7 @@
                 
         <div class="col">
 
-          <div class="card shadow border-0">
+          <div class="card shadow border-0 rotate-up">
             <div class="row g-0">
               <div class="col">
                 <img src="media/categories/img-1.png" class="img-fluid rounded-start" alt="">
@@ -559,10 +566,9 @@
                   <ul class="d-flex list-unstyled">
                     <li class="d-flex align-items-start">
                       <a href="#" class="link-dark" title="">                       
-                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                          <span class="px-2"><i class="iconoir-arrow-left"></i></span>
                       </a>
                     </li>
-                    <!-- More options here -->
                   </ul>
 
                 </div>
@@ -577,7 +583,7 @@
                 
         <div class="col">
 
-          <div class="card shadow border-0">
+          <div class="card shadow border-0 rotate-up">
             <div class="row g-0">
               <div class="col">
                 <img src="media/categories/img-2.png" class="img-fluid rounded-start" alt="">
@@ -593,10 +599,9 @@
                   <ul class="d-flex list-unstyled">
                     <li class="d-flex align-items-start">
                       <a href="#" class="link-dark" title="">                       
-                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                          <span class="px-2"><i class="iconoir-arrow-left"></i></span>
                       </a>
                     </li>
-                    <!-- More options here -->
                   </ul>
 
                 </div>
@@ -611,7 +616,7 @@
                 
         <div class="col">
 
-          <div class="card shadow border-0">
+          <div class="card shadow border-0 rotate-up">
             <div class="row g-0">
               <div class="col">
                 <img src="media/categories/img-3.png" class="img-fluid rounded-start" alt="">
@@ -627,10 +632,9 @@
                   <ul class="d-flex list-unstyled">
                     <li class="d-flex align-items-start">
                       <a href="#" class="link-dark" title="">                       
-                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                          <span class="px-2"><i class="iconoir-arrow-left"></i></span>
                       </a>
                     </li>
-                    <!-- More options here -->
                   </ul>
 
                 </div>
@@ -645,7 +649,7 @@
                 
         <div class="col">
 
-          <div class="card shadow border-0">
+          <div class="card shadow border-0 rotate-up">
             <div class="row g-0">
               <div class="col">
                 <img src="media/categories/img-4.png" class="img-fluid rounded-start" alt="">
@@ -661,10 +665,9 @@
                   <ul class="d-flex list-unstyled">
                     <li class="d-flex align-items-start">
                       <a href="#" class="link-dark" title="">                       
-                          <span class="px-2"><i class="iconoir-reply"></i></span>
+                          <span class="px-2"><i class="iconoir-arrow-left"></i></span>
                       </a>
                     </li>
-                    <!-- More options here -->
                   </ul>
 
                 </div>
@@ -681,8 +684,8 @@
       <!-- End of Categories List -->
   
     </div>
-  </section>
-  <!-- End of Categories -->        <!-- Featured -->
+</section>
+<!-- End of Categories -->        <!-- Featured -->
 <section class="p-5" role="featured">
   <div class="container">
     
@@ -700,7 +703,9 @@
           <div class="card shadow border-0 h-100">
 
               <!-- Product Image -->
-              <img src="media/featured/img-1.jpg" class="card-img-top" alt="">
+              <div class="rotate">
+                <img src="media/featured/img-1.jpg" class="card-img-top" alt="">
+              </div>
   
               <div class="card-body">
                   <!-- Product Title -->
@@ -744,7 +749,9 @@
           <div class="card shadow border-0 h-100">
 
               <!-- Product Image -->
-              <img src="media/featured/img-2.jpg" class="card-img-top" alt="">
+              <div class="rotate">
+                <img src="media/featured/img-2.jpg" class="card-img-top" alt="">
+              </div>
   
               <div class="card-body">
                   <!-- Product Title -->
@@ -788,7 +795,9 @@
           <div class="card shadow border-0 h-100">
 
               <!-- Product Image -->
-              <img src="media/featured/img-3.jpg" class="card-img-top" alt="">
+              <div class="rotate">
+                <img src="media/featured/img-3.jpg" class="card-img-top" alt="">
+              </div>
   
               <div class="card-body">
                   <!-- Product Title -->
@@ -832,7 +841,9 @@
           <div class="card shadow border-0 h-100">
 
               <!-- Product Image -->
-              <img src="media/featured/img-4.jpg" class="card-img-top" alt="">
+              <div class="rotate">
+                <img src="media/featured/img-4.jpg" class="card-img-top" alt="">
+              </div>
   
               <div class="card-body">
                   <!-- Product Title -->
@@ -876,7 +887,9 @@
           <div class="card shadow border-0 h-100">
 
               <!-- Product Image -->
-              <img src="media/featured/img-5.jpg" class="card-img-top" alt="">
+              <div class="rotate">
+                <img src="media/featured/img-5.jpg" class="card-img-top" alt="">
+              </div>
   
               <div class="card-body">
                   <!-- Product Title -->
@@ -934,7 +947,7 @@
     </div>
   </section>
   <!-- End of Featured -->        <!-- Discount -->
-<section class="bg-floor-darker p-5" role="discount">
+<section class="bg-floor-dark p-5" role="discount">
   <div class="container">
 
       <!-- Section Title -->
@@ -1637,108 +1650,372 @@
 
   </div>
 </section>
-<!-- End of Recently Arrived -->        <!--  Partners -->
-<section class="diagonal-section diagonal-section--flip-x bg-floor-dark p-5" role="partners">
-    <div class="container py-5">
+<!-- End of Recently Arrived -->        <!-- Partners -->
+<section class="p-5" role="partners">
+    <div class="container">
 
         <!-- Section Title -->
         <h4 class="pb-2 border-bottom">
-          <span class="px-2"><i class="iconoir-leaderboard-star"></i></span> شركائنا
+          <span class="px-2"><i class="iconoir-shopping-bag-check"></i></span> شركائنا
         </h4>
     
         <!-- Products Inner -->
         <div class="row g-4 py-5">
 
-        <!-- Loop of Products -->
-
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-1.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-2.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-3.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-4.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-5.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-6.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-7.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-8.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-9.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-                    <div class="col">
-    
-            <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2">
-                <!-- Product Image -->
-                <img src="media/partners/img-10.svg" class="card-img img-fluid" alt="">
-              </div>
-          </div>
-    
-          
+           <!-- Loop of Products -->
+                        <div class="col">
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
+                  <a href="#" title="" class="link-dark text-decoration-none">
+                    <img src="media/partners/img-1.svg" class="card-img img-fluid" alt="">
+                  </a>
+                </div>
+            </div>
+                        <div class="col">
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
+                  <a href="#" title="" class="link-dark text-decoration-none">
+                    <img src="media/partners/img-2.svg" class="card-img img-fluid" alt="">
+                  </a>
+                </div>
+            </div>
+                        <div class="col">
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
+                  <a href="#" title="" class="link-dark text-decoration-none">
+                    <img src="media/partners/img-3.svg" class="card-img img-fluid" alt="">
+                  </a>
+                </div>
+            </div>
+                        <div class="col">
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
+                  <a href="#" title="" class="link-dark text-decoration-none">
+                    <img src="media/partners/img-4.svg" class="card-img img-fluid" alt="">
+                  </a>
+                </div>
+            </div>
+                        <div class="col">
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
+                  <a href="#" title="" class="link-dark text-decoration-none">
+                    <img src="media/partners/img-5.svg" class="card-img img-fluid" alt="">
+                  </a>
+                </div>
+            </div>
+                        <div class="col">
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
+                  <a href="#" title="" class="link-dark text-decoration-none">
+                    <img src="media/partners/img-6.svg" class="card-img img-fluid" alt="">
+                  </a>
+                </div>
+            </div>
+                        <div class="col">
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-2 grow">
+                  <a href="#" title="" class="link-dark text-decoration-none">
+                    <img src="media/partners/img-7.svg" class="card-img img-fluid" alt="">
+                  </a>
+                </div>
+            </div>
+            
         </div> 
         <!-- End of Products Inner -->
 
     </div>
 </section>
-<!-- End of Partners -->
-                <!-- End of Components -->
+<!-- End of Partners -->        <!-- Reviews -->
+<section class="p-5" role="reviews">
+    <div class="container">
+
+        <!-- Section Title -->
+        <h4 class="pb-2 border-bottom">
+          <span class="px-2"><i class="iconoir-three-stars"></i></span> آراء عملائنا
+        </h4>
+    
+        <!-- Reviews Inner -->
+        <div class="row row-cols-1 row-cols-lg-4 g-4 py-5">
+
+           <!-- Loop of Reviews -->
+                        <div class="col">
+      
+              <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-perspective">
+                <div class="card-body">
+                  <!-- Reviews Details -->
+                  <i class="iconoir-bubble-star iconoir-lg text-primary"></i>
+                    <figure class="mt-3">
+                        <blockquote class="blockquote">
+                        <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                        12 نوفمبر 2022
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+            </div>
+      
+                        <div class="col">
+      
+              <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-perspective">
+                <div class="card-body">
+                  <!-- Reviews Details -->
+                  <i class="iconoir-bubble-star iconoir-lg text-primary"></i>
+                    <figure class="mt-3">
+                        <blockquote class="blockquote">
+                        <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                        12 نوفمبر 2022
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+            </div>
+      
+                        <div class="col">
+      
+              <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-perspective">
+                <div class="card-body">
+                  <!-- Reviews Details -->
+                  <i class="iconoir-bubble-star iconoir-lg text-primary"></i>
+                    <figure class="mt-3">
+                        <blockquote class="blockquote">
+                        <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                        12 نوفمبر 2022
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+            </div>
+      
+                        <div class="col">
+      
+              <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-perspective">
+                <div class="card-body">
+                  <!-- Reviews Details -->
+                  <i class="iconoir-bubble-star iconoir-lg text-primary"></i>
+                    <figure class="mt-3">
+                        <blockquote class="blockquote">
+                        <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                        12 نوفمبر 2022
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+            </div>
+      
+                        <div class="col">
+      
+              <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-perspective">
+                <div class="card-body">
+                  <!-- Reviews Details -->
+                  <i class="iconoir-bubble-star iconoir-lg text-primary"></i>
+                    <figure class="mt-3">
+                        <blockquote class="blockquote">
+                        <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                        12 نوفمبر 2022
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+            </div>
+      
+                        <div class="col">
+      
+              <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-perspective">
+                <div class="card-body">
+                  <!-- Reviews Details -->
+                  <i class="iconoir-bubble-star iconoir-lg text-primary"></i>
+                    <figure class="mt-3">
+                        <blockquote class="blockquote">
+                        <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                        12 نوفمبر 2022
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+            </div>
+      
+                        <div class="col">
+      
+              <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-perspective">
+                <div class="card-body">
+                  <!-- Reviews Details -->
+                  <i class="iconoir-bubble-star iconoir-lg text-primary"></i>
+                    <figure class="mt-3">
+                        <blockquote class="blockquote">
+                        <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                        12 نوفمبر 2022
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+            </div>
+      
+                        <div class="col">
+      
+              <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-perspective">
+                <div class="card-body">
+                  <!-- Reviews Details -->
+                  <i class="iconoir-bubble-star iconoir-lg text-primary"></i>
+                    <figure class="mt-3">
+                        <blockquote class="blockquote">
+                        <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                        12 نوفمبر 2022
+                        </figcaption>
+                    </figure>
+                </div>
+              </div>
+            </div>
+      
+            
+        </div> 
+        <!-- End of Reviews Inner -->
+
+        <!-- Link to See All -->
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-outline-primary" title=""> 
+                <span class="px-2"><i data-feather="refresh-ccw" class="feather-xs"></i></span> تحميل المزيد
+             </a>
+        </div>
+
+    </div>
+</section>
+<!-- End of Reviews -->
+        
+        <!-- Footer -->
+<footer class="triangle-section triangle-section-top--flip-x bg-primary text-white" role="footer">
+
+    <div class="container pt-5">
+        
+        <!-- Footer Row -->
+        <div class="row py-5 mt-5">
+          
+          <!-- Footer Column  -->
+          <div class="col-2  mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+               <img src="assets/img/store-logo.png" alt="" width="100" class="filter-white">
+            </a>
+          </div>
+
+          <!-- Footer Column  -->
+          <div class="col-4  mb-3">
+            <h5>روابط مهمة</h5>
+            <p class="mb-4 text-dark">
+                متجر افتراضي للتجربة والتعلم لمنصة Zid Store للتجارة الإلكترونية والتسويق الإلكتروني والتسويق عبر الإنترنت  والتسويق عبر الهواتف الذكية   
+            </p>
+          </div>
+          <div class="col-2  mb-3"></div>
+          
+          <!-- Footer Column  -->
+          <div class="col mb-3">
+            <h5>تابعنا على</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">الرئيسية</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">المنتجات</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">المدونة</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">المتاجر</a></li>
+            </ul>
+          </div>
+      
+           <!-- Footer Column  -->
+          <div class="col  mb-3">
+            <h5>روابط مهمة</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">الرئيسية</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">المنتجات</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">المدونة</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">المتاجر</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End of Footer Row -->
+
+        <!-- Sep -->
+        <hr>
+
+        <!-- FooteNotes -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center pb-0">
+            <p class="col-md-4 mb-0">© 2022 صنع بواسطة زد </p>
+        
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="media/intro/logo.svg" alt="" width="40">
+            </a>
+        
+            <ul class="nav d-flex align-content-center justify-content-center my-3 p-4">
+              <li class="mx-2">
+                <a class="link-dark grow" href="#" title="">
+                    <i class="iconoir-twitter iconoir-md"></i>
+                </a>
+              </li>
+              <li class="mx-2 hstack" hidden>
+                <div class="vr"></div>
+              </li>
+              <li class="mx-2">
+                <a class="link-dark grow" href="#" title="">
+                  <i class="iconoir-instagram iconoir-md"></i>
+                </a>
+              </li>
+              <li class="mx-2 hstack" hidden>
+                <div class="vr"></div>
+              </li>
+              <li class="mx-2">
+                <a class="link-dark grow" href="#" title="">
+                  <i class="iconoir-facebook iconoir-md"></i>
+                </a>
+              </li>
+              <li class="mx-2 hstack" hidden>
+                <div class="vr"></div>
+              </li>
+              <!-- <li class="mx-2">
+                <a class="" href="#" title="">
+                  <i class="iconoir-snapchat iconoir-md"></i>
+                </a>
+              </li> -->
+              <li class="mx-2">
+                <a class="link-dark grow" href="#" title="">
+                  <i class="iconoir-tiktok iconoir-md"></i>
+                </a>
+              </li>
+              <li class="mx-2 hstack" hidden>
+                <div class="vr"></div>
+              </li>
+              <li class="mx-2">
+                <a class="link-dark grow" href="#" title="">
+                  <i class="iconoir-phone iconoir-md"></i>
+                </a>
+              </li>
+              <li class="mx-2 hstack" hidden>
+                <div class="vr"></div>
+              </li>
+              <li class="mx-2">
+                <a class="link-dark grow" href="#" title="">
+                  <i class="iconoir-mail-opened iconoir-md"></i>
+                </a>
+              </li>
+              <li class="mx-2 hstack" hidden>
+                <div class="vr"></div>
+              </li>
+              <li class="mx-2">
+                <a class="link-dark grow" href="#" title="">
+                  <i class="iconoir-globe iconoir-md"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+         <!-- End of FooteNotes -->
+
+    </div>
+
+</footer>
+<!-- End of Footer -->        <!-- End of Components -->
 
     </section>
     <!-- Tomporary wrapper for Desktop & large Screens -->
@@ -1757,7 +2034,7 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="unpkg/progressbar.js/dist/progressbar.min.js"></script>
+    <script src="addons/progressbar.js/dist/progressbar.min.js"></script>
 
     <!-- JS Application -->
     <script src="assets/js/app.js"></script>
