@@ -77,3 +77,15 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
 
+let loadMoreReviewsButton = document.getElementById('loadMoreReviewsButton');
+loadMoreReviewsButton.addEventListener('click', function () {
+  let reviews = document.getElementById('reviews');
+  reviews.classList.remove('end-opacity');
+  loadMoreReviewsButton.classList.add('d-none');
+  
+ // console.log('load more reviews');
+});
+
+
+
+

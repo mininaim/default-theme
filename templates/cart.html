@@ -2,9 +2,12 @@
 <div class="offcanvas offcanvas-end" tabindex="-1" data-bs-scroll="true" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasCartLabel">
-        <i data-feather="shopping-bag"></i> سلة المشتريات
+        <i data-feather="shopping-cart"></i> سلة المشتريات
       </h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="iconoir-cancel iconoir-md"></i> 
+    </button>
     </div>
 
     <!-- Sep -->
@@ -27,7 +30,8 @@
                 <small class="text-muted">المقاس: 50</small>
                 <!-- Product Price -->
                 <div class="text-muted ltr py-2">
-                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                    5 x <del>261.37 SAR</del> 
+                    <mark class="text-danger bg-transparent">182.93 SAR</mark>
                 </div>
               </div>
 
@@ -41,12 +45,22 @@
             <?php } ?>
 
           </ul>
+          
+          <!-- if the cart was empty -->
+          <div class="text-center py-5">
+              <i data-feather="shopping-bag" class="feather-3x text-muted"></i>
+              <p class="text-muted my-3">سلة المشتريات فارغة</p>
+
+              <a href="#" class="btn btn-primary" title="">
+                تسوق الآن <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+              </a>
+          </div>
 
       </div>
     </div>
 
     <!-- Total -->
-    <div class="p-4 sticky-bottom bg-floor-dark">
+    <div class="p-4 sticky-bottom shadow-lg" hidden>
         <div class="d-flex align-items-center">
             <div class="flex-grow-1">
                 <h5 class="mb-0">المجموع</h5>

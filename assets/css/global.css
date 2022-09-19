@@ -158,6 +158,11 @@ h6 {
   height: 2rem;
 }
 
+.feather-3x {
+  width: 3rem;
+  height: 3rem;
+}
+
 /* filters  */
 .filter-white {
   filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(14%)

@@ -88,7 +88,7 @@
 
         <!-- Components -->
         <!-- Alert -->
-<div class="alert bg-primary text-white alert-dismissible fade show rounded-0 border-0 mb-0 text-center" role="alert">
+<div class="alert bg-primary text-white alert-dismissible fade show rounded-0 border-0 mb-0 text-center py-1" role="alert">
   <div class="container-fluid d-flex justify-content-between align-items-center">
     <div class="text-center flex-grow-1">
       <!-- <i class="iconoir-bell-notification px-2"></i>  -->
@@ -178,7 +178,10 @@
       <h5 class="offcanvas-title" id="offcanvasCartLabel">
         <i data-feather="shopping-bag"></i> سلة المشتريات
       </h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="iconoir-cancel iconoir-md"></i> 
+    </button>
     </div>
 
     <!-- Sep -->
@@ -200,7 +203,8 @@
                 <small class="text-muted">المقاس: 50</small>
                 <!-- Product Price -->
                 <div class="text-muted ltr py-2">
-                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                    5 x <del>261.37 SAR</del> 
+                    <mark class="text-danger bg-transparent">182.93 SAR</mark>
                 </div>
               </div>
 
@@ -220,7 +224,8 @@
                 <small class="text-muted">المقاس: 50</small>
                 <!-- Product Price -->
                 <div class="text-muted ltr py-2">
-                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                    5 x <del>261.37 SAR</del> 
+                    <mark class="text-danger bg-transparent">182.93 SAR</mark>
                 </div>
               </div>
 
@@ -240,7 +245,8 @@
                 <small class="text-muted">المقاس: 50</small>
                 <!-- Product Price -->
                 <div class="text-muted ltr py-2">
-                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                    5 x <del>261.37 SAR</del> 
+                    <mark class="text-danger bg-transparent">182.93 SAR</mark>
                 </div>
               </div>
 
@@ -260,7 +266,8 @@
                 <small class="text-muted">المقاس: 50</small>
                 <!-- Product Price -->
                 <div class="text-muted ltr py-2">
-                    5 x <del>261.37 SAR</del> <mark>182.93 SAR</mark>
+                    5 x <del>261.37 SAR</del> 
+                    <mark class="text-danger bg-transparent">182.93 SAR</mark>
                 </div>
               </div>
 
@@ -278,7 +285,7 @@
     </div>
 
     <!-- Total -->
-    <div class="p-4 sticky-bottom bg-floor-dark">
+    <div class="p-4 sticky-bottom shadow-lg">
         <div class="d-flex align-items-center">
             <div class="flex-grow-1">
                 <h5 class="mb-0">المجموع</h5>
@@ -504,11 +511,11 @@
         <li class="mx-2 hstack" hidden>
           <div class="vr"></div>
         </li>
-        <!-- <li class="mx-2">
-          <a class="" href="#" title="">
-            <i class="iconoir-snapchat iconoir-md"></i>
+        <li class="mx-2">
+          <a class="link-dark grow" href="#" title="">
+            <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path fill="bg-primary" d="M0 0h24v24H0z"></path><path d="M18 8.75c0-9-12-9-12 0v1.5H4.372c-.583 0-.823.749-.348 1.088L6 12.75c-.333 1.167-1.7 3.7-4.5 4.5.333.5 1.3 1.5 2.5 1.5l1 1.5 2.5-.5c.833.667 2.9 2 4.5 2s3.667-1.333 4.5-2l2.5.5 1-1.5c1.2 0 2.167-1 2.5-1.5-2.8-.8-4.167-3.333-4.5-4.5l1.976-1.412c.475-.339.235-1.088-.348-1.088H18v-1.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </a>
-        </li> -->
+        </li>
         <li class="mx-2">
           <a class="link-dark grow" href="#" title="">
             <i class="iconoir-tiktok iconoir-md"></i>
@@ -561,7 +568,8 @@
       <div class="d-flex @border-bottom">
         <div class="flex-grow-1">
           <h4 class="pb-2">
-            <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> التصانيف
+            <!-- <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> -->
+             التصانيف
           </h4>
         </div>
         <div class="flex-shrink-0">
@@ -719,7 +727,8 @@
     
       <!-- Section Title -->
       <h4 class="pb-2 @border-bottom">
-        <span class="px-2"><i class="iconoir-doc-star-alt"></i></span> منتجات مميزة
+        <!-- <span class="px-2"><i class="iconoir-doc-star-alt"></i></span>  -->
+        منتجات مميزة
       </h4>
   
       <!-- Products Inner -->
@@ -985,7 +994,8 @@
 
       <!-- Section Title -->
       <h4 class="pb-2 @border-bottom">
-        <span class="px-2"><i class="iconoir-percentage-round"></i></span> العروض المخفضة
+        <!-- <span class="px-2"><i class="iconoir-percentage-round"></i></span> -->
+         العروض المخفضة
       </h4>
   
       <!-- Products Inner -->
@@ -1221,7 +1231,8 @@
 
         <!-- Section Title -->
         <h4 class="pb-2 @border-bottom">
-          <span class="px-2"><i class="iconoir-stat-up"></i></span> الأكثر مبيعا
+          <!-- <span class="px-2"><i class="iconoir-stat-up"></i></span> -->
+           الأكثر مبيعا
         </h4>
     
         <!-- Products Inner -->
@@ -1254,7 +1265,8 @@
                       <!-- Add to Cart -->
                       <div class="btn-group btn-group-sm">
                         <button type="button" class="btn btn-outline-primary">
-                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                            <i class="iconoir-add-to-cart iconoir-md"></i>
+                             <!-- أضف للسلة -->
                         </button>
                       </div>
                 
@@ -1296,7 +1308,8 @@
                       <!-- Add to Cart -->
                       <div class="btn-group btn-group-sm">
                         <button type="button" class="btn btn-outline-primary">
-                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                            <i class="iconoir-add-to-cart iconoir-md"></i>
+                             <!-- أضف للسلة -->
                         </button>
                       </div>
                 
@@ -1338,7 +1351,8 @@
                       <!-- Add to Cart -->
                       <div class="btn-group btn-group-sm">
                         <button type="button" class="btn btn-outline-primary">
-                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                            <i class="iconoir-add-to-cart iconoir-md"></i>
+                             <!-- أضف للسلة -->
                         </button>
                       </div>
                 
@@ -1380,7 +1394,8 @@
                       <!-- Add to Cart -->
                       <div class="btn-group btn-group-sm">
                         <button type="button" class="btn btn-outline-primary">
-                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                            <i class="iconoir-add-to-cart iconoir-md"></i>
+                             <!-- أضف للسلة -->
                         </button>
                       </div>
                 
@@ -1422,7 +1437,8 @@
                       <!-- Add to Cart -->
                       <div class="btn-group btn-group-sm">
                         <button type="button" class="btn btn-outline-primary">
-                            <span class="px-2"><i data-feather="plus-circle" class="feather-xs"></i></span> أضف للسلة
+                            <i class="iconoir-add-to-cart iconoir-md"></i>
+                             <!-- أضف للسلة -->
                         </button>
                       </div>
                 
@@ -1462,12 +1478,13 @@
     </div>
 </section>
 <!-- End of Best Seller -->        <!-- Recently Arrived -->
-<section class="p-5" role="recently-arrived">
+<section class="p-5 border-top" role="recently-arrived">
   <div class="container">
 
       <!-- Section Title -->
       <h4 class="pb-2 @border-bottom">
-        <span class="px-2"><i class="iconoir-fire-flame"></i></span> وصل حديثا
+        <!-- <span class="px-2"><i class="iconoir-fire-flame"></i></span>  -->
+        وصل حديثا
       </h4>
   
       <!-- Products Inner -->
@@ -1484,7 +1501,7 @@
 
               <div class="position-absolute top-0 start-0">
                 <span class="badge text-bg-primary rounded-0">
-                  <span class="px-2"><i class="iconoir-fire-flame"></i></span> وصل حديثا
+                  <span class="px-1"><i class="iconoir-fire-flame"></i></span> وصل حديثا
                 </span>
               </div>
 
@@ -1531,7 +1548,7 @@
 
               <div class="position-absolute top-0 start-0">
                 <span class="badge text-bg-primary rounded-0">
-                  <span class="px-2"><i class="iconoir-fire-flame"></i></span> وصل حديثا
+                  <span class="px-1"><i class="iconoir-fire-flame"></i></span> وصل حديثا
                 </span>
               </div>
 
@@ -1578,7 +1595,7 @@
 
               <div class="position-absolute top-0 start-0">
                 <span class="badge text-bg-primary rounded-0">
-                  <span class="px-2"><i class="iconoir-fire-flame"></i></span> وصل حديثا
+                  <span class="px-1"><i class="iconoir-fire-flame"></i></span> وصل حديثا
                 </span>
               </div>
 
@@ -1625,7 +1642,7 @@
 
               <div class="position-absolute top-0 start-0">
                 <span class="badge text-bg-primary rounded-0">
-                  <span class="px-2"><i class="iconoir-fire-flame"></i></span> وصل حديثا
+                  <span class="px-1"><i class="iconoir-fire-flame"></i></span> وصل حديثا
                 </span>
               </div>
 
@@ -1672,7 +1689,7 @@
 
               <div class="position-absolute top-0 start-0">
                 <span class="badge text-bg-primary rounded-0">
-                  <span class="px-2"><i class="iconoir-fire-flame"></i></span> وصل حديثا
+                  <span class="px-1"><i class="iconoir-fire-flame"></i></span> وصل حديثا
                 </span>
               </div>
 
@@ -1833,13 +1850,14 @@
 
         <!-- Section Title -->
         <h4 class="pb-2 @border-bottom text-center">
-          <span class="px-2"><i class="iconoir-three-stars"></i></span> آراء عملائنا
+          <!-- <span class="px-2"><i class="iconoir-three-stars"></i></span>  -->
+          آراء عملائنا
         </h4>
 
         
         
         <!-- Reviews Inner -->
-        <div class="row row-cols-1 row-cols-lg-4 g-5 pt-3 py-5 mt-3 position-relative end-opacity">
+        <div class="row row-cols-1 row-cols-lg-4 g-5 pt-3 py-5 mt-3 position-relative end-opacity" id="reviews">
 
            <!-- Loop of Reviews -->
                         <div class="col">
@@ -1987,14 +2005,88 @@
             </div>
       
             
-        </div> 
+
+            <!-- Display more reviews -->
+            <div class="collapse w-100" id="loadMoreReviews">
+            <div class="row row-cols-1 row-cols-lg-4 g-5">
+                          <div class="col">
+        
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-up position-relative">
+                  <div class="card-body">
+                    <!-- Reviews Details -->
+                      <figure class="mt-3">
+                          <blockquote class="blockquote">
+                          <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer mt-2">
+                          12 نوفمبر 2022
+                          </figcaption>
+                      </figure>
+                      <svg class="text-dark text-opacity-25 feather-md position-absolute top-0 end-0 translate-middle" aria-hidden="true" viewBox="0 0 64 64"><polygon fill="currentColor" points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36"></polygon><polygon fill="currentColor" points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36"></polygon></svg>
+                  </div>
+                </div>
+              </div>
+                            <div class="col">
+        
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-up position-relative">
+                  <div class="card-body">
+                    <!-- Reviews Details -->
+                      <figure class="mt-3">
+                          <blockquote class="blockquote">
+                          <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer mt-2">
+                          12 نوفمبر 2022
+                          </figcaption>
+                      </figure>
+                      <svg class="text-dark text-opacity-25 feather-md position-absolute top-0 end-0 translate-middle" aria-hidden="true" viewBox="0 0 64 64"><polygon fill="currentColor" points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36"></polygon><polygon fill="currentColor" points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36"></polygon></svg>
+                  </div>
+                </div>
+              </div>
+                            <div class="col">
+        
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-up position-relative">
+                  <div class="card-body">
+                    <!-- Reviews Details -->
+                      <figure class="mt-3">
+                          <blockquote class="blockquote">
+                          <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer mt-2">
+                          12 نوفمبر 2022
+                          </figcaption>
+                      </figure>
+                      <svg class="text-dark text-opacity-25 feather-md position-absolute top-0 end-0 translate-middle" aria-hidden="true" viewBox="0 0 64 64"><polygon fill="currentColor" points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36"></polygon><polygon fill="currentColor" points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36"></polygon></svg>
+                  </div>
+                </div>
+              </div>
+                            <div class="col">
+        
+                <div class="card shadow border-0 h-100 w-100 d-grid align-items-center p-3 rotate-up position-relative">
+                  <div class="card-body">
+                    <!-- Reviews Details -->
+                      <figure class="mt-3">
+                          <blockquote class="blockquote">
+                          <p>متجر جميل، متنوع وتوصيل سريع جدا</p>
+                          </blockquote>
+                          <figcaption class="blockquote-footer mt-2">
+                          12 نوفمبر 2022
+                          </figcaption>
+                      </figure>
+                      <svg class="text-dark text-opacity-25 feather-md position-absolute top-0 end-0 translate-middle" aria-hidden="true" viewBox="0 0 64 64"><polygon fill="currentColor" points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36"></polygon><polygon fill="currentColor" points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36"></polygon></svg>
+                  </div>
+                </div>
+              </div>
+                          </div>
+            </div>
+        </div>
         <!-- End of Reviews Inner -->
 
         <!-- Link to Download More -->
         <div class="d-flex justify-content-center">
              <div class="flex-shrink-0">
-              <a href="#" class="custom-link custom-link-2" title=""> 
-                <span class="px-2"><i data-feather="refresh-ccw" class="feather-xs"></i></span> تحميل المزيد
+              <a data-bs-toggle="collapse" id="loadMoreReviewsButton" href="#loadMoreReviews" role="button" aria-expanded="false" aria-controls="loadMoreReviews" class="custom-link custom-link-2" title=""> 
+                <span class="px-2"><i class="iconoir-refresh-circular"></i></span> إظهار المزيد
               </a>
           </div>
         </div>
@@ -2020,110 +2112,71 @@
 
           <!-- Footer Column  -->
           <div class="col-4 mb-3">
-            <h6 class="text-yellow"> عن المتجر التجريبي</h6>
-            <p class="mb-4 text-white">
+            <h6 class="text-yellow fw-bold"> عن المتجر التجريبي</h6>
+            <p class="mb-4 text-white mt-3 w-75">
+              <small>
                 متجر افتراضي للتجربة والتعلم لمنصة Zid Store للتجارة الإلكترونية والتسويق الإلكتروني والتسويق عبر الإنترنت  والتسويق عبر الهواتف الذكية   
+               </small>
             </p>
           </div>
-          <div class="col-2 mb-3"></div>
+
           
           <!-- Footer Column  -->
           <div class="col mb-3">
-            <h6 class="text-yellow">تابعنا على</h6>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">الرئيسية</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">المنتجات</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">المدونة</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">المتاجر</a></li>
+            <h6 class="text-yellow fw-bold"> قائمة التصفح</h6>
+            <ul class="nav flex-column mt-3">
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>الرئيسية</small></a></li>
+                  
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>التصانيف</small></a></li>
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>
+                سلة التسوق
+                <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+              </small></a></li>
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>
+                
+               
+                
+                الدخول للحساب</small></a></li>
+
+              <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><small></small></a></li> -->
+
             </ul>
           </div>
       
            <!-- Footer Column  -->
-          <div class="col mb-3">
-            <h6 class="text-yellow">روابط مهمة</h6>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0">الرئيسية</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">المنتجات</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">المدونة</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">المتاجر</a></li>
+           <div class="col mb-3">
+            <h6 class="text-yellow fw-bold"> روابط مهمة</h6>
+            <ul class="nav flex-column mt-3">
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>سياسات الاستبدال و الاسترجاع</small></a></li>
+                  
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>خيارات الدفع والتوصيل</small></a></li>
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>سياسة الخصوصية</small></a></li>
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>الشكاوى و اﻹقتراحات</small></a></li>
+              <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>صفحة تجريبية</small></a></li>
+ 
+                <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>الشروط والأحكام</small></a></li>
+               
+                  <li class="nav-item mb-1"><a href="#" class="nav-link p-0"><small>التراخيص</small></a></li>
             </ul>
           </div>
-        </div>
+
+          <div class="col-2 mb-3">
+            <h6 class="text-yellow fw-bold"> خيارات اللغة</h6>
+            <ul class="nav flex-column mt-3">
+             
+              <li class="nav-item mb-1"><a href="#" class="btn btn-sm btn-warning text-white border ltr"><small>
+
+                <span class="px-2"><i class="iconoir-translate"></i></span> English
+              </small></a></li>
+              <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0"><small></small></a></li> -->
+
+            </ul>
+          </div>
+
         <!-- End of Footer Row -->
 
         <!-- Sep -->
         <!-- <hr> -->
-
-        <!-- FooteNotes -->
-        <div class="d-flex flex-wrap justify-content-between align-items-center pb-0 bg-primary-dark rounded-pill px-4">
-            <p class="col-md-4 mb-0">© 2022 صنع بواسطة زد </p>
-        
-            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <img src="media/intro/logo-white.svg" alt="" width="40">
-            </a>
-        
-            <ul class="nav d-flex align-content-center justify-content-center my-3 p-4">
-              <li class="mx-2">
-                <a class="text-white grow" href="#" title="">
-                    <i class="iconoir-twitter iconoir-md"></i>
-                </a>
-              </li>
-              <li class="mx-2 hstack" hidden>
-                <div class="vr"></div>
-              </li>
-              <li class="mx-2">
-                <a class="text-white grow" href="#" title="">
-                  <i class="iconoir-instagram iconoir-md"></i>
-                </a>
-              </li>
-              <li class="mx-2 hstack" hidden>
-                <div class="vr"></div>
-              </li>
-              <li class="mx-2">
-                <a class="text-white grow" href="#" title="">
-                  <i class="iconoir-facebook iconoir-md"></i>
-                </a>
-              </li>
-              <li class="mx-2 hstack" hidden>
-                <div class="vr"></div>
-              </li>
-              <li class="mx-2">
-                <a class="text-white grow" href="#" title="">
-                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path fill="bg-primary" d="M0 0h24v24H0z"></path><path d="M18 8.75c0-9-12-9-12 0v1.5H4.372c-.583 0-.823.749-.348 1.088L6 12.75c-.333 1.167-1.7 3.7-4.5 4.5.333.5 1.3 1.5 2.5 1.5l1 1.5 2.5-.5c.833.667 2.9 2 4.5 2s3.667-1.333 4.5-2l2.5.5 1-1.5c1.2 0 2.167-1 2.5-1.5-2.8-.8-4.167-3.333-4.5-4.5l1.976-1.412c.475-.339.235-1.088-.348-1.088H18v-1.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                </a>
-              </li>
-              <li class="mx-2">
-                <a class="text-white grow" href="#" title="">
-                  <i class="iconoir-tiktok iconoir-md"></i>
-                </a>
-              </li>
-              <li class="mx-2 hstack" hidden>
-                <div class="vr"></div>
-              </li>
-              <li class="mx-2">
-                <a class="text-white grow" href="#" title="">
-                  <i class="iconoir-phone iconoir-md"></i>
-                </a>
-              </li>
-              <li class="mx-2 hstack" hidden>
-                <div class="vr"></div>
-              </li>
-              <li class="mx-2">
-                <a class="text-white grow" href="#" title="">
-                  <i class="iconoir-mail-opened iconoir-md"></i>
-                </a>
-              </li>
-              <li class="mx-2 hstack" hidden>
-                <div class="vr"></div>
-              </li>
-              <li class="mx-2">
-                <a class="text-white grow" href="#" title="">
-                  <i class="iconoir-globe iconoir-md"></i>
-                </a>
-              </li>
-            </ul>
-        </div>
-         <!-- End of FooteNotes -->
 
     </div>
 
@@ -2178,8 +2231,107 @@
       </svg>
     </figure>
 </footer>
-<!-- End of Footer -->        
-<!-- End of Components -->
+<!-- End of Footer -->
+
+
+
+        <!-- FooteNote -->
+        <section class="bg-primary-dark py-3" hidden role="footenote">
+        <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+          <p class="col-md-4 mb-0 border">
+            © 2022 صنع بواسطة زد 
+            <span class=""><img src="media/footenote/zid.svg" alt="" width="24" height="24" class="bg-dark d-inline-block rounded-pill p-1"></span>
+          </p>
+
+          <div class="border col-md-4 d-flex align-items-center justify-content-center">
+            <ul class="nav d-flex align-content-center justify-content-center border">
+              <li class="mx-2">
+                <a class="text-white grow" href="#" title="">
+                    <img src="media/footenote/apple-pay.svg" alt="" width="24">
+                </a>
+              </li>
+              <li class="mx-2">
+                <a class="text-white grow" href="#" title="">
+                    <img src="media/footenote/apple-pay.svg" alt="" width="24">
+                </a>
+              </li>
+              <li class="mx-2">
+                <a class="text-white grow" href="#" title="">
+                    <img src="media/footenote/apple-pay.svg" alt="" width="24">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+      
+          <!-- <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <img src="media/intro/logo-white.svg" alt="" width="40">
+          </a> -->
+      
+          <ul class="nav d-flex align-content-center justify-content-center border">
+            <li class="mx-2">
+              <a class="text-white grow" href="#" title="">
+                  <i class="iconoir-twitter iconoir-md"></i>
+              </a>
+            </li>
+            <li class="mx-2 hstack" hidden>
+              <div class="vr"></div>
+            </li>
+            <li class="mx-2">
+              <a class="text-white grow" href="#" title="">
+                <i class="iconoir-instagram iconoir-md"></i>
+              </a>
+            </li>
+            <li class="mx-2 hstack" hidden>
+              <div class="vr"></div>
+            </li>
+            <li class="mx-2">
+              <a class="text-white grow" href="#" title="">
+                <i class="iconoir-facebook iconoir-md"></i>
+              </a>
+            </li>
+            <li class="mx-2 hstack" hidden>
+              <div class="vr"></div>
+            </li>
+            <li class="mx-2">
+              <a class="text-white grow" href="#" title="">
+                  <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path fill="bg-primary" d="M0 0h24v24H0z"></path><path d="M18 8.75c0-9-12-9-12 0v1.5H4.372c-.583 0-.823.749-.348 1.088L6 12.75c-.333 1.167-1.7 3.7-4.5 4.5.333.5 1.3 1.5 2.5 1.5l1 1.5 2.5-.5c.833.667 2.9 2 4.5 2s3.667-1.333 4.5-2l2.5.5 1-1.5c1.2 0 2.167-1 2.5-1.5-2.8-.8-4.167-3.333-4.5-4.5l1.976-1.412c.475-.339.235-1.088-.348-1.088H18v-1.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a class="text-white grow" href="#" title="">
+                <i class="iconoir-tiktok iconoir-md"></i>
+              </a>
+            </li>
+            <li class="mx-2 hstack" hidden>
+              <div class="vr"></div>
+            </li>
+            <li class="mx-2">
+              <a class="text-white grow" href="#" title="">
+                <i class="iconoir-phone iconoir-md"></i>
+              </a>
+            </li>
+            <li class="mx-2 hstack" hidden>
+              <div class="vr"></div>
+            </li>
+            <li class="mx-2">
+              <a class="text-white grow" href="#" title="">
+                <i class="iconoir-mail-opened iconoir-md"></i>
+              </a>
+            </li>
+            <li class="mx-2 hstack" hidden>
+              <div class="vr"></div>
+            </li>
+            <li class="mx-2">
+              <a class="text-white grow" href="#" title="">
+                <i class="iconoir-globe iconoir-md"></i>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+       <!-- End of FooteNote -->        <!-- End of Components -->
 
     </section>
     <!-- Tomporary wrapper for Desktop & large Screens -->

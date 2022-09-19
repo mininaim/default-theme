@@ -2,6 +2,7 @@
 
 ### Todo
 - [ ] Clean codebase
+- [ ] Generate color palette
 - [ ] Implement a better way to handle the sliders
 - [ ] Responsiveness
 - [ ] Add a link to the demo
