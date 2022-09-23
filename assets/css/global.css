@@ -53,6 +53,18 @@ h6 {
     line-height: 1.4;
   }
 }
+@media (max-width: 575.98px) {
+  .carousel-item {
+    height: inherit !important;
+  }
+}
+
+/* w-75 */
+@media (max-width: 575.98px) {
+  .w-75 {
+    width: 100% !important;
+  }
+}
 
 /* iconoir sizes */
 *[class^="iconoir-"],
@@ -256,4 +268,10 @@ h6 {
 /* swipper pagination */
 .swiper-pagination-bullet-active {
   background-color: #8661a3 !important;
+}
+
+/* zindex-fixed */
+
+.zindex-fixed {
+  z-index: 1030 !important;
 }

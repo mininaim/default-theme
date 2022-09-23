@@ -403,11 +403,11 @@ const swiper5 = new Swiper(".recentlyArrivedSwiper", {
 });
 
 const swiper6 = new Swiper(".partnersSwiper", {
-  slidesPerView: "auto",
-  centeredSlides: true,
+  slidesPerView: 1,
+  // centeredSlides: true,
   spaceBetween: 30,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-sm",
     dynamicBullets: true,
     clickable: true,
   },
@@ -466,21 +466,21 @@ const swiper7 = new Swiper(".reviewsSwiper", {
 
 // Init Slick
 // #todo: Get rid of jQuery dependency
-$(document).ready(function () {
-  $(".slick").slick({
-    dots: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    rtl: true,
-    centerMode: true,
-    centerPadding: "60px",
-  });
-});
+// $(document).ready(function () {
+//   $(".slick").slick({
+//     dots: true,
+//     speed: 500,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     arrows: false,
+//     infinite: true,
+//     slidesToShow: 4,
+//     slidesToScroll: 4,
+//     rtl: true,
+//     centerMode: true,
+//     centerPadding: "60px",
+//   });
+// });
 
 // Nested Dropdown Menu
 document.addEventListener("DOMContentLoaded", function () {
