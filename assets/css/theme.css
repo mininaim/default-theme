@@ -497,13 +497,13 @@ a.text-secondary:focus {
   color: #8661a3 !important;
 }
 
-footer .nav-link {
+/* footer .nav-link {
   color: hsl(var(--color-white)) !important;
 }
 footer .nav-link:focus,
 footer .nav-link:hover {
   color: hsl(var(--color-warning)) !important;
-}
+} */
 
 .dropdown-item {
   /* color: #8f8f8f !important; */
@@ -512,4 +512,85 @@ footer .nav-link:hover {
 
 .text-bg-primary {
   background-color: #8661a3 !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #8661a3 !important;
+}
+
+@media (min-width: 768px) {
+  /* .sticky-md-top {
+    background-color: #fff !important;
+  } */
+}
+
+/* styles when the main navigation is sticked  */
+
+@media (min-width: 991.98px) {
+  .main-navigation {
+    position: sticky;
+    top: -1px;
+
+    padding-top: calc(1em + 1px);
+
+    transition: all 0.4s ease;
+  }
+
+  .main-navigation.isSticky {
+    background-color: #fff !important;
+    padding: 1.5rem 0 !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+/* .main-navigation.isSticky {
+  backdrop-filter: saturate(180%) blur(2px);
+  background-color: rgba(225, 225, 225, 0.8);
+} */
+
+/* btn-toggle */
+.dropdown-toggle {
+  outline: 0;
+}
+
+.btn-toggle {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: transparent !important;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, 0.85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+
+.scrollarea {
+  overflow-y: auto;
 }

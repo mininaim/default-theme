@@ -45,6 +45,9 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <!-- Iconoir & Feather -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
     <script src="addons/feather-icons/dist/feather.min.js"></script>
@@ -60,6 +63,8 @@
     <link rel="stylesheet" href="assets/css/components/snap.css">
     <link rel="stylesheet" href="assets/css/components/links.css">
     <link rel="stylesheet" href="assets/css/components/decorators.css">
+    <link rel="stylesheet" href="assets/css/components/swiper.css">
+    <link rel="stylesheet" href="assets/css/components/css-filter.css">
 
     <!-- Title -->
     <title>زد - القالب الإفتراضي</title>
@@ -69,7 +74,7 @@
 <body>
 
     <!-- Tomporary alert for Mobile Devices -->
-    <section class="d-block d-lg-none">
+    <!-- <section class="d-block d-lg-none">
         <div class="alert bg-gradient d-flex flex-column text-center" role="alert">
             <i class="iconoir-hand-brake iconoir-lg"></i>
 
@@ -77,36 +82,39 @@
                 فضلا التصفح من شاشة جهاز كمبيوتر، أو متصفح بأبعاد كبيرة، الموبايل قادم في القريب العاجل
             </p>
         </div>
-    </section>
+    </section> -->
 
     <!-- Tomporary wrapper for Desktop & large Screens -->
-    <section class="d-none d-lg-block">
+    <!-- <section class="d-none d-lg-block"> -->
 
-        <!-- Progress Loader -->
-        <div id="progress"></div>
+    <!-- Progress Loader -->
+    <div id="progress"></div>
 
-        <!-- Components -->
-        <?php include_once 'templates/alert.html'; ?>
-        <?php include_once 'templates/top-navigation.html'; ?>
-        <?php include_once 'templates/main-navigation.html'; ?>
-        <?php include_once 'templates/slider.html'; ?>
-        <?php include_once 'templates/intro.html'; ?>
-        <?php include_once 'templates/categories.html'; ?>
-        <?php include_once 'templates/featured.html'; ?>
-        <?php include_once 'templates/discount.html'; ?>
-        <?php include_once 'templates/best-seller.html'; ?>
-        <?php include_once 'templates/recently-arrived.html'; ?>
-        <?php include_once 'templates/partners-snap.html'; ?>
-        <?php include_once 'templates/reviews.html'; ?>
+    <!-- Components -->
+    <?php //include_once 'templates/swiper.html'; 
+    ?>
 
-        <?php
-        //include_once 'templates/snap-scrolling-test.html'; 
-        ?>
+    <?php include_once 'templates/alert.html'; ?>
+    <?php include_once 'templates/top-navigation.html'; ?>
+    <?php include_once 'templates/main-navigation.html'; ?>
+    <?php include_once 'templates/slider.html'; ?>
+    <?php include_once 'templates/intro.html'; ?>
+    <?php include_once 'templates/categories.html'; ?>
+    <?php include_once 'templates/featured.html'; ?>
+    <?php include_once 'templates/discount.html'; ?>
+    <?php include_once 'templates/best-seller.html'; ?>
+    <?php include_once 'templates/recently-arrived.html'; ?>
+    <?php include_once 'templates/partners.html'; ?>
+    <?php include_once 'templates/reviews.html'; ?>
 
-        <?php include_once 'templates/footer.html'; ?>
-        <!-- End of Components -->
+    <?php
+    //include_once 'templates/snap-scrolling-test.html'; 
+    ?>
 
-    </section>
+    <?php include_once 'templates/footer.html'; ?>
+    <!-- End of Components -->
+
+    <!-- </section> -->
     <!-- Tomporary wrapper for Desktop & large Screens -->
 
     <!-- Bootstrap Bundle with Popper -->
@@ -117,6 +125,9 @@
     <!-- jQuery Dependecies -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"

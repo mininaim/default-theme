@@ -1,83 +1,101 @@
 <!-- Best Seller -->
-<section class="bg-white p-5" role="best-seller">
-    <div class="container">
+<section class="p-5 border-top" role="best-seller">
+  <div class="container">
 
-        <!-- Section Title -->
-        <h4 class="pb-2 @border-bottom">
-          <!-- <span class="px-2"><i class="iconoir-stat-up"></i></span> -->
-           الأكثر مبيعا
+    <!-- Section Title -->
+    <div class="d-flex mb-md-2 mb-3">
+      <div class="flex-grow-1">
+        <h4 class="pb-md-2 pt-2">
+          <!-- <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> -->
+          الأكثر مبيعا
         </h4>
-    
-        <!-- Products Inner -->
-        <div class="row row-cols-1 row-cols-lg-5 flex-row flex-nowrap align-items-stretch g-4 pt-3 pb-5">
+      </div>
+      <div class="flex-shrink-0 position-relative">
+        <div
+          class="swiper-button-next swiper-button-next-sm swiper-button-next-best-seller text-primary custom-link custom-link-7">
+        </div>
+        <div
+          class="swiper-button-prev swiper-button-prev-sm swiper-button-prev-best-seller text-primary custom-link custom-link-7">
+        </div>
+      </div>
+    </div>
 
-        <!-- Loop of Products -->
-        <?php for($i = 1; $i < 6; $i++)  { ?>
-          <div class="col">
-    
-            <div class="card shadow border-0 @h-100">
 
-                <!-- Product Image -->
-                <img src="media/best-seller/img-<?php echo $i ?>.jpg" class="card-img-top" alt="">
-    
-                <div class="card-body">
-                    <!-- Product Title -->
-                    <h6 class="card-title text-dark py-2">
-                      <a href="#" title="" class="link-dark text-decoration-none">
-                        معطف كاشيه ملون رجالي
-                      </a>
-                    </h6>
-                    <!-- Product Caption -->
-                    <p class="card-text text-dark">
-                        <small class="text-muted">
-                          <i class="iconoir-message-alert iconoir-sm"></i> متوفر بعدة خيارات
-                        </small>
-                    </p>
-                    
-                    <div class="d-flex justify-content-between align-items-center">
-                      
-                      <!-- Add to Cart -->
-                      <div class="btn-group btn-group-sm">
-                        <button type="button" class="btn btn-outline-primary">
-                            <i class="iconoir-add-to-cart iconoir-md"></i>
-                             <!-- أضف للسلة -->
-                        </button>
-                      </div>
-                
-                      <!-- Product Price -->
-                      <small class="text-muted d-flex flex-column align-items-end">
-                        <!-- <small><del class="text-danger">620 SAR</del></small> -->
-                        <strong class="fs-6">500 SAR</strong>
-                      </small>
 
-                    </div>
-                  </div>
-    
-              </div>
-          </div>
-    
-          <?php } ?>
 
-        </div> 
-        <!-- End of Products Inner -->
+    <!-- Products Inner -->
+    <div class="swiper besetSellerSwiper">
+      <div class="swiper-wrapper">
 
-        <!-- Link to See All -->
-        <div class="d-flex">
-          <div class="flex-grow-1">
-              <!-- Any data or summary here -->
-          </div>
-          <!-- <div class="flex-shrink-0">
-              <a href="#" class="btn btn-primary" title=""> 
-                  تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+        <?php for($i = 1; $i < 5; $i++)  { ?>
+
+        <div class="swiper-slide card shadow-sm border h-100">
+          <a href="./product" class="d-inline-block @overflow-hidden rotate">
+            <img src="media/best-seller/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
+          </a>
+
+          <div class="card-body">
+            <!-- Product Title -->
+            <h6 class="card-title py-2">
+              <a href="./product" title="" class="link-dark text-decoration-none">
+                جاكيت بليزر أسود رجالي
               </a>
-          </div> -->
-          <div class="flex-shrink-0">
-            <a href="#" class="custom-link custom-link-2" title=""> 
+            </h6>
+            <!-- Product Caption -->
+            <p class="card-text text-dark mb-0">
+              <span class="fs-7 text-primary">
+
+                <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <rect width="100%" height="100%" fill="currentColor"></rect>
+                </svg>
+
+                متوفر بعدة خيارات</span>
+            </p>
+
+
+            <!-- Product Price -->
+            <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
+              <small><del>620 SAR</del></small>
+              <strong class="fs-6 text-danger">500 SAR</strong>
+            </small>
+
+            <!-- Add to Cart -->
+            <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
+              <button type="button" class="btn btn-primary">
+                <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة للسلة
+              </button>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <?php } ?>
+      </div>
+
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <!-- End of Products Inner -->
+
+    <!-- Link to See All -->
+    <div class="d-flex">
+      <div class="flex-grow-1">
+        <!-- Any data or summary here -->
+      </div>
+      <!-- <div class="flex-shrink-0">
+            <a href="#" class="btn btn-primary" title=""> 
                 تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
             </a>
-        </div>
-       </div>
-
+        </div> -->
+      <!-- <div class="flex-shrink-0">
+        <a href="#" class="custom-link custom-link-2" title="">
+          تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+        </a>
+      </div> -->
     </div>
+
+  </div>
 </section>
 <!-- End of Best Seller -->
