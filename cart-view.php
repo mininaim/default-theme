@@ -94,12 +94,13 @@
     <?php include_once 'templates/top-navigation.html'; ?>
     <?php include_once 'templates/main-navigation.html'; ?>
 
-    <?php include_once 'templates/page-products-hero.html'; ?>
+    <?php #include_once 'templates/page-products-hero.html'; 
+    ?>
     <?php #include_once 'templates/breadcrumb.html'; 
     ?>
     <?php #include_once 'templates/no-results.html'; 
     ?>
-    <?php #include_once 'templates/cart-empty.html'; 
+    <?php #include_once 'templates/cart-empty.html';
     ?>
     <?php include_once 'templates/page-cart-view.html';
     ?>

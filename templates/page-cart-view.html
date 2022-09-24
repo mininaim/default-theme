@@ -1,1 +1,218 @@
-cart
+<!-- Cart Hero  -->
+<section class="bg-primary text-center py-5" role="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="text-white">
+                    <h1>سلة المشتريات</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Of Cart Hero  -->
+
+
+<!-- shopping cart  -->
+
+<section class="py-5">
+    <div class="container">
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+
+                <!-- alert -->
+                <!-- <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    لم يتم إيجاد الكوبون
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div> -->
+
+
+
+
+                <div class="">
+
+
+                    <ul class="list-group list-group-flush">
+                        <?php for($i = 1; $i <8; $i++)  { ?>
+
+                        <li class="list-group-item border-bottom">
+
+                            <div class="row align-items-center">
+
+                                <div class="col-1">
+                                    <button class="btn btn-dark btn-sm" id="del-1">
+                                        <i class="iconoir-delete-circled-outline iconoir-md"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-1">
+
+                                    <img src="https://media.zid.store/thumbs/cada0eba-1b92-45dd-92d2-486b3ba9674c/abf684d3-b2c4-4744-af12-f21cade5d204-thumbnail-370x370-70.jpeg"
+                                        alt="" class="img-fluid img-thumbnail w-100">
+                                </div>
+                                <div class="col-5">
+                                    <h6>
+                                        <a href="#" class="link-primary" title="">
+                                            جاكيت بليزر أسود رجالي - <span>50</span>
+                                        </a>
+                                    </h6>
+
+                                </div>
+
+                                <div class="col-2">
+
+                                    <div class="input-group input-custom">
+                                        <input type="button" value="-" class="button-minus  btn  btn-sm "
+                                            data-field="quantity">
+                                        <input type="number" step="1" max="10" value="1" name="quantity"
+                                            class="quantity-field form-control-sm form-input   ">
+                                        <input type="button" value="+" class="button-plus btn btn-sm "
+                                            data-field="quantity">
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col d-grid gap-1 justify-content-end">
+                                    <span class="fw-bold fs-5">$5.00</span>
+                                    <small class="text-muted"><del>1306.83 SAR</del></small>
+
+
+
+                                    <span class="text-muted small">(للواحد 97.08 SAR)</span>
+
+
+
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <?php } ?>
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+            <!-- sidebar -->
+            <div class="col-12 col-lg-4 col-md-5">
+                <!-- card -->
+                <div class="card card-product">
+                    <div class="card-body p-3">
+                        <!-- heading -->
+                        <h2 class="h5 mb-4">المجموع</h2>
+                        <div class="mb-3">
+                            <!-- list group -->
+                            <ul class="list-group list-group-flush">
+                                <!-- list group item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="me-auto">
+                                        <span>قيمة المنتجات</span>
+
+                                    </div>
+                                    <span>1574.32 SAR</span>
+                                </li>
+
+                                <!-- list group item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="me-auto">
+                                        <span> رسوم الشحن</span>
+
+                                    </div>
+                                    <span>45.23 SAR</span>
+                                </li>
+                                <!-- list group item -->
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="me-auto">
+                                        <span>المجموع الكلي</span>
+
+                                    </div>
+                                    <span>1574.32 SAR</span>
+                                </li>
+                                <!-- list group item -->
+
+
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="me-auto">
+                                        <span class="fs-7 text-danger">
+
+                                            <svg class="rounded-pill me-1" width="8" height="8"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                            </svg>
+
+                                            ملاحظة: هذا المجموع لا يشمل تكاليف التوصيل </span>
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+
+                        <div class="mt-3">
+
+                            <form method="post" action="#">
+                                <div class="mb-2">
+
+                                    <label for="giftcard" class="form-label sr-only">إضافة كوبون</label>
+                                    <input type="text" class="form-control" id="giftcard"
+                                        placeholder="أدخل الكوبون الخاص بك">
+
+                                </div>
+
+                                <div class="d-grid"><button type="submit" class="btn btn-primary">
+                                        <span class="px-1">
+                                            <i class="iconoir-gift"></i> </span> تطبيق الكوبون
+
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <hr>
+                        <div class="d-grid gap-2 mt-3">
+                            <button
+                                class="btn btn-outline-dark bg-floor-darker btn-lg d-flex justify-content-between align-items-center"
+                                type="submit">
+                                مواصلة التسوق <span class="fw-bold">
+                                    <i class="iconoir-arrow-left"></i> </span>
+                                </span></button>
+                            <button class="btn btn-primary btn-lg d-flex justify-content-between align-items-center"
+                                type="submit">
+                                إتمام عملية الشراء <span class="fw-bold">1574.32 SAR</span></button>
+
+                        </div>
+                        <!-- text -->
+                        <p class="my-2">
+
+
+                            <span class="fs-7 text-muted">
+
+                                <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                </svg>
+
+                                بمتابعة طلبك ، فإنك توافق على شروطنا وسياسة الخصوصية </span>
+
+
+
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

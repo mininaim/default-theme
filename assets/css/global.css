@@ -18,6 +18,11 @@ a {
   color: #8661a3 !important;
   text-decoration: none !important;
 }
+:focus-visible {
+  outline: none !important;
+  border-color: none !important;
+}
+
 /* a:hover {
   color: hsl(230 13% 9%) !important;
 } */
