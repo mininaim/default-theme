@@ -16,7 +16,7 @@
 
 <!-- shopping cart  -->
 
-<section class="py-5">
+<section class="py-4 py-md-5 cart-view">
     <div class="container">
 
         <!-- row -->
@@ -24,10 +24,10 @@
             <div class="col-lg-8 col-md-7">
 
                 <!-- alert -->
-                <!-- <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
                     لم يتم إيجاد الكوبون
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div> -->
+                </div>
 
 
 
@@ -38,22 +38,24 @@
                     <ul class="list-group list-group-flush">
                         <?php for($i = 1; $i <8; $i++)  { ?>
 
-                        <li class="list-group-item border-bottom">
+                        <li class="list-group-item border-bottom mb-3 card-product border rounded">
 
-                            <div class="row align-items-center">
+                            <div class="row align-items-start align-items-md-center g-3">
 
-                                <div class="col-1">
+                                <div
+                                    class="col-8 my-2 mt-sm-3 mb-sm-0 col-sm-12 col-lg-1 d-grid justify-content-start justify-content-sm-center order-2 order-sm-0">
                                     <button class="btn btn-dark btn-sm" id="del-1">
                                         <i class="iconoir-delete-circled-outline iconoir-md"></i>
+                                        <span class="d-inline-block d-lg-none">حذف</span>
                                     </button>
                                 </div>
 
-                                <div class="col-1">
+                                <div class="col-4 col-sm-12 col-lg-1 order-1 order-sm-0">
 
                                     <img src="https://media.zid.store/thumbs/cada0eba-1b92-45dd-92d2-486b3ba9674c/abf684d3-b2c4-4744-af12-f21cade5d204-thumbnail-370x370-70.jpeg"
                                         alt="" class="img-fluid img-thumbnail w-100">
                                 </div>
-                                <div class="col-5">
+                                <div class="col-12 col-sm-8 col-lg-6 order-sm-1 my-2 my-sm-3 pt-4 pt-sm-0">
                                     <h6>
                                         <a href="#" class="link-primary" title="">
                                             جاكيت بليزر أسود رجالي - <span>50</span>
@@ -62,21 +64,21 @@
 
                                 </div>
 
-                                <div class="col-2">
+                                <div
+                                    class="col-4 col-sm-4 col-lg-2 order-2 order-sm-1 d-flex d-sm-grid justify-content-between justify-content-sm-end my-2">
 
                                     <div class="input-group input-custom">
-                                        <input type="button" value="-" class="button-minus  btn  btn-sm "
-                                            data-field="quantity">
+                                        <input type="button" value="-" class="button-minus btn btn-sm">
                                         <input type="number" step="1" max="10" value="1" name="quantity"
-                                            class="quantity-field form-control-sm form-input   ">
-                                        <input type="button" value="+" class="button-plus btn btn-sm "
-                                            data-field="quantity">
+                                            class="form-control-sm form-input">
+                                        <input type="button" value="+" class="button-plus btn btn-sm">
                                     </div>
 
 
                                 </div>
 
-                                <div class="col d-grid gap-1 justify-content-end">
+                                <div
+                                    class="px-2 p-sm-0 col-8 col-sm-12 col-lg d-grid d-lg-grid justify-content-md-center justify-content-lg-end order-sm-1 d-sm-flex justify-content-sm-between align-items-sm-center gap-sm-3 gap-lg-0">
                                     <span class="fw-bold fs-5">$5.00</span>
                                     <small class="text-muted"><del>1306.83 SAR</del></small>
 

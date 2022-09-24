@@ -110,6 +110,25 @@ a {
   background: rgb(219, 255, 73);
 }
 
+.bg-gradient-between {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: radial-gradient(
+      circle at 12% 55%,
+      rgba(33, 150, 243, 0.15),
+      hsla(0, 0%, 100%, 0) 25%
+    ),
+    radial-gradient(
+      circle at 85% 33%,
+      rgba(113, 73, 144, 0.175),
+      hsla(0, 0%, 100%, 0) 25%
+    );
+}
+
 /* #todo: export to a class */
 .bg-primary-dark {
   background: #714990;
@@ -312,3 +331,9 @@ a {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
 }
+
+/* @media (max-width: 1199.98px) {
+  .cart-view .card-product {
+    border: 1px solid #eee !important;
+  }
+} */
