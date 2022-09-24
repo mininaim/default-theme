@@ -1,0 +1,166 @@
+<!-- Products -->
+<section class="products py-4 py-md-5" role="products">
+    <div class="container">
+
+
+        <!-- filters -->
+        <div class="row d-flex justify-content-between g-0">
+            <div
+                class="col-12 col-md-6 col-lg-8 border d-flex align-self-center align-items-center justify-content-start rounded mb-3 mb-md-0">
+
+                <p class="my-3 ps-2">تم ايجاد <strong class="text-primary">982</strong> منتج</p>
+
+            </div>
+
+            <div class="col ms-0 ms-md-3">
+
+
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select">
+                        <option value="0" selected>الافتراضي</option>
+                        <option value="1">الأكثر مبيعاً</option>
+                        <option value="2">الأحدث</option>
+                        <option value="3">الأقل سعراً</option>
+                        <option value="4">الأعلى سعراً</option>
+                    </select>
+                    <label for="floatingSelect">ترتيب حسب</label>
+                </div>
+
+            </div>
+
+            <div class="col d-grid ms-2 ms-md-3">
+                <button class="btn btn-dark border" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasProductsFilter" aria-controls="offcanvasProductsFilter">
+
+                    <span class="px-1"><i class="iconoir-filter iconoir-xs"></i></span> تصفية النتائج
+                </button>
+
+            </div>
+        </div>
+
+        <!-- products list  -->
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 mt-3">
+
+            <?php for($i = 1; $i <5; $i++)  { ?>
+            <div class="cold">
+                <div class="card shadow-sm border h-100">
+                    <a href="./product" class="d-inline-block @overflow-hidden">
+                        <img src="media/discount/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
+                    </a>
+
+                    <div class="card-body">
+                        <!-- Product Title -->
+                        <h6 class="card-title py-2">
+                            <a href="./product" title="" class="link-dark text-decoration-none">
+                                جاكيت بليزر أسود رجالي
+                            </a>
+                        </h6>
+                        <!-- Product Caption -->
+                        <p class="card-text text-dark mb-0">
+                            <span class="fs-7 text-primary">
+
+                                <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                </svg>
+
+                                متوفر بعدة خيارات</span>
+                        </p>
+
+
+                        <!-- Product Price -->
+                        <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
+                            <small><del>620 SAR</del></small>
+                            <strong class="fs-6 text-danger">500 SAR</strong>
+                        </small>
+
+                        <!-- Add to Cart -->
+                        <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
+                            <button type="button" class="btn btn-primary">
+                                <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
+                                للسلة
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <?php } ?>
+            <?php for($i = 1; $i <5; $i++)  { ?>
+            <div class="cold">
+                <div class="card shadow-sm border h-100">
+                    <a href="./product" class="d-inline-block @overflow-hidden">
+                        <img src="media/discount/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
+                    </a>
+
+                    <div class="card-body">
+                        <!-- Product Title -->
+                        <h6 class="card-title py-2">
+                            <a href="./product" title="" class="link-dark text-decoration-none">
+                                جاكيت بليزر أسود رجالي
+                            </a>
+                        </h6>
+                        <!-- Product Caption -->
+                        <p class="card-text text-dark mb-0">
+                            <span class="fs-7 text-primary">
+
+                                <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                </svg>
+
+                                متوفر بعدة خيارات</span>
+                        </p>
+
+
+                        <!-- Product Price -->
+                        <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
+                            <small><del>620 SAR</del></small>
+                            <strong class="fs-6 text-danger">500 SAR</strong>
+                        </small>
+
+                        <!-- Add to Cart -->
+                        <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
+                            <button type="button" class="btn btn-primary">
+                                <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
+                                للسلة
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <?php } ?>
+        </div>
+
+        <!-- pagination -->
+        <div class="row mt-4 mt-md-5">
+            <div class="col">
+                <nav aria-label="navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link">السابق</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">التالي</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!-- End Products -->
+<?php include_once 'page-products-filters-offcanvas.html'; ?>
