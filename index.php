@@ -107,6 +107,29 @@ switch ($page) {
         include_once 'templates/pages/404.html';
         break;
 
+
+        // ========================
+        // search results
+        // ========================
+    case 'search-results':
+
+        // shared files
+        #include_once 'templates/componments/alert.html';
+        include_once 'templates/componments/top-navigation.html';
+        include_once 'templates/componments/cart-offcanvas.html';
+        include_once 'templates/componments/main-navigation.html';
+        include_once 'templates/componments/menu-offcanvas.html';
+
+        // specific files
+        include_once 'templates/pages/search-results.html';
+
+        // shared files
+        include_once 'templates/componments/filters-offcanvas.html';
+        require_once 'templates/commons/footer-columns.html';
+        break;
+
+
+
         // ========================
         // search no results
         // ========================
@@ -124,7 +147,6 @@ switch ($page) {
         include_once 'templates/pages/search-no-results.html';
 
         // shared files
-        include_once 'templates/componments/hero.html';
         require_once 'templates/commons/footer-columns.html';
         break;
 
@@ -162,6 +184,74 @@ switch ($page) {
         // shared files
         require_once 'templates/commons/footer-columns.html';
         break;
+
+
+
+        // ========================
+        // faqs
+        // ========================
+    case 'faqs':
+
+        // shared files
+        include_once 'templates/componments/top-navigation.html';
+        include_once 'templates/componments/cart-offcanvas.html';
+        include_once 'templates/componments/main-navigation.html';
+        include_once 'templates/componments/menu-offcanvas.html';
+
+        // specific files
+        include_once 'templates/pages/faqs.html';
+
+        // shared files
+        require_once 'templates/commons/footer-columns.html';
+        break;
+
+
+        // ========================
+        // page-sample
+        // ========================
+    case 'page-sample':
+
+        // shared files
+        include_once 'templates/componments/top-navigation.html';
+        include_once 'templates/componments/cart-offcanvas.html';
+        include_once 'templates/componments/main-navigation.html';
+        include_once 'templates/componments/menu-offcanvas.html';
+
+        // specific files
+        include_once 'templates/pages/page-sample.html';
+
+        // shared files
+        require_once 'templates/commons/footer-columns.html';
+        break;
+
+
+        // ========================
+        // shipping
+        // ========================
+    case 'shipping':
+
+        // shared files
+        include_once 'templates/componments/top-navigation.html';
+        include_once 'templates/componments/cart-offcanvas.html';
+        include_once 'templates/componments/main-navigation.html';
+        include_once 'templates/componments/menu-offcanvas.html';
+
+        // specific files
+        include_once 'templates/pages/shipping.html';
+
+        // shared files
+        require_once 'templates/commons/footer-columns.html';
+        break;
 }
 
 require_once 'templates/commons/footer.html';
+
+
+
+
+        // product-1
+        // product-2
+        // product-3
+        // product-4
+
+        // account

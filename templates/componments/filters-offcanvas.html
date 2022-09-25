@@ -7,7 +7,7 @@
                 تصفية النتائج
             </h5>
 
-            <button type="button" class="btn btn-sm btn-outline-primary text-yellow" data-bs-dismiss="offcanvas"
+            <button type="button" class="btn-none btn-close-rotate text-yellow" data-bs-dismiss="offcanvas"
                 aria-label="Close">
                 <i class="iconoir-cancel iconoir-md"></i>
             </button>
@@ -30,25 +30,25 @@
                             <label for="productMin" class="col-form-label">من</label>
                         </div>
                         <div class="col">
-                            <input type="number" min="1" placeholder="SAR" id="productMin" class="form-control">
+                            <input type="number" min="0" value="0" placeholder="SAR" id="productMin"
+                                class="form-control">
                         </div>
                         <div class="col">
                             <label for="productMax" class="col-form-label">إلى</label>
                         </div>
                         <div class="col">
-                            <input type="number" max="1000" placeholder="SAR" id="productMax" class="form-control">
+                            <input type="number" max="10000" value="10000" placeholder="SAR" id="productMax"
+                                class="form-control">
                         </div>
                     </div>
-
-
-
-
-
                 </div>
                 <hr>
                 <div class="flex-shrink-0 p-3">
-                    <!-- <label for="customRangePrice" class="form-label">تغيير السعر </label> -->
-                    <input type="range" class="form-range" disabled min="0" max="100" id="customRangePrice">
+                    <label for="customRangePrice" class="form-label">تغيير السعر </label>
+                    <input type="range" class="form-range" min="0" max="100" id="customRangePrice">
+                    <!-- <div id="html5"></div>
+                    <select id="input-select"></select>
+                    <input type="number" min="0" max="10000" step="1" id="input-number"> -->
                 </div>
                 <hr>
                 <div class="flex-shrink-0 p-3">

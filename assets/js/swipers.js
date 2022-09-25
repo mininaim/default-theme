@@ -201,6 +201,7 @@ const swiper5 = new Swiper(".recentlyArrivedSwiper", {
 // Init partnersSwiper
 const swiper6 = new Swiper(".partnersSwiper", {
   slidesPerView: 1,
+  loop: true,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination-sm",
@@ -221,7 +222,7 @@ const swiper6 = new Swiper(".partnersSwiper", {
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       spaceBetween: 50,
     },
   },

@@ -33,6 +33,25 @@ a {
   box-shadow: none;
 }
 
+.btn-none {
+  border: none !important;
+  background: none !important;
+}
+.btn-none:hover {
+  border: none !important;
+  background-color: none !important;
+}
+
+.btn-close-rotate {
+  transition: all 0.1s linear;
+}
+
+.btn-close-rotate:hover {
+  transform: rotate(90deg);
+  background-color: inherit !important;
+  border-color: inherit !important;
+}
+
 /* tooltip */
 .tooltip {
   font-family: "FS Albert Arabic", sans-serif;
@@ -300,4 +319,9 @@ a {
   -moz-transition: 0.2s;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
+}
+
+/* noUi-connect */
+.noUi-connect {
+  background: #8661a3;
 }

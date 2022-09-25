@@ -703,3 +703,35 @@ a.text-secondary:focus {
   box-shadow: inherit !important;
   background-color: #fff !important;
 }
+
+/* accordion */
+.accordion-button:not(.collapsed) {
+  color: #8661a3 !important;
+  background-color: inherit !important;
+  border-color: #inherit !important;
+}
+
+.accordion-button:not(.collapsed):hover {
+  color: #8661a3 !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
+}
+
+.accordion-button:not(.collapsed):focus {
+  color: #8661a3 !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
+  box-shadow: 0 0 0 0.2rem rgba(134, 97, 163, 0.25) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: #8661a3 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(134, 97, 163, 0.25) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3e%3c/svg%3e");
+}
