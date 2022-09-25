@@ -30,24 +30,24 @@
 - [ ] Generate color palette for the theme
 - [ ] Responsiveness for all pages
 - [ ] Add a link to the demo
-- ~~[ ] Implement Lotties~~
+~~[ ] Implement Lotties~~
 
 ### Requests
 - [ ] Ask about all use-cases and hidden senarios that should be supported
 - [ ] Change photos of products, categories, slider to new/better ones
 
 ### Labs
-- ~~[ ] Delete node modules and unpkg folders~~
-- ~~[ ] Use CDN for /Plugins folder~~
+~~[ ] Delete node modules and unpkg folders~~
+~~[ ] Use CDN for /Plugins folder~~
 - [ ] Integrate Vite
 
-### Credits
+### Libraries Used
 - [Bootstrap](https://getbootstrap.com/)
 - [jQuery](https://jquery.com/)
 - [Popper.js](https://popper.js.org/)
 - [Swiper](https://swiperjs.com/)
 
-### Libraries to consider/test
+### Libraries (to consider/test)
 - [Font Awesome](https://fontawesome.com/)
 - [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
 - [Animate.css](https://daneden.github.io/animate.css/)
@@ -56,3 +56,6 @@
 - [Isotope](https://isotope.metafizzy.co/)
 - [ImagesLoaded](https://imagesloaded.desandro.com/)
 - [jQuery Countdown](https://hilios.github.io/jQuery.countdown/)
+
+### Credits
+- [MiniNaim] (https://mininaim.com/)
