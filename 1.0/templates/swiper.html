@@ -1,0 +1,20 @@
+<div class="container-fluid my-5">
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <?php for($i = 1; $i < 6; $i++)  { ?>
+
+            <div class="swiper-slide">
+                <img data-src="media/discount/img-<?php echo $i ?>.jpg" class="swiper-lazy" alt="">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+
+            <?php } ?>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>

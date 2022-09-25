@@ -1,0 +1,112 @@
+<!-- Top Navigation -->
+<nav class="navbar navbar-expand-lg py-3" role="top-navigation">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand ps-3 order-1 order-lg-0" href="./" title="المتجر الإفتراضي">
+      <!-- <img src="assets/img/store-logo.png" alt="المتجر الإفتراضي" style="width:80px"> -->
+      <img
+        src="https://media.zid.store/cdn-cgi/image/h=220,q=100,f=auto/https://media.zid.store/cada0eba-1b92-45dd-92d2-486b3ba9674c/54d3472f-9540-4379-b96c-83f5e46237b5-200x.png"
+        alt="" style="width:50px">
+
+      <span class="fs-5 text-dark px-2">متجر افتراضي</span>
+    </a>
+
+    <!-- Toggle for Mobile -->
+    <!-- <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+
+    <a class="d-block d-lg-none nav-link position-relative order-0" title="قائمة التصفح" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" href="#offcanvasMenu">
+      <i class="iconoir-align-right iconoir-md"></i>
+    </a>
+
+
+    <a class="me-4 d-block d-lg-none nav-link position-relative order-2" title="سلة التسوق" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" href="#offcanvasCart">
+      <i data-feather="shopping-cart"></i>
+      <span class="position-absolute top-0 start-100 translate-middle-y badge rounded-pill bg-primary">
+        6 <span class="visually-hidden">6 منتجات</span>
+      </span>
+    </a>
+
+
+    <!-- Menu Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Search Form -->
+      <form class="d-flex mx-auto w-50 border rounded" role="search">
+        <input class="form-control form-control-no-focus ms-2 rounded-0 border-0" type="search"
+          placeholder="ابحث في المتجر" aria-label="Search">
+        <button class="btn btn-outline-primary border-0 rounded-0 rounded-end" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+      <!-- End of Search Form -->
+
+      <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+        <!--        
+        <li class="nav-item dropdown px-2">
+          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            title="تغيير اللغة">
+            <i data-feather="globe"></i> <span class="visually-hidden">اللغة</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0">
+            <li><a class="dropdown-item disabled py-2" href="#" title="">العربية</a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">English</a></li>
+          </ul>
+        </li>  -->
+
+
+        <li class="nav-item dropdown px-1">
+          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            title="الشحن">
+            <i data-feather="truck" class="feather-xs"></i> <span class="px-1">الشحن</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0 zindex-fixed">
+            <!-- <li>
+              <h6 class="dropdown-header">الشحن إلى</h6>
+            </li> -->
+            <li><a class="dropdown-item py-2" href="#" title="">
+
+                المملكة العربية السعودية <span class="px-2"><i class="iconoir-check"></i></span> </a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">سلطة عمان</a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">الإمارات العربية المتحدة</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="nav-item px-1">
+          <a class="nav-link" title="English" href="#">
+            <i data-feather="globe" class="feather-sm"></i> <span class="px-1">English</span>
+          </a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" title="تسجيل دخول" href="#">
+            <i data-feather="user" class="feather-sm"></i> <span class="px-1">تسجيل دخول</span>
+          </a>
+        </li>
+
+        <!-- Anchor to open the OffCanvas -->
+        <li class="nav-item px-1">
+          <a class="nav-link position-relative" title="سلة التسوق" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" href="#">
+            <i data-feather="shopping-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+              6 <span class="visually-hidden">6 منتجات</span>
+            </span>
+          </a>
+
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!-- End of Top Navigation -->

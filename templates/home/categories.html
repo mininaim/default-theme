@@ -1,0 +1,89 @@
+<!-- Categories -->
+<section class="@triangle-section @triangle-section-top--flip-x @alert-secondary p-5" role="categories">
+    <div class="container-fluid">
+
+        <!-- Section Title -->
+        <div class="text-center text-md-start d-md-flex mb-3 mb-md-2">
+            <div class="flex-md-grow-1">
+                <h4 class="pb-md-2">
+                    <!-- <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> -->
+                    التصانيف
+                </h4>
+            </div>
+            <div class="flex-md-shrink-0">
+                <a href="#" class="custom-link custom-link-7" title="">
+                    تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- Categories List -->
+        <!-- <div class="row row-cols-1 row-cols-lg-4 flex-row flex-nowrap align-items-stretch g-4 pt-3 pb-5"> -->
+
+        <div class="swiper categoriesSwiper">
+            <div class="swiper-wrapper">
+
+                <?php for($i = 1; $i < 5; $i++)  { ?>
+
+                <div class="swiper-slide d-flex flex-column align-items-center">
+                    <div class="rotate">
+                        <img src="media/categories/img-<?php echo $i ?>.png" alt="" class="rounded-3">
+                    </div>
+                    <a href="#" title="" class="fw-light fs-6 link-dark text-decoration-none d-inline-block py-2">
+                        شنط نسائي
+                    </a>
+                </div>
+
+                <?php } ?>
+            </div>
+            <div class="swiper-button-next swiper-button-next-categories"></div>
+            <div class="swiper-button-prev swiper-button-prev-categories"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+
+        <!-- Category Loop
+        <?php for($i = 1; $i < 5; $i++)  { ?>
+        
+        <div class="col">
+
+          <div class="card shadow border-0 rotate-up">
+            <div class="row g-0">
+              <div class="col">
+                <img src="media/categories/img-<?php echo $i ?>.png" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col">
+                <div class="card-body h-100 d-flex flex-column-reverse">
+                  <h6 class="card-title">
+                    <a href="#" title="" class="custom-link custom-link-7 text-decoration-none">
+                        شنط نسائي
+                    </a>
+                  </h6>
+
+                  <ul class="d-flex list-unstyled">
+                    <li class="d-flex align-items-start">
+                      <a href="#" class="link-dark" title="">                       
+                          <span class="px-2"><i class="iconoir-arrow-left"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+ 
+
+        </div>
+
+        <?php } ?> -->
+
+        <!-- </div>  -->
+        <!-- End of Categories List -->
+
+    </div>
+</section>
+<!-- End of Categories -->

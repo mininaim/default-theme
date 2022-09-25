@@ -1,0 +1,51 @@
+/* css filter */
+[data-filter*="image-"] {
+  /* flex: 0 1 20%;
+  line-height: 0; */
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+[data-filter*="image-"] img {
+  height: auto;
+  width: 100%;
+  will-change: transform;
+  transition: 0.2s ease-in-out transform;
+}
+
+[data-filter="image-grayscale"] img:hover {
+  filter: grayscale(70%);
+}
+
+[data-filter="image-saturate"] img:hover {
+  filter: saturate(360%);
+}
+
+[data-filter="image-sepia"] img:hover {
+  filter: sepia(100%);
+}
+
+[data-filter="image-invert"] img:hover {
+  filter: invert(100%);
+}
+
+[data-filter="image-opacity"] img:hover {
+  filter: opacity(50%);
+}
+
+[data-filter="image-brightness"] img:hover {
+  filter: brightness(120%);
+}
+
+[data-filter="image-contrast"] img:hover {
+  filter: contrast(160%);
+}
+
+[data-filter="image-hue-rotate"] img:hover {
+  filter: hue-rotate(160deg);
+}
+
+[data-filter="image-blur"] img:hover {
+  filter: blur(2px);
+}

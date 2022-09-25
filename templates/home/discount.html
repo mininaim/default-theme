@@ -1,0 +1,102 @@
+<!-- Discount -->
+<section class="p-5 border-top" role="discount">
+    <div class="container-fluid">
+
+        <!-- Section Title -->
+        <div class="d-flex mb-md-2 mb-3">
+            <div class="flex-grow-1">
+                <h4 class="pb-md-2 pt-2">
+                    <!-- <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> -->
+                    العروض المخفضة
+                </h4>
+            </div>
+            <div class="flex-shrink-0 position-relative">
+                <div
+                    class="swiper-button-next swiper-button-next-sm swiper-button-next-discount link-primary bg-floor-dark rounded-pill custom-link custom-link-7">
+                </div>
+                <div
+                    class="swiper-button-prev swiper-button-prev-sm swiper-button-prev-discount link-primary bg-floor-dark rounded-pill custom-link custom-link-7">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Products Inner -->
+        <div class="swiper discountSwiper">
+            <div class="swiper-wrapper">
+
+                <?php for($i = 1; $i < 5; $i++)  { ?>
+
+                <div class="swiper-slide card shadow-sm border h-100">
+                    <a href="./product" class="d-inline-block @overflow-hidden">
+                        <img src="media/discount/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
+                    </a>
+
+                    <div class="card-body">
+                        <!-- Product Title -->
+                        <h6 class="card-title py-2">
+                            <a href="./product" title="" class="link-dark text-decoration-none">
+                                جاكيت بليزر أسود رجالي
+                            </a>
+                        </h6>
+                        <!-- Product Caption -->
+                        <p class="card-text text-dark mb-0">
+                            <span class="fs-7 text-primary">
+
+                                <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                </svg>
+
+                                متوفر بعدة خيارات</span>
+                        </p>
+
+
+                        <!-- Product Price -->
+                        <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
+                            <small><del>620 SAR</del></small>
+                            <strong class="fs-6 text-danger">500 SAR</strong>
+                        </small>
+
+                        <!-- Add to Cart -->
+                        <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
+                            <button type="button" class="btn btn-primary">
+                                <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
+                                للسلة
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <?php } ?>
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <!-- End of Products Inner -->
+
+        <!-- Link to See All -->
+        <div class="d-flex">
+            <div class="flex-grow-1">
+                <!-- Any data or summary here -->
+            </div>
+            <!-- <div class="flex-shrink-0">
+            <a href="#" class="btn btn-primary" title=""> 
+                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+            </a>
+        </div> -->
+            <!-- <div class="flex-shrink-0">
+        <a href="#" class="custom-link custom-link-2" title="">
+          تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+        </a>
+      </div> -->
+        </div>
+
+    </div>
+</section>
+<!-- End of Discount -->
