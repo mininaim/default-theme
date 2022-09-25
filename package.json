@@ -1,23 +1,26 @@
 {
-  "name": "pulse",
+  "name": "default-theme",
   "version": "1.0.0",
-  "description": "Pulse - Default theme for Zid Catalog",
-  "main": "index.js",
+  "description": "Zid Catalog - Default Theme",
+  "main": "index.php",
   "scripts": {
-    "compile:sass": "sass --watch scss:assets/css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mininaim/default-theme.git"
+  },
+  "keywords": [
+    "zid",
+    "theme",
+    "default",
+    "catalog",
+    "ecommerce"
+  ],
+  "author": "MiniNaim",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.54.9"
+  "bugs": {
+    "url": "https://github.com/mininaim/default-theme/issues"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
-    "autoprefixer": "^10.4.9",
-    "bootstrap": "^5.2.1",
-    "feather-icons": "^4.29.0",
-    "postcss": "^8.4.16",
-    "postcss-cli": "^10.0.0",
-    "progressbar.js": "^1.1.0"
-  }
+  "homepage": "https://github.com/mininaim/default-theme#readme"
 }

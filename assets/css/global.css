@@ -1,6 +1,5 @@
 /* global styles */
 body {
-  /* font-family: "Readex Pro", sans-serif; */
   font-family: "FS Albert Arabic", sans-serif;
 }
 
@@ -23,10 +22,6 @@ a {
   border-color: none !important;
 }
 
-/* a:hover {
-  color: hsl(230 13% 9%) !important;
-} */
-
 /* btn-close */
 .btn-close {
   color: #ffd14b !important;
@@ -35,13 +30,6 @@ a {
   box-shadow: none;
 }
 
-/* navbar brand */
-/* .navbar-brand {
-  transition: 0.2s ease-in-out transform;
-}
-.navbar-brand:hover {
-  transform: rotate(-5deg) scale(1.1);
-} */
 /* tooltip */
 .tooltip {
   font-family: "FS Albert Arabic", sans-serif;
@@ -152,7 +140,7 @@ a {
 }
 .bg-overlay {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./../../media/intro/backgrounds/bg-7.jpg");
+    url("./../../media/intro/backgrounds/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -224,14 +212,6 @@ a {
   direction: rtl;
 }
 
-/* links effect */
-/* .link-effect {
-  transition: 0.2s ease-in-out transform;
-}
-.link-effect:hover {
-  transform: rotate(-5deg) scale(1.2);
-} */
-
 .text-yellow {
   color: #ffd14b !important;
 }
@@ -251,8 +231,7 @@ a {
   pointer-events: none;
 }
 
-/* Nested Dropdown Menu */
-
+/* nested dropdown menu */
 @media all and (min-width: 992px) {
   .dropdown-menu li {
     position: relative;
@@ -283,15 +262,10 @@ a {
   }
 }
 
-/* form contril with no focus */
+/* form control with no focus */
 .form-control-no-focus:focus {
   box-shadow: none !important;
 }
-
-/* font sizes */
-/* .fs-7 {
-  font-size: 0.7rem !important;
-} */
 
 .fs-7 {
   font-size: 0.88rem !important;
@@ -314,15 +288,8 @@ a {
   -moz-transition: 0.2s;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
-  /* display: block; */
 }
 
-/* .card-product:hover {
-  transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -o-transform: scale(1.05);
-} */
 .card-product:hover {
   border: 1px solid #8661a3 !important;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12) !important;
@@ -331,9 +298,3 @@ a {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
 }
-
-/* @media (max-width: 1199.98px) {
-  .cart-view .card-product {
-    border: 1px solid #eee !important;
-  }
-} */

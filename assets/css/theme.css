@@ -502,14 +502,6 @@ a.text-secondary:focus {
   color: #8661a3 !important;
 }
 
-/* footer .nav-link {
-  color: hsl(var(--color-white)) !important;
-}
-footer .nav-link:focus,
-footer .nav-link:hover {
-  color: hsl(var(--color-warning)) !important;
-} */
-
 /* dropdown-item */
 .dropdown-item {
   /* color: #8f8f8f !important; */
@@ -522,12 +514,6 @@ footer .nav-link:hover {
 /* text-bg-primary */
 .text-bg-primary {
   background-color: #8661a3 !important;
-}
-
-@media (min-width: 768px) {
-  /* .sticky-md-top {
-    background-color: #fff !important;
-  } */
 }
 
 /* styles when the main navigation is sticked  */
@@ -548,11 +534,6 @@ footer .nav-link:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   }
 }
-
-/* .main-navigation.isSticky {
-  backdrop-filter: saturate(180%) blur(2px);
-  background-color: rgba(225, 225, 225, 0.8);
-} */
 
 /* btn-toggle */
 .dropdown-toggle {
@@ -700,8 +681,6 @@ footer .nav-link:hover {
 .input-custom .button-plus {
   background-color: transparent;
   border-color: #ecf0ef !important;
-  /* height: 2rem !important;
-  width: 1.8rem !important; */
 }
 
 .input-custom .button-minus:hover,
@@ -713,7 +692,7 @@ footer .nav-link:hover {
 .input-custom .form-input {
   background: 0 0 !important;
   border: 1px solid #ecf0ef !important;
-  /* height: 100% !important; */
+
   min-height: 2rem !important;
   text-align: center !important;
   width: 2rem !important;

@@ -3,21 +3,18 @@
 $page = $_GET['page'];
 
 require_once 'templates/commons/header.html';
+
+// shared componments
+include_once 'templates/componments/alert.html';
+include_once 'templates/componments/top-navigation.html';
+include_once 'templates/componments/cart-offcanvas.html';
+include_once 'templates/componments/main-navigation.html';
+include_once 'templates/componments/menu-offcanvas.html';
+
 switch ($cmd) {
 
         // default/home
     default:
-
-        // componments 
-        include_once 'templates/componments/alert.html';
-        include_once 'templates/componments/top-navigation.html';
-
-        include_once 'templates/componments/cart-offcanvas.html';
-        include_once 'templates/componments/menu-offcanvas.html';
-
-        include_once 'templates/componments/main-navigation.html';
-
-        // home
         include_once 'templates/home/slider.html';
         include_once 'templates/home/intro.html';
         include_once 'templates/home/categories.html';
@@ -39,7 +36,7 @@ switch ($cmd) {
 
         // search no results
     case 'search-no-results':
-        include_once 'templates/componments/hero-global.html';
+        include_once 'templates/componments/hero.html';
         include_once 'templates/pages/search-no-results.html';
         break;
 
@@ -64,7 +61,7 @@ switch ($cmd) {
 
         // cart empty
     case 'cart-empty':
-        include_once 'templates/componments/hero-global.html';
+        include_once 'templates/componments/hero.html';
         include_once 'templates/pages/cart-empty.html';
         break;
 
@@ -74,8 +71,5 @@ switch ($cmd) {
         break;
 }
 
-require_once 'templates/commons/footer-inner.html';
+require_once 'templates/commons/footer-columns.html';
 require_once 'templates/commons/footer.html';
-
-
-include_once 'templates/componments/hero-global.html';
