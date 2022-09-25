@@ -30,15 +30,15 @@
 - [ ] Generate color palette for the theme
 - [ ] Responsiveness for all pages
 - [ ] Add a link to the demo
-~~[ ] Implement Lotties~~
+- ~~ Implement Lotties~~
 
 ### Requests
 - [ ] Ask about all use-cases and hidden senarios that should be supported
 - [ ] Change photos of products, categories, slider to new/better ones
 
 ### Labs
-~~[ ] Delete node modules and unpkg folders~~
-~~[ ] Use CDN for /Plugins folder~~
+- ~~Delete node modules and unpkg folders~~
+- ~~Use CDN for /Plugins folder~~
 - [ ] Integrate Vite
 
 ### Libraries Used
