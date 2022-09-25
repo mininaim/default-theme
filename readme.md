@@ -30,7 +30,7 @@
 - [ ] Generate color palette for the theme
 - [ ] Responsiveness for all pages
 - [ ] Add a link to the demo
-- ~~ Implement Lotties~~
+- ~~Implement Lotties~~
 
 ### Requests
 - [ ] Ask about all use-cases and hidden senarios that should be supported
