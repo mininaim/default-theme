@@ -36,7 +36,7 @@
 
 
                     <ul class="list-group list-group-flush">
-                        <?php for($i = 1; $i <8; $i++)  { ?>
+                        <?php for($i = 1; $i <16; $i++)  { ?>
 
                         <li class="list-group-item border-bottom mb-3 card-product border rounded">
 
@@ -158,33 +158,38 @@
 
                         </div>
 
+                        <div class="mt-3 py-2 p-3 card">
 
+                            <a class="link-dark" data-bs-toggle="collapse" href="#collapseCoupon" role="button"
+                                aria-expanded="false" aria-controls="collapseCoupon">
+                                <i class="iconoir-gift iconoir-xs"></i> لديك قسيمة؟ اضغط هنا لإدخالها
+                            </a>
 
-                        <div class="mt-3">
+                            <div class="collapse pb-3" id="collapseCoupon">
+                                <form method="post" action="#">
+                                    <div class="mb-2 mt-3">
 
-                            <form method="post" action="#">
-                                <div class="mb-2">
+                                        <label for="giftcard" class="form-label sr-only visually-hidden">إضافة
+                                            كوبون</label>
+                                        <input type="text" class="form-control" id="giftcard"
+                                            placeholder="أدخل الكوبون الخاص بك">
 
-                                    <label for="giftcard" class="form-label sr-only">إضافة كوبون</label>
-                                    <input type="text" class="form-control" id="giftcard"
-                                        placeholder="أدخل الكوبون الخاص بك">
+                                    </div>
 
-                                </div>
+                                    <div class="d-grid"><button type="submit" class="btn btn-dark bg-floor-darker ">
+                                            <span class="px-1">
+                                                <i class="iconoir-gift"></i> </span> تطبيق الكوبون
 
-                                <div class="d-grid"><button type="submit" class="btn btn-primary">
-                                        <span class="px-1">
-                                            <i class="iconoir-gift"></i> </span> تطبيق الكوبون
+                                        </button>
+                                    </div>
 
-                                    </button>
-                                </div>
-
-                            </form>
+                                </form>
+                            </div>
                         </div>
 
-                        <hr>
+
                         <div class="d-grid gap-2 mt-3">
-                            <button
-                                class="btn btn-outline-dark bg-floor-darker btn-lg d-flex justify-content-between align-items-center"
+                            <button class="btn btn-primary btn-lg d-flex justify-content-between align-items-center"
                                 type="submit">
                                 مواصلة التسوق <span class="fw-bold">
                                     <i class="iconoir-arrow-left"></i> </span>

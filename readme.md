@@ -30,6 +30,7 @@
 - [ ] Generate color palette for the theme
 - [ ] Responsiveness for all pages
 - [ ] Add a link to the demo
+- [ ] Add Screenshots & Redpen links
 - ~~Implement Lotties~~
 
 ### Requests

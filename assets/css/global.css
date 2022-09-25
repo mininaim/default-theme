@@ -14,9 +14,12 @@ h6 {
 }
 
 a {
-  color: #8661a3 !important;
+  /* color: #8661a3 !important; */
   text-decoration: none !important;
 }
+/* a:hover {
+  color: #000 !important;
+} */
 :focus-visible {
   outline: none !important;
   border-color: none !important;
