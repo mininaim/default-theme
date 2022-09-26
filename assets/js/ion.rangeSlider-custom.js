@@ -3,7 +3,7 @@ var $range = $(".js-range-slider"),
   $inputTo = $(".js-input-to"),
   instance,
   min = 0,
-  max = 1000,
+  max = 10000,
   from = 0,
   to = 0;
 
@@ -12,8 +12,8 @@ $range.ionRangeSlider({
   type: "double",
   min: min,
   max: max,
-  from: 230,
-  to: 700,
+  from: 0,
+  to: 10000,
   onStart: updateInputs,
   onChange: updateInputs,
 });

@@ -60,6 +60,12 @@
   border-top-color: #8662a3 !important;
 }
 
+.irs--round .irs-from,
+.irs--round .irs-to,
+.irs--round .irs-single {
+  direction: ltr !important;
+}
+
 /* bootstrap-select */
 
 .bootstrap-select .dropdown-toggle::after {
