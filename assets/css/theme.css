@@ -518,7 +518,7 @@ a.text-secondary:focus {
 
 /* styles when the main navigation is sticked  */
 
-@media (min-width: 991.98px) {
+/* @media (min-width: 991.98px) {
   .main-navigation {
     position: sticky;
     top: -1px;
@@ -532,6 +532,12 @@ a.text-secondary:focus {
     background-color: #fff !important;
     padding: 1.5rem 0 !important;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+} */
+
+@media (min-width: 992px) {
+  .sticky-cart {
+    top: 20px !important;
   }
 }
 
@@ -734,4 +740,12 @@ a.text-secondary:focus {
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3e%3c/svg%3e");
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: #8661a3 !important;
 }

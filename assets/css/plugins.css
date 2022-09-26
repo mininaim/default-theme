@@ -1,0 +1,92 @@
+/* ion.rangeSlider */
+
+.range-slider {
+  position: relative;
+  height: 80px;
+}
+
+.irs--round .irs-handle {
+  border-color: #8662a3 !important;
+}
+
+.irs--round .irs-handle > i:first-child {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-handle > i:last-child {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-bar {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-from {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-to {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-single {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-from:before {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-to:before {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-single:before {
+  background-color: #8662a3 !important;
+}
+
+.irs--round .irs-min,
+.irs--round .irs-max {
+  display: none !important;
+}
+
+.irs--round .irs-line {
+  background-color: #ffd14b !important;
+}
+
+.irs--round .irs-from:before,
+.irs--round .irs-to:before,
+.irs--round .irs-single:before {
+  border-top-color: #8662a3 !important;
+}
+
+/* bootstrap-select */
+
+.bootstrap-select .dropdown-toggle::after {
+  float: left;
+  margin-top: 0.6em;
+  vertical-align: 0.1em;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option {
+  text-align: right !important;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner {
+  padding-right: 0 !important;
+}
+
+/* for menu */
+.bootstrap-select .dropdown-menu .inner .dropdown-menu {
+  text-align: right !important;
+}
+
+.bootstrap-select,
+.bootstrap-select .dropdown-menu {
+  width: 100% !important;
+}
+
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+  outline: none !important;
+}

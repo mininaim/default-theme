@@ -1,3 +1,8 @@
+// Custom Select
+$(function () {
+  $(".custom-select").selectpicker();
+});
+
 // Scroll to top
 // note: dependencies: jQuery
 $(window).on("scroll", function () {

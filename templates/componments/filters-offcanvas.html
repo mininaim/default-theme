@@ -24,34 +24,31 @@
 
 
                 <div class="flex-shrink-0 p-3">
+
                     <h6 class="text-dark">السعر</h6>
-                    <div class="row g-3 align-items-start">
+
+                    <div class="range-slider mt-3 bg-floor-dark p-3 rounded" dir="rtl">
+                        <input type="text" class="js-range-slider form-control" value="" />
+                    </div>
+                    <div class="extra-controls mt-2">
                         <div class="col">
                             <label for="productMin" class="col-form-label">من</label>
+                            <input type="text" class="js-input-from form-control" id="productMin" placeholder="SAR"
+                                value="0" />
                         </div>
-                        <div class="col">
-                            <input type="number" min="0" value="0" placeholder="SAR" id="productMin"
-                                class="form-control">
-                        </div>
+
                         <div class="col">
                             <label for="productMax" class="col-form-label">إلى</label>
+                            <input type="text" class="js-input-to form-control" id="productMax" placeholder="SAR"
+                                value="0" />
                         </div>
-                        <div class="col">
-                            <input type="number" max="10000" value="10000" placeholder="SAR" id="productMax"
-                                class="form-control">
-                        </div>
+
+
                     </div>
+
                 </div>
                 <hr>
-                <div class="flex-shrink-0 p-3">
-                    <label for="customRangePrice" class="form-label">تغيير السعر </label>
-                    <input type="range" class="form-range" min="0" max="100" id="customRangePrice">
-                    <!-- <div id="html5"></div>
-                    <select id="input-select"></select>
-                    <input type="number" min="0" max="10000" step="1" id="input-number"> -->
-                </div>
-                <hr>
-                <div class="flex-shrink-0 p-3">
+                <div class="flex-shrink-0 py-0 px-3">
 
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
