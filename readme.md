@@ -27,6 +27,7 @@
 - [ ] Cleanups codebase
 - [ ] Fix rangeSlider direction
 - [ ] Add english support
+- [ ] Fix Closed icon in Accordions
 
 - [ ] Fix height of images
 - [ ] Change arrows in categories
