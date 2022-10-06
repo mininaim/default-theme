@@ -3,6 +3,22 @@
 - [Zid - Default Theme](https://zid-theme.herokuapp.com/)
 
 ### Redesign Pages
+
+الصفحة الرئيسية- [  ] 
+صفحة قائمة المنتجات- [  ] 
+صفحة منتجات التصنيف- [  ] 
+صفحة جميع التصنيفات- [  ] 
+صفحة تفاصيل المنتج- [  ] 
+صفحة خيارات الدفع و التوصيل- [  ] 
+صفحة الاسئلة الشائعة- [  ] 
+صفحة المحتوى النصي- [  ] 
+صفحة حسابي- [  ] 
+صفحة عناويني- [  ] 
+صفحة طلباتي- [  ] 
+صفحة سلة الشراء- [  ] 
+صفحة 404- [  ]  
+صفحة نتائج البحث- [  ]
+
 ### Done :check: 
 - ~~[Home Page] (https://zid-demo.com/)~~
 - ~~[Categories] (https://zid-demo.com/categories)~~
@@ -24,10 +40,18 @@
 - [Product Sample 4] (https://zid-demo.com/products/%D9%85%D8%B9%D8%B7%D9%81-%D8%A3%D8%B3%D9%88%D8%AF-%D8%A8%D9%8A%D8%A7%D9%82%D8%A9-%D9%81%D8%B1%D9%88-%D8%B1%D8%AC%D8%A7%D9%84%D9%8A)
 
 ### Minor Fixes
+- [ ] Fixes on http://localhost/default-theme/?page=cart-view
+- [ ] add tabby payment box to sidebar
+- [ ] fix responsive
+- [ ] Implement copy to clipboard
+
+
 - [ ] Cleanups codebase
 - [ ] Fix rangeSlider direction
 - [ ] Add english support
 - [ ] Fix Closed icon in Accordions
+
+- [ ] Ask about Tamara Integration (https://aryafalma.com/cart/view)
 
 - [ ] Fix height of images
 - [ ] Change arrows in categories
@@ -39,6 +63,7 @@
 - [ ] Fix loop status in Partnes Swiper
 
 ### Todo
+- [ ] Add user sentence when login in
 - [ ] Clean codebase
 - [ ] Generate color palette for the theme
 - [ ] Responsiveness for all pages
@@ -60,6 +85,8 @@
 ## Before Shipping
 - [ ] Remove Demos purpose
 - [ ] Renove fixed Dropdown Demo link
+- [ ] Server /JS/CSS localy
+- [ ] Add snapchat icon
 
 ## Missing Features
 - [ ] Search in Scrolly cities list in Shipping page
@@ -82,3 +109,37 @@
 
 ### Credits
 - [MiniNaim] (https://mininaim.com/)
+
+
+## Later
+https://fredolss.github.io/rater-js/example
+
+- atomic design system (https://www.obytes.com/blog/atomic-design-approach)
+
+
+
+
+## Mobile test
+500000005
+0000
+
+## Generate color palette
+https://chroma.dev/tints-and-shades/832161/shades
+https://yoksel.github.io/url-encoder/
+https://coolors.co/palettes/trending
+
+## SVG
+
+arrow
+`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#832161'>
+    <path fill-rule='evenodd'
+        d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
+</svg>`
+
+
+bullet
+`<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'>
+    <circle r='3' fill='#d6b5ca' />
+</svg>`
+
+

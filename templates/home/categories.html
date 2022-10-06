@@ -1,23 +1,23 @@
 <!-- Categories -->
 <section class="@triangle-section @triangle-section-top--flip-x @alert-secondary p-5" role="categories">
-  <div class="container-fluid">
-
+  <div class="container">
     <!-- Section Title -->
-    <div class="text-center text-md-start d-md-flex mb-3 mb-md-2">
-      <div class="flex-md-grow-1">
-        <h4 class="pb-md-2">
+    <div class="d-flex align-items-between align-items-center mb-md-2 mb-3">
+      <div class="flex-grow-1">
+        <h5 class="p-0">
           <!-- <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> -->
           التصانيف
-        </h4>
+        </h5>
       </div>
-      <div class="flex-md-shrink-0">
-        <a href="#" class="custom-link custom-link-7" title="">
-          تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
-        </a>
+      <div class="flex-shrink-0 position-relative">
+        <div
+          class="swiper-button-next swiper-button-next-sm swiper-button-next-categories link-secondary bg-light rounded-pill custom-link custom-link-7">
+        </div>
+        <div
+          class="swiper-button-prev swiper-button-prev-sm swiper-button-prev-categories link-secondary bg-light rounded-pill custom-link custom-link-7">
+        </div>
       </div>
     </div>
-
-
 
     <!-- Categories List -->
     <!-- <div class="row row-cols-1 row-cols-lg-4 flex-row flex-nowrap align-items-stretch g-4 pt-3 pb-5"> -->
@@ -27,22 +27,44 @@
 
         <?php for($i = 1; $i < 5; $i++)  { ?>
 
-        <div class="swiper-slide d-flex flex-column align-items-center">
-          <div class="rotate">
-            <img src="media/cdn/categories/img-<?php echo $i ?>.png" alt="" class="rounded-3">
-          </div>
-          <a href="#" title="" class="fw-light fs-6 link-dark text-decoration-none d-inline-block py-2">
+        <div class="swiper-slide card card-product d-flex flex-column align-items-center">
+
+
+          <a href="./category/" class="d-inline-block @overflow-hidden">
+            <img src="media/cdn/categories/img-<?php echo $i ?>.png" alt="" class="card-img-top">
+          </a>
+
+
+          <a href="./category/" title="" class="fw-light fs-6 link-dark text-decoration-none d-inline-block py-2">
             شنط نسائي
           </a>
         </div>
 
         <?php } ?>
       </div>
-      <div class="swiper-button-next swiper-button-next-categories"></div>
-      <div class="swiper-button-prev swiper-button-prev-categories"></div>
+
+
+
       <!-- <div class="swiper-pagination"></div> -->
     </div>
 
+
+    <!-- Link to See All -->
+    <div class="d-md-flex mt-4">
+      <div class="flex-md-grow-1">
+        <!-- Any data or summary here -->
+      </div>
+      <!-- <div class="flex-shrink-0">
+          <a href="#" class="btn btn-primary" title=""> 
+              تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+          </a>
+      </div> -->
+      <div class="flex-md-shrink-0 text-center">
+        <a href="#" class="custom-link custom-link-7" title="">
+          تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+        </a>
+      </div>
+    </div>
 
     <!-- Category Loop
         <?php for($i = 1; $i < 5; $i++)  { ?>

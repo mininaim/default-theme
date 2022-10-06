@@ -12,20 +12,20 @@
 </section>
 <!-- End Of Search Hero  -->
 
-<!-- Products -->
-<section class="products py-4 py-md-4" role="products">
+<!-- Search Results -->
+<section class="py-4 py-md-4" role="search">
     <div class="container">
+
 
         <!-- filters -->
         <div class="row d-flex justify-content-between g-0">
             <div
-                class="col-12 col-md-6 col-lg-8 border d-flex align-self-center align-items-center justify-content-start rounded mb-3 mb-md-0">
-                <p class="my-3 ps-2">تم ايجاد <strong class="text-primary">54</strong> منتج</p>
+                class="col-12 col-md-6 col-lg-8 border d-flex align-self-center align-items-center justify-content-center justify-content-sm-start rounded mb-3 mb-md-0">
+                <p class="my-3 ps-2 text-muted text-center text-sm-start">تم ايجاد <strong
+                        class="text-primary">982</strong> منتج</p>
             </div>
 
             <div class="col ms-0 ms-md-3">
-
-
                 <div class="form-floating">
                     <select class="form-select" id="floatingSelect" aria-label="Floating label select">
                         <option value="0" selected>الافتراضي</option>
@@ -36,82 +36,50 @@
                     </select>
                     <label for="floatingSelect">ترتيب حسب</label>
                 </div>
-
             </div>
-
             <div class="col d-grid ms-2 ms-md-3">
-                <button class="btn btn-dark border" type="button" data-bs-toggle="offcanvas"
+                <button class="btn btn-light border position-relative" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasProductsFilter" aria-controls="offcanvasProductsFilter">
 
-                    <span class="px-1"><i class="iconoir-filter iconoir-xs"></i></span> تصفية النتائج
-                </button>
+                    <i class="iconoir-db-search iconoir-xs"></i>
+                    <span class="px-1"> تصفية
+                        النتائج
 
+
+                        <span class="position-absolute top-0 start-100 translate-middle">
+
+                            <svg class="rounded-pill me-1 text-primary pulse-grouped" width="12" height="12"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                            </svg>
+                        </span>
+                    </span>
+
+
+                </button>
             </div>
         </div>
 
         <!-- products list  -->
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 mt-3">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 mt-0">
 
-            <?php for($i = 1; $i <5; $i++)  { ?>
-            <div class="cold">
+            <?php for($i = 1; $i <16; $i++)  { ?>
+            <div class="col">
                 <div class="card card-product shadow-sm border h-100">
                     <a href="./product" class="d-inline-block @overflow-hidden">
-                        <img src="media/cdn/discount/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
+                        <img src="media/cdn/discount/img-5.jpg" alt="" class="card-img-top">
                     </a>
 
-                    <div class="card-body">
-                        <!-- Product Title -->
-                        <h6 class="card-title py-2">
-                            <a href="./product" title="" class="link-dark text-decoration-none">
-                                جاكيت بليزر أسود رجالي
-                            </a>
-                        </h6>
-                        <!-- Product Caption -->
-                        <p class="card-text text-dark mb-0">
-                            <span class="fs-7 text-primary">
-
-                                <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
-                                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <rect width="100%" height="100%" fill="currentColor"></rect>
-                                </svg>
-
-                                متوفر بعدة خيارات</span>
-                        </p>
-
-
-                        <!-- Product Price -->
-                        <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
-                            <small><del>620 SAR</del></small>
-                            <strong class="fs-6 text-danger">500 SAR</strong>
-                        </small>
-
-                        <!-- Add to Cart -->
-                        <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
-                            <button type="button" class="btn btn-primary">
-                                <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
-                                للسلة
-                            </button>
-                        </div>
-
-
+                    <div class="position-absolute top-0 start-0 badge text-bg-primary mt-1 ms-1 px-2 py-1 small">
+                        <span class="small"> <span class="px-1"><i class="iconoir-medal"></i></span> مميز</span>
                     </div>
 
-                </div>
-            </div>
-
-            <?php } ?>
-            <?php for($i = 1; $i <5; $i++)  { ?>
-            <div class="cold">
-                <div class="card shadow-sm border h-100">
-                    <a href="./product" class="d-inline-block @overflow-hidden">
-                        <img src="media/cdn/discount/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
-                    </a>
-
                     <div class="card-body">
                         <!-- Product Title -->
-                        <h6 class="card-title py-2">
-                            <a href="./product" title="" class="link-dark text-decoration-none">
-                                جاكيت بليزر أسود رجالي
+                        <h6 class="card-title py-2 lh-base">
+                            <a href="./" title="" class="link-dark text-decoration-none">
+                                مفرش تغير الحفاظات للأطفال مع جيوب تنظيم متعددة ومكان للمناديل
                             </a>
                         </h6>
                         <!-- Product Caption -->
@@ -125,23 +93,37 @@
 
                                 متوفر بعدة خيارات</span>
                         </p>
-
-
+                        <!-- rating -->
+                        <div class="text-primary my-2">
+                            <small>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i></small>
+                            <span class="text-muted small">4.5</span>
+                        </div>
                         <!-- Product Price -->
                         <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
-                            <small><del>620 SAR</del></small>
-                            <strong class="fs-6 text-danger">500 SAR</strong>
+                            <div class="text-start">
+                                <strong class="fs-6 text-danger">500 رس</strong>
+                                <small><del class="text-decoration-line-through">620 رس</del></small>
+                            </div>
+                            <span class="badge bg-danger rounded-pill">وفر 20%</span>
                         </small>
 
                         <!-- Add to Cart -->
                         <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
+
                             <button type="button" class="btn btn-primary">
                                 <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
                                 للسلة
                             </button>
+                            <!-- <button type="button" class="btn btn-primary" disabled>
+                                <span class="px-2"><i class="iconoir-info-empty"></i></span> نفذت
+                                الكمية
+                            </button> -->
                         </div>
-
-
                     </div>
 
                 </div>
@@ -170,5 +152,7 @@
             </div>
         </div>
     </div>
+
+
 </section>
-<!-- End Products -->
+<!-- End Search Results -->

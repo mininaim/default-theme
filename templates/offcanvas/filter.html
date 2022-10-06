@@ -1,0 +1,93 @@
+<!-- OffCanvas Cart -->
+<form method="post" action="">
+    <div class="offcanvas offcanvas-start border-0 shadow-lg" tabindex="-1" data-bs-scroll="true"
+        id="offcanvasProductsFilter" aria-labelledby="offcanvasProductsFilterLabel">
+        <div class="offcanvas-header bg-light">
+            <h6 class="offcanvas-title" id="offcanvasProductsFilterLabel">
+                تصفية النتائج
+            </h6>
+
+            <button type="button" class="btn-none btn-close-rotate p-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="iconoir-cancel iconoir-md"></i>
+            </button>
+        </div>
+
+        <!-- Sep -->
+
+        <!-- Cart Content -->
+
+        <div class="offcanvas-body p-0">
+            <div>
+                <div class="flex-shrink-0 p-3">
+                    <div class="card p-3">
+
+
+                        <h6 class="text-dark">السعر</h6>
+
+                        <div class="range-slider p-2">
+                            <input type="text" class="js-range-slider form-control" value="" />
+                        </div>
+
+                    </div>
+
+                    <div class="card p-3 mt-3">
+
+                        <div class="extra-controls row">
+                            <div class="col">
+                                <label for="productMin" class="col-form-label">من</label>
+                                <div class="input-group input-group-sm">
+                                    <input class="js-input-from form-control range-slider-value-min" type="number"
+                                        id="productMin" min="0">
+                                    <span class="input-group-text">SAR</span>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <label for="productMax" class="col-form-label">إلى</label>
+                                <div class="input-group input-group-sm">
+                                    <input class="js-input-to form-control range-slider-value-min" type="number"
+                                        id="productMax" max="10000">
+                                    <span class="input-group-text">SAR</span>
+                                </div>
+                            </div>
+                            <!-- <label for="productMin" class="col-form-label">من</label>
+                                <input type="number" min="0" class="js-input-from form-control" id="productMin"
+                                    placeholder="SAR" value="0" /> -->
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card p-3 mt-3">
+                        <div
+                            class="form-check form-switch d-flex flex-row-reverse justify-content-between align-items-center ps-0">
+                            <input class="form-check-input pulse-grouped" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefaultFilter">
+                            <label class="form-check-label text-dark" for="flexSwitchCheckDefaultFilter">
+                                <i class="iconoir-fire-flame fs-5"></i>
+                                عرض التخفيضات فقط</label>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- options -->
+        <div class="px-3 py-3 p-md-3 sticky-bottom bg-light">
+            <div class="d-grid gap-2">
+                <!-- <button type="reset" class="btn btn-dark border" data-bs-dismiss="modal">
+                مسح
+            </button> -->
+                <button type="button" class="btn btn-primary">
+                    <!-- <i class="iconoir-control-slider iconoir-xs"></i> -->
+                    حفظ الفلترة
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- End of OffCanvas Cart -->
+</form>

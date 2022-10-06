@@ -7,12 +7,12 @@
 
   /* #todo: to be removed */
   padding: 0.375rem 0.75rem;
-  color: #8661a3;
+  color: var(--color-primary);
 }
 
 .custom-link-1 {
-  background: linear-gradient(#8661a3 0 0) bottom / 100% var(--distance, 0px)
-    no-repeat;
+  background: linear-gradient(var(--color-primary) 0 0) bottom / 100%
+    var(--distance, 0px) no-repeat;
   transition: 0.5s;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .custom-link-2 {
-  background: linear-gradient(#8661a3 0 0) 50% calc(-3px - 100%) /
+  background: linear-gradient(var(--color-primary) 0 0) 50% calc(-3px - 100%) /
     var(--distance, 0%) 200% no-repeat;
   transition: 0.3s, background-size 0.3s 0.3s;
 }
@@ -33,7 +33,7 @@
 }
 
 .custom-link-3 {
-  background: linear-gradient(#8661a3 0 0) 0% calc(-3px - 100%) /
+  background: linear-gradient(var(--color-primary) 0 0) 0% calc(-3px - 100%) /
     var(--distance, 0%) 200% no-repeat;
   transition: 0.3s, background-size 0.3s 0.3s;
 }
@@ -45,9 +45,10 @@
 }
 
 .custom-link-4 {
-  background: linear-gradient(#8661a3 0 0) right / var(--distance, 0%) 100%
-      no-repeat,
-    linear-gradient(#8661a3 0 0) left / var(--distance, 0%) 100% no-repeat;
+  background: linear-gradient(var(--color-primary) 0 0) right /
+      var(--distance, 0%) 100% no-repeat,
+    linear-gradient(var(--color-primary) 0 0) left / var(--distance, 0%) 100%
+      no-repeat;
   transition: 0.5s;
 }
 .custom-link-4:hover {
@@ -56,9 +57,10 @@
 }
 
 .custom-link-5 {
-  background: linear-gradient(#8661a3 0 0) top / 100% var(--distance, 0%)
-      no-repeat,
-    linear-gradient(#8661a3 0 0) bottom / 100% var(--distance, 0%) no-repeat;
+  background: linear-gradient(var(--color-primary) 0 0) top / 100%
+      var(--distance, 0%) no-repeat,
+    linear-gradient(var(--color-primary) 0 0) bottom / 100% var(--distance, 0%)
+      no-repeat;
   transition: 0.5s;
 }
 .custom-link-5:hover {
@@ -67,8 +69,8 @@
 }
 
 .custom-link-6 {
-  background: linear-gradient(#8661a3 0 0) right / 100% var(--distance, 0%)
-    no-repeat;
+  background: linear-gradient(var(--color-primary) 0 0) right / 100%
+    var(--distance, 0%) no-repeat;
   transition: 0.5s;
 }
 .custom-link-6:hover {
@@ -77,8 +79,8 @@
 }
 
 .custom-link-7 {
-  background: linear-gradient(#8661a3 0 0) right / var(--distance, 0%) 100%
-    no-repeat;
+  background: linear-gradient(var(--color-primary) 0 0) right /
+    var(--distance, 0%) 100% no-repeat;
   transition: 0.5s;
 }
 .custom-link-7:hover {
@@ -87,8 +89,8 @@
 }
 
 .custom-link-8 {
-  background: linear-gradient(#8661a3 0 0) top / 100% var(--distance, 0%)
-    no-repeat;
+  background: linear-gradient(var(--color-primary) 0 0) top / 100%
+    var(--distance, 0%) no-repeat;
   transition: 0.5s;
 }
 .custom-link-8:hover {

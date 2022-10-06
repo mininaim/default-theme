@@ -1,27 +1,24 @@
 <!-- Featured -->
 <section class="p-5 border-top" role="featured">
-    <div class="container-fluid">
+    <div class="container">
 
         <!-- Section Title -->
-        <div class="d-flex mb-md-2 mb-3">
+        <div class="d-flex align-items-between align-items-center mb-md-2 mb-3">
             <div class="flex-grow-1">
-                <h4 class="pb-md-2 pt-2">
+                <h5 class="p-0">
                     <!-- <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> -->
                     منتجات مميزة
-                </h4>
+                </h5>
             </div>
             <div class="flex-shrink-0 position-relative">
                 <div
-                    class="swiper-button-next swiper-button-next-sm swiper-button-next-featured link-primary bg-floor-dark rounded-pill custom-link custom-link-7">
+                    class="swiper-button-next swiper-button-next-sm swiper-button-next-featured link-secondary bg-light rounded-pill custom-link custom-link-7">
                 </div>
                 <div
-                    class="swiper-button-prev swiper-button-prev-sm swiper-button-prev-featured link-primary bg-floor-dark rounded-pill custom-link custom-link-7">
+                    class="swiper-button-prev swiper-button-prev-sm swiper-button-prev-featured link-secondary bg-light rounded-pill custom-link custom-link-7">
                 </div>
             </div>
         </div>
-
-
-
 
         <!-- Products Inner -->
         <div class="swiper featuredSwiper">
@@ -29,16 +26,21 @@
 
                 <?php for($i = 1; $i < 5; $i++)  { ?>
 
-                <div class="swiper-slide card card-product shadow-sm border h-100">
+                <!-- the ideal products list that should be cloned -->
+                <div class="swiper-slide card card-product shadow-sm border h-100 position-relative">
                     <a href="./product" class="d-inline-block @overflow-hidden">
                         <img src="media/cdn/featured/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
                     </a>
 
+                    <div class="position-absolute top-0 start-0 badge text-bg-primary mt-1 ms-1 px-2 py-1 small">
+                        <span class="small"> <span class="px-1"><i class="iconoir-medal"></i></span> مميز</span>
+                    </div>
+
                     <div class="card-body">
                         <!-- Product Title -->
-                        <h6 class="card-title py-2">
-                            <a href="./product" title="" class="link-dark text-decoration-none">
-                                جاكيت بليزر أسود رجالي
+                        <h6 class="card-title py-2 lh-base">
+                            <a href="./" title="" class="link-dark text-decoration-none">
+                                مفرش تغير الحفاظات للأطفال مع جيوب تنظيم متعددة ومكان للمناديل
                             </a>
                         </h6>
                         <!-- Product Caption -->
@@ -52,42 +54,38 @@
 
                                 متوفر بعدة خيارات</span>
                         </p>
-
-
                         <!-- rating -->
-                        <div class="text-warning my-2">
-
+                        <div class="text-primary my-2">
                             <small>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star"></i></small>
-                            <span class="text-muted small">4</span>
+                            <span class="text-muted small">4.5</span>
                         </div>
-
-
                         <!-- Product Price -->
                         <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
-
                             <div class="text-start">
                                 <strong class="fs-6 text-danger">500 رس</strong>
                                 <small><del class="text-decoration-line-through">620 رس</del></small>
                             </div>
-                            <span class="badge bg-danger rounded-pill">-20%</span>
+                            <span class="badge bg-primary text-primary bg-opacity-10 rounded-pill">وفر 20%</span>
                         </small>
 
                         <!-- Add to Cart -->
                         <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
+
                             <button type="button" class="btn btn-primary">
                                 <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
                                 للسلة
                             </button>
+                            <!-- <button type="button" class="btn btn-primary" disabled>
+                                <span class="px-2"><i class="iconoir-info-empty"></i></span> نفذت
+                                الكمية
+                            </button> -->
                         </div>
-
-
                     </div>
-
                 </div>
 
                 <?php } ?>

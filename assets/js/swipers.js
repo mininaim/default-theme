@@ -3,7 +3,7 @@ const swiper = new Swiper(".categoriesSwiper", {
   lazy: true,
   direction: "horizontal",
   loop: true,
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 30,
   centeredSlides: true,
   freeMode: true,
@@ -18,6 +18,7 @@ const swiper = new Swiper(".categoriesSwiper", {
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
+      centeredSlides: true,
     },
     768: {
       slidesPerView: 3,
@@ -25,7 +26,7 @@ const swiper = new Swiper(".categoriesSwiper", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
   navigation: {
@@ -47,7 +48,7 @@ const swiper2 = new Swiper(".featuredSwiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 0,
   centeredSlides: true,
   freeMode: true,
   keyboard: {
@@ -65,7 +66,7 @@ const swiper2 = new Swiper(".featuredSwiper", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
   navigation: {
@@ -104,7 +105,7 @@ const swiper3 = new Swiper(".discountSwiper", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
   navigation: {
@@ -143,7 +144,7 @@ const swiper4 = new Swiper(".besetSellerSwiper", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
   navigation: {
@@ -182,7 +183,7 @@ const swiper5 = new Swiper(".recentlyArrivedSwiper", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
   navigation: {

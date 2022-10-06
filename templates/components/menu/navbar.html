@@ -1,0 +1,139 @@
+<!-- Top Navigation -->
+<nav class="navbar navbar-expand-lg py-2 navbar-sticky" role="navbar">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand ps-3 order-1 order-lg-0" href="./" title="المتجر الإفتراضي">
+      <!-- <img src="assets/img/store-logo.png" alt="المتجر الإفتراضي" style="width:80px"> -->
+      <img
+        src="https://media.zid.store/cdn-cgi/image/h=220,q=100,f=auto/https://media.zid.store/cada0eba-1b92-45dd-92d2-486b3ba9674c/54d3472f-9540-4379-b96c-83f5e46237b5-200x.png"
+        alt="" style="width:50px">
+
+      <!-- <span class="text-dark px-2">متجر افتراضي</span> -->
+    </a>
+
+    <!-- Toggle for Mobile -->
+    <!-- <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+
+    <a class="d-block d-lg-none nav-link link-dark position-relative order-0" title="قائمة التصفح"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" href="#offcanvasMenu">
+      <i class="iconoir-menu iconoir-md"></i>
+    </a>
+
+
+    <a class="me-4 d-block d-lg-none nav-link link-dark position-relative order-2" title="سلة التسوق"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" href="#offcanvasCart">
+      <i class="iconoir-cart iconoir-md"></i>
+      <span class="position-absolute top-0 start-100 translate-middle-y badge rounded-pill bg-primary">
+        6 <span class="visually-hidden">6 منتجات</span>
+      </span>
+    </a>
+
+
+    <!-- Menu Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Search Form -->
+      <form class="d-flex mx-auto w-50 border rounded" role="search">
+        <input class="form-control form-control-no-focus ms-2 rounded-0 border-0" type="search"
+          placeholder="ابحث في المتجر" aria-label="Search">
+        <button class="btn btn-primary border-0 rounded-0 rounded-end" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+      <!-- End of Search Form -->
+
+      <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+        <!--        
+        <li class="nav-item dropdown px-2">
+          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            title="تغيير اللغة">
+            <i data-feather="globe"></i> <span class="visually-hidden">اللغة</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0">
+            <li><a class="dropdown-item disabled py-2" href="#" title="">العربية</a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">English</a></li>
+          </ul>
+        </li>  -->
+        <!-- <li class="nav-item dropdown px-1">
+          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            title="الشحن">
+            <i class="iconoir-delivery iconoir-md" data-bs-placement="bottom" data-bs-html="true"
+              data-bs-toggle="tooltip" data-bs-title="<small>دولة الشحن</small>"></i> <span
+              class="px-1 visually-hidden">الشحن</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0 zindex-fixed animate slideIn">
+            <li>
+              <h6 class="dropdown-header">الشحن إلى</h6>
+            </li>
+            <li><a class="dropdown-item py-2" href="#" title="">مصر</a></li>
+            <li><a class="dropdown-item py-2 active" href="#" title="">
+
+                المملكة العربية السعودية <span class="px-2"><i class="iconoir-check"></i></span> </a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">سلطة عمان</a></li>
+            <li><a class="dropdown-item py-2" href="#" title="">الإمارات العربية المتحدة</a></li>
+          </ul>
+        </li> -->
+        <!-- login link -->
+        <li class="nav-item px-1">
+          <a class="nav-link link-dark" href="#">
+            <i class="iconoir-log-in iconoir-md" data-bs-placement="bottom" data-bs-html="true" data-bs-toggle="tooltip"
+              data-bs-title="<small>تسجيل دخول</small>"></i> <span class="px-1 visually-hidden">تسجيل دخول</span>
+          </a>
+        </li>
+
+        <!-- account link -->
+
+        <!-- <li class="vr mx-2"></li>
+        <li class="nav-item px-1">
+          <a class="nav-link" href="#">
+            <i class="iconoir-user-circle-alt iconoir-md" data-bs-placement="bottom" data-bs-html="true"
+              data-bs-toggle="tooltip" data-bs-title="<small>حسابي</small>"></i> <span
+              class="px-1 visually-hidden">حسابي</span>
+          </a>
+        </li> -->
+
+
+
+
+
+
+        <li class="vr mx-2"></li>
+        <li class="nav-item px-1">
+          <a class="nav-link link-dark position-relative" title="دولة الشحن" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasCountries" aria-controls="offcanvasCountries" href="#">
+            <i class="iconoir-language iconoir-md" data-bs-placement="bottom" data-bs-html="true"
+              data-bs-toggle="tooltip" data-bs-title="<small>اللغة والشحن</small>"></i>
+
+          </a>
+
+        </li>
+
+
+
+        <li class="vr mx-2"></li>
+        <!-- Anchor to open the OffCanvas -->
+        <li class="nav-item px-1">
+          <a class="nav-link link-dark position-relative" title="سلة التسوق" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" href="#">
+            <i class="iconoir-cart iconoir-md" data-bs-placement="bottom" data-bs-html="true" data-bs-toggle="tooltip"
+              data-bs-title="<small>سلة المشتريات</small>"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-primary">
+              6 <span class="visually-hidden">6 منتجات</span>
+            </span>
+          </a>
+
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!-- End of Top Navigation -->

@@ -18,16 +18,15 @@
         <div class="row">
             <div class="col">
 
-                <div class="card card-product mt-2 mt-sm-4 shadow">
-
+                <div class="card card-product shadow-sm">
                     <div style="cursor:pointer" class="card-body d-flex align-items-center" data-bs-toggle="collapse"
                         data-bs-target="#collapseTable" aria-expanded="false" aria-controls="collapseTable">
-                        <p class="text-primary fs-1">
-                            <i class="iconoir-box-iso" class="opacity-50 text-primary"></i>
+                        <p class="text-primary fs-1 mb-0">
+                            <i class="iconoir-box-iso text-primary"></i>
                         </p>
                         <div class="ms-3">
-                            <h5 class="card-title text-dark">خيارات الشحن</h5>
-                            <p class="card-text">يمكنك الدفع عند استلام الطلبية من المندوب</p>
+                            <h6 class="card-title text-dark mb-0">خيارات الشحن</h6>
+                            <p class="card-text text-muted">يمكنك الدفع عند استلام الطلبية من المندوب</p>
                         </div>
                     </div>
 
@@ -35,7 +34,7 @@
                         <div class="card card-body">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <thead class="text-muted">
+                                    <thead class="text-muted bg-light">
                                         <tr>
 
                                             <th scope="col">خيارات الشحن</th>
@@ -44,34 +43,29 @@
                                             <th scope="col">الدفع عند الإستلام</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="small">
                                         <tr>
-
                                             <td>
                                                 <img style="width:30px"
                                                     src="https://media.zid.store/cdn-cgi/image/w=46,q=85,f=auto/https://media.zid.store/static/default/icons/zid_front_point_02.png"
                                                     alt="">
-                                                <small class="ms-2">الشحن السريع</small>
+                                                <span class="ms-2">الشحن السريع</span>
                                             </td>
                                             <td>
-                                                <span class="badge text-dark bg-floor-dark">الرياض</span>
-                                                <span class="badge text-dark bg-floor-dark">جدة</span>
-                                                <span class="badge text-dark bg-floor-dark">الدمام</span>
-
-                                                <!-- <a href="#" class="link-primary ms-2 text-decoration-underline">
-                                                <small> و 164 مدن أخرى</small>
-                                            </a> -->
+                                                <span>الدمام</span>،
+                                                <span>الجبيل</span>،
+                                                <span>مكة</span>
                                             </td>
                                             <td>
-
-                                                <span>35.00 SAR </span>
+                                                <i class="iconoir-pin-alt"></i> <span class="px-1">35.00
+                                                    SAR</span>
                                             </td>
                                             <td>
-                                                <span>5.00 SAR</span>
+                                                <i class="iconoir-user-cart"></i>
+                                                <span class="px-1">44.00 SAR</span>
                                             </td>
                                         </tr>
                                         <tr>
-
                                             <td>
                                                 <img style="width:30px"
                                                     src="https://media.zid.store/cdn-cgi/image/w=46,q=85,f=auto/https://media.zid.store/static/mandob.png"
@@ -79,37 +73,38 @@
                                                 <small class="ms-2"> مندوب مخصص</small>
                                             </td>
                                             <td>
-                                                <span class="badge text-dark bg-floor-dark">الدمام</span>
-                                                <span class="badge text-dark bg-floor-dark">الجبيل</span>
-                                                <span class="badge text-dark bg-floor-dark">مكة</span>
+                                                <span>الدمام</span>،
+                                                <span>الجبيل</span>،
+                                                <span>مكة</span>
 
-                                                <a href="#" class="link-primary ms-2 text-decoration-underline"
+                                                <br>
+                                                <a href="#" class="link-primary badge bg-light border"
                                                     data-bs-toggle="modal" data-bs-target="#staticBackdropRowOne">
-                                                    <small> و 340 مدن أخرى</small>
+                                                    <i class="iconoir-arrow-separate-vertical fs-6"></i>
+                                                    <span class="px-1"> و 340 مدينة أخرى</span>
                                                 </a>
                                                 <!-- modal -->
-
-                                                <div class="modal fade" id="staticBackdropRowOne"
-                                                    data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                                                <div class="modal fade zindex-fixed-top" id="staticBackdropRowOne"
+                                                    data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
                                                     aria-labelledby="staticBackdropRowOneLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title text-muted"
-                                                                    id="staticBackdropRowOneLabel">
-                                                                    <i class="iconoir-pin-alt"></i>
+                                                                <h6 class="modal-title" id="staticBackdropRowOneLabel">
+                                                                    <i class="iconoir-pin-alt iconoir-md"></i>
                                                                     المدن التي يوصل لها المندوب
-                                                                </h5>
+                                                                </h6>
 
                                                                 <button type="button"
-                                                                    class="btn-none btn-close-rotate text-primary"
+                                                                    class="btn-none btn-close-rotate p-0"
                                                                     data-bs-dismiss="modal" aria-label="Close">
                                                                     <i class="iconoir-cancel iconoir-md"></i>
                                                                 </button>
                                                             </div>
-                                                            <div class="modal-body">
+                                                            <div class="modal-body py-3">
                                                                 <div class="p-2">
-                                                                    <select data-width="auto" data-style="btn-primary"
+                                                                    <select data-width="auto"
+                                                                        data-style="border bg-light"
                                                                         class="custom-select" data-live-search="true">
                                                                         <option>
                                                                             الرياض
@@ -1114,180 +1109,250 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="modal-footer px-3">
+                                                            <!-- <div
+                                                                class="modal-header text-muted bg-floor-dark px-3 d-grid gap-1 text-center justify-content-center">
                                                                 <button type="button" class="btn btn-sm btn-primary"
                                                                     data-bs-dismiss="modal">
                                                                     إغلاق
                                                                 </button>
-
-
-                                                            </div>
+                                                                <i class="iconoir-pin-alt iconoir-md"></i>
+                                                                <small> 340 مدينة أخرى</small>
+                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="d-grid gap-2 justify-content-between">
-                                                <div>
-                                                    <strong>خارج مدينة التاجر</strong>
-                                                    <span>35.00 SAR </span>
-                                                </div>
-                                                <div>
-                                                    <strong>داخل مدينة التاجر</strong>
-                                                    <span>35.00 SAR </span>
-                                                </div>
+                                            <td>
+                                                <a type="button" class="btn-block p-0 link-dark d-inline-block"
+                                                    data-bs-toggle="tooltip" data-bs-placement="left"
+                                                    data-bs-title="داخل مدينة التاجر">
+                                                    <i class="iconoir-add-pin-alt"></i> <span class="px-1">35.00
+                                                        SAR</span>
+                                                </a>
+                                                <a type="button" class="p-0 link-dark d-block" data-bs-toggle="tooltip"
+                                                    data-bs-placement="left" data-bs-title="خارج مدينة التاجر">
+                                                    <i class="iconoir-minus-pin-alt"></i> <span class="px-1">85.00
+                                                        SAR</span>
+                                                </a>
                                             </td>
                                             <td>
-                                                <span>53.00 SAR</span>
+                                                <i class="iconoir-user-cart"></i>
+                                                <span class="px-1">53.00 SAR</span>
                                             </td>
                                         </tr>
-
                                     </tbody>
-
                                 </table>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mt-4">
-                    <div class="card-body d-flex align-items-center">
-                        <p class="text-primary fs-1">
-                            <i class="iconoir-money-square" class="opacity-50 text-primary"></i>
+                <div class="card card-product mt-3 mt-sm-3 shadow-sm">
+                    <div style="cursor:pointer" class="card-body d-flex align-items-center" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTablePayment" aria-expanded="false"
+                        aria-controls="collapseTablePayment">
+                        <p class="text-primary fs-1 mb-0">
+                            <i class="iconoir-card-wallet text-primary"></i>
                         </p>
                         <div class="ms-3">
-                            <h5 class="card-title text-dark">خيارات الدفع</h5>
+                            <h6 class="card-title text-dark mb-0">خيارات الدفع</h6>
                             <p class="card-text text-muted">يمكنك الدفع عند استلام الطلبية من المندوب</p>
                         </div>
                     </div>
 
-                    <ul
-                        class="nav border rounded d-flex flex-wrap justify-content-start justify-content-md-start align-items-center mx-3 mb-4">
-                        <li class="mb-3 my-sm-3 ms-4">
-                            <a class="grow" href="#" title="">
-                                <img src="media/public/footenote/payments/apple-pay.svg" alt="" width="60">
-                            </a>
-                        </li>
-                        <li class="mb-3 my-sm-3 mx-3">
-                            <a class="grow" href="#" title="">
-                                <img src="media/public/footenote/payments/mada.svg" alt="" width="60">
-                            </a>
-                        </li>
-                        <li class="mb-3 my-sm-3 mx-3">
-                            <a class="grow" href="#" title="">
-                                <img src="media/public/footenote/payments/maroof.svg" alt="" width="60">
-                            </a>
-                        </li>
-                        <li class="mb-3 my-sm-3 mx-3">
-                            <a class="grow" href="#" title="">
-                                <img src="media/public/footenote/payments/stc-pay.svg" alt="" width="60">
-                            </a>
-                        </li>
-                        <li class="mb-3 my-sm-3 mx-3">
-                            <a class="grow" href="#" title="">
-                                <img src="media/public/footenote/payments/tabby.svg" alt="" width="60">
-                            </a>
-                        </li>
-                        <li class="mb-3 my-sm-3 mx-3">
-                            <a class="grow" href="#" title="">
-                                <img src="media/public/footenote/payments/tamara.svg" alt="" width="60">
-                            </a>
-                        </li>
-                        <li class="mb-3 my-sm-3 mx-3 me-0">
-                            <a class="grow" href="#" title="">
-                                <img src="media/public/footenote/payments/visa.svg" alt="" width="60">
-                            </a>
-                        </li>
-                    </ul>
+
+                    <div class="collapse mx-0 mb-4 border-0 show" id="collapseTablePayment">
+                        <ul
+                            class="nav border rounded d-flex flex-wrap justify-content-start justify-content-md-start align-items-center mx-3 mb-4">
+                            <li class="mb-3 my-sm-3 ms-4">
+                                <a class="translateY d-inline-block" href="#" title="">
+                                    <img src="media/public/footenote/payments/apple-pay.svg" alt="" width="60">
+                                </a>
+                            </li>
+                            <li class="mb-3 my-sm-3 mx-3">
+                                <a class="translateY d-inline-block" href="#" title="">
+                                    <img src="media/public/footenote/payments/mada.svg" alt="" width="60">
+                                </a>
+                            </li>
+                            <li class="mb-3 my-sm-3 mx-3">
+                                <a class="translateY d-inline-block" href="#" title="">
+                                    <img src="media/public/footenote/payments/maroof.svg" alt="" width="60">
+                                </a>
+                            </li>
+                            <li class="mb-3 my-sm-3 mx-3">
+                                <a class="translateY d-inline-block" href="#" title="">
+                                    <img src="media/public/footenote/payments/stc-pay.svg" alt="" width="60">
+                                </a>
+                            </li>
+                            <li class="mb-3 my-sm-3 mx-3">
+                                <a class="translateY d-inline-block" href="#" title="">
+                                    <img src="media/public/footenote/payments/tabby.svg" alt="" width="60">
+                                </a>
+                            </li>
+                            <li class="mb-3 my-sm-3 mx-3">
+                                <a class="translateY d-inline-block" href="#" title="">
+                                    <img src="media/public/footenote/payments/tamara.svg" alt="" width="60">
+                                </a>
+                            </li>
+                            <li class="mb-3 my-sm-3 mx-3 me-0">
+                                <a class="translateY d-inline-block" href="#" title="">
+                                    <img src="media/public/footenote/payments/visa.svg" alt="" width="60">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="card mt-4">
+                <div class="card card-product mt-3 mt-sm-3 shadow-sm">
 
-                    <div class="card-body d-flex align-items-center">
-                        <p class="text-primary fs-1">
-                            <i class="iconoir-bank" class="opacity-50 text-primary"></i>
+                    <div style="cursor:pointer" class="card-body d-flex align-items-center" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTableBanks" aria-expanded="false" aria-controls="collapseTableBanks">
+                        <p class="text-primary fs-1 mb-0">
+                            <i class="iconoir-bank text-primary"></i>
                         </p>
                         <div class="ms-3">
-                            <h5 class="card-title text-dark">الحسابات البنكية</h5>
+                            <h6 class="card-title text-dark mb-0">الحسابات البنكية</h6>
                             <p class="card-text text-muted">يمكنك الدفع عند استلام الطلبية من المندوب</p>
                         </div>
                     </div>
+                    <div class="collapse mx-0 mb-4 border-0 show" id="collapseTableBanks">
+                        <div class="accordion mx-3 mb-4" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        ساب
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body px-0">
+                                        <ul class="list-group list-group-flush">
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                اسم المحول له
+                                                <span
+                                                    class="badge bg-primary text-primary bg-opacity-10 rounded-pill d-flex gap-1 user-select-all">
+                                                    david frank
+                                                    <span class="btn-clipboard" data-clipboard-text="david frank">
 
-                    <div class="collapse show border-0 mx-3 mb-4">
-                        <div class="card card-body p-2">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                            ساب
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body px-0">
+                                                        <i class="iconoir-copy" title="نسخ">
 
-                                            <ul class="list-group list-group-flush">
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    اسم المحول له
-                                                    <span class="badge bg-primary rounded-pill">demo store</span>
-                                                </li>
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    رقم الحساب
-                                                    <span class="badge bg-primary rounded-pill">344608019986525</span>
-                                                </li>
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    رقم الآيبان
-                                                    <span
-                                                        class="badge bg-primary rounded-pill">SA0280000344608019986525</span>
-                                                </li>
-                                            </ul>
+                                                        </i></span>
+                                                </span>
 
 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mt-3">
+
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                رقم الحساب
+                                                <span
+                                                    class="badge bg-primary text-primary bg-opacity-10 rounded-pill d-flex gap-1 user-select-all">
+
+                                                    4444444433333
+                                                    <span class="btn-clipboard" data-clipboard-text="4444444433333">
+                                                        <i class="iconoir-copy" title="نسخ">
+
+                                                        </i></span>
+                                                </span>
 
 
-                                    <h2 class="accordion-header" id="flush-headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            البنك الأهلي التجاري
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body px-0">
 
-                                            <ul class="list-group list-group-flush">
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    اسم المحول له
-                                                    <span class="badge bg-primary rounded-pill">محمد تست</span>
-                                                </li>
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    رقم الحساب
-                                                    <span class="badge bg-primary rounded-pill">12345678912345</span>
-                                                </li>
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    رقم الآيبان
-                                                    <span
-                                                        class="badge bg-primary rounded-pill">SA12345678912345678912</span>
-                                                </li>
-                                            </ul>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                رقم الآيبان
+
+                                                <span
+                                                    class="badge bg-primary text-primary bg-opacity-10 rounded-pill d-flex gap-1 user-select-all">
+
+                                                    SA125555555555545678912
+                                                    <span class="btn-clipboard"
+                                                        data-clipboard-text="SA125555555555545678912">
+                                                        <i class="iconoir-copy" title="نسخ">
+                                                        </i></span>
+                                                </span>
 
 
-                                        </div>
+                                            </li>
+
+
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        البنك الأهلي التجاري
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body px-0">
+                                        <ul class="list-group list-group-flush">
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                اسم المحول له
+                                                <span
+                                                    class="badge bg-primary text-primary bg-opacity-10 rounded-pill d-flex gap-1 user-select-all">
+
+                                                    محمد عبدالله العمران
+
+                                                    <span class="btn-clipboard"
+                                                        data-clipboard-text="محمد عبدالله العمران">
+
+                                                        <i class="iconoir-copy" title="نسخ">
+
+                                                        </i></span>
+                                                </span>
+
+
+
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                رقم الحساب
+                                                <span
+                                                    class="badge bg-primary text-primary bg-opacity-10 rounded-pill d-flex gap-1 user-select-all">
+
+                                                    12345678912345
+                                                    <span class="btn-clipboard" data-clipboard-text="12345678912345">
+                                                        <i class="iconoir-copy" title="نسخ">
+
+                                                        </i></span>
+                                                </span>
+
+
+
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                رقم الآيبان
+
+                                                <span
+                                                    class="badge bg-primary text-primary bg-opacity-10 rounded-pill d-flex gap-1 user-select-all">
+
+                                                    SA12345678912345678912
+                                                    <span class="btn-clipboard"
+                                                        data-clipboard-text="SA12345678912345678912">
+                                                        <i class="iconoir-copy" title="نسخ">
+                                                        </i></span>
+                                                </span>
+
+
+                                            </li>
+
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

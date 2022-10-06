@@ -1,0 +1,13 @@
+/* DIN Next LT Arabic */
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../../fonts/DINNextLTArabic/DINNextLTArabic.ttf") format("truetype");
+}
+
+:root {
+  --font-primary: "DIN Next LT Arabic", sans-serif;
+  --font-primary-bold: "DIN Next LT Arabic", sans-serif;
+}
