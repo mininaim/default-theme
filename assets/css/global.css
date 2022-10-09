@@ -159,31 +159,6 @@ a {
 }
 
 /* backgrounds */
-.bg-alternate {
-  background: rgb(219, 255, 73);
-}
-
-/* #todo: export to a class */
-.bg-primary-dark {
-  background: #714990;
-  color: #c8b7d5 !important;
-}
-.bg-primary-dark a {
-  color: #c8b7d5 !important;
-}
-.bg-primary-dark a:hover {
-  color: #fff !important;
-}
-.bg-gradient {
-  background-image: linear-gradient(
-    to left,
-    #ffd14b,
-    #ffc696,
-    #ffd2de,
-    #ffebff,
-    #ffffff
-  ) !important;
-}
 .bg-overlay {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../media/cdn/intro/backgrounds/bg.jpg");
@@ -195,30 +170,6 @@ a {
 }
 .bg-overlay a {
   color: #ffffff !important;
-}
-
-.bg-animated-gradient {
-  animation: animateBg 14s linear infinite;
-  background-image: linear-gradient(90deg, #ffd14b, #8d5ea7, #ffd14b, #8d5ea7);
-  background-size: 300% 100%;
-}
-@keyframes animateBg {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
-.bg-color-1 {
-  background-color: rgba(247, 243, 237, 1);
-}
-.bg-color-2 {
-  background-color: #f7f7f7;
-}
-.bg-color-3 {
-  background-color: #f2f2f3;
 }
 
 /* progress */
@@ -348,25 +299,6 @@ a {
 /* logo sizes */
 .logo-xs {
   width: 100px;
-}
-
-.bg-gradient-badge {
-  display: flex;
-  align-items: center;
-
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-
-  background: linear-gradient(
-    90deg,
-    #8661a3 16%,
-    #8661a3 26%,
-    #8661a3 48%,
-    rgba(255, 206, 74, 1) 79%
-  );
-
-  color: white !important;
 }
 
 /* .dropdown-item  */
