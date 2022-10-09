@@ -1,64 +1,67 @@
-<!-- Products -->
+<!-- Products of a Category -->
 <section class="py-4 py-md-4" role="products">
     <div class="container">
 
-
-        <!-- filters -->
+        <!-- Filters Section -->
         <div class="row d-flex justify-content-between g-0">
+
+            <!-- Results of Products -->
             <div
                 class="col-12 col-md-6 col-lg-8 border d-flex align-self-center align-items-center justify-content-center justify-content-sm-start rounded mb-3 mb-md-0">
                 <p class="my-3 ps-2 text-muted text-center text-sm-start">تم ايجاد <strong
-                        class="text-primary">982</strong> منتج</p>
-            </div>
+                        class="text-primary">982</strong>
+                    منتج</p>
+            </div> <!-- #Results of Products -->
 
+            <!-- Filter Column -->
             <div class="col ms-0 ms-md-3">
                 <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select">
+                    <select class="form-select" id="floatingSelectFilter" aria-label="Select Filters">
                         <option value="0" selected>الافتراضي</option>
                         <option value="1">الأكثر مبيعاً</option>
                         <option value="2">الأحدث</option>
                         <option value="3">الأقل سعراً</option>
                         <option value="4">الأعلى سعراً</option>
                     </select>
-                    <label for="floatingSelect">ترتيب حسب</label>
+                    <label for="floatingSelectFilter">ترتيب حسب</label>
                 </div>
-            </div>
+            </div> <!-- #Filter Column -->
 
+            <!-- Open Filter Offcanvas -->
             <div class="col d-grid ms-2 ms-md-3">
                 <button class="btn btn-link text-decoration-none border position-relative" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasProductsFilter"
                     aria-controls="offcanvasProductsFilter">
-
                     <i class="iconoir-db-search iconoir-xs"></i>
-                    <span class="px-1"> تصفية
-                        النتائج
-
-
-                        <span class="position-absolute top-0 start-100 translate-middle">
-
+                    <span class="px-1">
+                        تصفية النتائج
+                        <!-- bullet to show the filter icon -->
+                        <!-- <span class="position-absolute top-0 start-100 translate-middle">
                             <svg class="rounded-pill me-1 text-primary text-opacity-50 pulse-grouped" width="12"
                                 height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <rect width="100%" height="100%" fill="currentColor"></rect>
                             </svg>
-                        </span>
+                        </span> -->
                     </span>
-
-
                 </button>
-            </div>
-        </div>
+            </div><!-- #Open Filter Offcanvas -->
+        </div> <!-- Filters Section -->
 
-        <!-- products list  -->
+        <!-- Products list  -->
+        <!-- latest version that can be extended in other pages -->
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 mt-0">
 
+            <!-- simple loop to show products -->
             <?php for($i = 1; $i <16; $i++)  { ?>
             <div class="col">
                 <div class="card card-product shadow-sm border h-100">
+                    <!-- main image -->
                     <a href="./product" class="d-inline-block @overflow-hidden">
-                        <img src="media/cdn/discount/img-3.jpg" alt="" class="card-img-top">
+                        <img src="media/cdn/discount/img-4.jpg" alt="" class="card-img-top">
                     </a>
 
+                    <!-- append product discount badge -->
                     <div class="position-absolute top-0 start-0 badge text-bg-primary mt-1 ms-1 px-2 py-1 small">
                         <span class="small"> <span class="px-1"><i class="iconoir-medal"></i></span> مميز</span>
                     </div>
@@ -70,17 +73,17 @@
                                 مفرش تغير الحفاظات للأطفال مع جيوب تنظيم متعددة ومكان للمناديل
                             </a>
                         </h6>
-                        <!-- Product Caption -->
+                        <!-- product caption -->
                         <p class="card-text text-dark mb-0">
                             <span class="fs-7 text-primary">
-
                                 <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
                                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="currentColor"></rect>
                                 </svg>
-
-                                متوفر بعدة خيارات</span>
+                                متوفر بعدة خيارات
+                            </span>
                         </p>
+
                         <!-- rating -->
                         <div class="text-primary my-2">
                             <small>
@@ -91,7 +94,8 @@
                                 <i class="bi bi-star"></i></small>
                             <span class="text-muted small">4.5</span>
                         </div>
-                        <!-- Product Price -->
+
+                        <!-- product Price -->
                         <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
                             <div class="text-start">
                                 <strong class="fs-6 text-danger">500 رس</strong>
@@ -103,44 +107,44 @@
                         <!-- Add to Cart -->
                         <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
 
-                            <!-- <button type="button" class="btn btn-primary">
-                                <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
+                            <!--
+                                <button type="button" class="btn btn-primary">
+                                    <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
                                 للسلة
-                            </button> -->
+                            </button> 
+                        -->
                             <button type="button" class="btn btn-primary" disabled>
-                                <span class="px-2"><i class="iconoir-info-empty"></i></span> نفذت
-                                الكمية
+                                <span class="px-2"><i class="iconoir-info-empty"></i></span> نفذت الكمية
                             </button>
                         </div>
                     </div>
 
                 </div>
             </div>
-
             <?php } ?>
-        </div>
+        </div><!-- #Products list  -->
 
-        <!-- pagination -->
+        <!-- Pagination  -->
         <div class="row mt-4 mt-md-5">
             <div class="col">
+
+                <!-- Pagination Nav -->
                 <nav aria-label="navigation">
                     <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
-                            <a class="page-link">السابق</a>
+                            <a class="page-link" title="">السابق</a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#" title="">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#" title="">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#" title="">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#" title="">7</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="#">التالي</a>
+                            <a class="page-link" href="#" title="">التالي</a>
                         </li>
                     </ul>
-                </nav>
+                </nav><!-- #Pagination Nav -->
             </div>
-        </div>
+        </div> <!-- #Pagination  -->
     </div>
-
-
 </section>
-<!-- End Products -->
+<!-- #Products of a Category -->

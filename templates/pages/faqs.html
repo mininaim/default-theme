@@ -1,4 +1,4 @@
-<!-- FAQs Hero  -->
+<!-- Hero  -->
 <section class="bg-primary text-center py-5" role="hero">
     <div class="container">
         <div class="row">
@@ -9,38 +9,49 @@
             </div>
         </div>
     </div>
-</section>
+</section><!-- Hero  -->
 
+<!-- FAQs -->
 <section class="py-4 py-md-4" role="faqs">
     <div class="container">
-
-
         <div class="row">
-            <div class="col-12 col-lg-3 mb-3 mb-md-3 mb-lg-0">
 
+            <!-- sidebar (that can be removed) -->
+            <div class="col-12 col-lg-3 mb-3 mb-md-3 mb-lg-0">
                 <div class="card p-3 sticky-lg-top sticky-offset">
                     <div class="fs-1">
-                        <i class="iconoir-message-text text-dark"></i>
+                        <i class="iconoir-message-text text-primary text-opacity-75"></i>
                     </div>
-                    <h6 class="my-2">الأسئلة الأكثر شيوعا</h6>
+                    <!-- sidebar title -->
+                    <h5 class="my-2 text-muted">الأسئلة الأكثر شيوعا</h5>
                 </div>
-
             </div>
 
-
+            <!-- page content -->
             <div class="col-12 col-lg-9">
 
-                <div class="accordion" id="accordionPanelsStayOpenList">
+                <!-- init accordion -->
+                <div class="accordion" id="accordionPanelsFAQS">
+
+                    <!-- loop of questions -->
+                    <?php for($i = 1; $i <6; $i++)  { ?>
+
+                    <!-- small logic to check the active accordion -->
+                    <?php if($i == 1) { ?>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+
+                        <!-- accordion question -->
+                        <h2 class="accordion-header" id="panelsStayOpen-heading-<?php echo $i ?>">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                aria-controls="panelsStayOpen-collapseOne">
+                                data-bs-target="#panelsStayOpen-collapse-<?php echo $i ?>" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapse-<?php echo $i ?>">
                                 هل يمكنني الحصول على الخصم على الطلبات الكبيرة؟
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                            aria-labelledby="panelsStayOpen-headingOne">
+
+                        <!-- accordion answer -->
+                        <div id="panelsStayOpen-collapse-<?php echo $i ?>" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-heading-<?php echo $i ?>">
                             <div class="accordion-body text-muted">
                                 منصة زد للتسوق هي منصة تسوق عبر الإنترنت تقدم خدماتها للمستخدمين من خلال موقعها
                                 الإلكتروني وتطبيقاتها المتوفرة على الهواتف الذكية والأجهزة اللوحية والحاسب الآلي. وتقدم
@@ -51,89 +62,34 @@
                             </div>
                         </div>
                     </div>
+                    <?php } else { ?>
+
+                    <!-- rest of accordions  -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <h2 class="accordion-header" id="panelsStayOpen-heading-<?php echo $i ?>">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo">
-                                هل يوجد خصم للطلبات الكبيرة؟
+                                data-bs-target="#panelsStayOpen-collapse-<?php echo $i ?>" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse-<?php echo $i ?>">
+                                هل يمكنني الحصول على الخصم على الطلبات الكبيرة؟
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingTwo">
+                        <div id="panelsStayOpen-collapse-<?php echo $i ?>" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading-<?php echo $i ?>">
                             <div class="accordion-body text-muted">
-                                التسوق عبر الإنترنت لا يزال مجرد مبتدأ في العالم العربي. ولكنه يتطور بشكل سريع. ومع ذلك،
-                                لا يزال هناك الكثير من الأشخاص الذين لا يعرفون كيفية التسوق عبر الإنترنت. ولذلك، نحن
-                                نقدم لكم هذا الدليل الشامل للتسوق عبر الإنترنت في العالم العربي. وهذا الدليل يحتوي على
-                                كل ما تحتاجه للتسوق عبر الإنترنت بشكل أمن وسليم. وهذا الدليل يحتوي على كل ما تحتاجه
-                                للتسوق عبر الإنترنت بشكل أمن وسليم. وهذا الدليل يحتوي على كل ما تحتاجه للتسوق عبر
-                                الإنترنت بشكل أمن وسليم. وهذا الدليل يحتوي على كل ما تحتاجه للتسوق عبر الإنترنت بشكل أمن
-                                وسليم. وهذا الدليل يحتوي على كل ما تحتاجه للتسوق عبر الإنترنت بشكل أمن وسليم. وهذا
-                                الدليل يحتوي على كل ما تحتاجه للتسوق عبر الإنترنت بشكل أمن وسليم. وهذا الدليل يحتوي على
-                                كل ما
+                                منصة زد للتسوق هي منصة تسوق عبر الإنترنت تقدم خدماتها للمستخدمين من خلال موقعها
+                                الإلكتروني وتطبيقاتها المتوفرة على الهواتف الذكية والأجهزة اللوحية والحاسب الآلي. وتقدم
+                                منصة زد للتسوق خدماتها للمستخدمين من خلال موقعها الإلكتروني وتطبيقاتها المتوفرة على
+                                الهواتف الذكية والأجهزة اللوحية والحاسب الآلي. وتقدم منصة زد للتسوق خدماتها للمستخدمين
+                                من خلال موقعها الإلكتروني وتطبيقاتها المتوفرة على الهواتف الذكية والأجهزة اللوحية
+                                والحاسب الآلي.
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                كيف يمكنني الحصول على الخصم؟
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingThree">
-                            <div class="accordion-body text-muted">
-                                يمكنك الحصول على الخصم عن طريق الاتصال بنا. يرجى الاتصال بنا للحصول على تفاصيل. يمكنك
-                                الاتصال بنا على الرقم 00966500000000 أو عبر البريد الإلكتروني
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseFour">
-                                هل يمكنني الحصول على الخصم عن طريق الاتصال بنا؟
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingFour">
-                            <div class="accordion-body text-muted">
-                                يمكنك الحصول على الخصم عن طريق الاتصال بنا. يرجى الاتصال بنا للحصول على تفاصيل. يمكنك
-                                الاتصال بنا على الرقم 00966500000000 أو عبر البريد الإلكتروني
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseFive">
-                                هل يمكنني الحصول على الخصم عن طريق الاتصال بنا؟
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingFive">
-                            <div class="accordion-body text-muted">
-                                يمكنك الحصول على الخصم عن طريق الاتصال بنا. يرجى الاتصال بنا للحصول على تفاصيل. يمكنك
-                                الاتصال بنا على الرقم 00966500000000 أو عبر البريد الإلكتروني
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
+                    <?php } ?>
+                    <?php } ?>
+                </div><!-- #init accordion -->
+            </div><!-- #page content -->
         </div>
-
     </div>
-
 </section>
-<!-- End of FAQs -->
+<!-- #FAQs -->

@@ -1,4 +1,6 @@
-var $range = $(".js-range-slider"),
+// Init Ion Range Slider
+
+let $range = $(".js-range-slider"),
   $inputFrom = $(".js-input-from"),
   $inputTo = $(".js-input-to"),
   instance,
@@ -22,36 +24,29 @@ instance = $range.data("ionRangeSlider");
 function updateInputs(data) {
   from = data.from;
   to = data.to;
-
   $inputFrom.prop("value", from);
   $inputTo.prop("value", to);
 }
 
 $inputFrom.on("input", function () {
-  var val = $(this).prop("value");
-
-  // validate
+  let val = $(this).prop("value");
   if (val < min) {
     val = min;
   } else if (val > to) {
     val = to;
   }
-
   instance.update({
     from: val,
   });
 });
 
 $inputTo.on("input", function () {
-  var val = $(this).prop("value");
-
-  // validate
+  let val = $(this).prop("value");
   if (val < from) {
     val = from;
   } else if (val > max) {
     val = max;
   }
-
   instance.update({
     to: val,
   });

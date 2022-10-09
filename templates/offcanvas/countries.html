@@ -1,66 +1,63 @@
-<!-- OffCanvas Cart -->
+<!-- Offcanvas: Shipping & Languages -->
 <div class="offcanvas offcanvas-end border-0 shadow-lg" tabindex="-1" data-bs-scroll="true" id="offcanvasCountries"
     aria-labelledby="offcanvasCountriesLabel">
+
+    <!-- Offcanvas Title -->
     <div class="offcanvas-header bg-light">
         <h6 class="offcanvas-title" id="offcanvasCountriesLabel">
-            <!-- <i class="iconoir-delivery fs-5"></i> -->
             اللغة والشحن
         </h6>
 
-
-
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        <!-- close button -->
         <button type="button" class="btn-none btn-close-rotate p-0" data-bs-dismiss="offcanvas" aria-label="Close">
             <i class="iconoir-cancel iconoir-md"></i>
-        </button>
+        </button> <!-- #close button -->
     </div>
 
-    <!-- Cart Content -->
+    <!-- Offcanvas Content -->
     <div class="offcanvas-body p-0 bg-white">
         <div class="mt-3">
 
-
+            <!-- Widget 01: Language -->
             <div class="flex-shrink-0 px-3">
-
                 <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Select Shipping Countries List">
+                    <select class="form-select" id="floatingSelectLanguage" aria-label="Select Language">
                         <option selected>العربية</option>
                         <option value="1">English</option>
-                        <!-- <option value="2">Français</option>
-                        <option value="3">Español</option> -->
+
+                        <!-- more countries -->
+                        <!--
+                        <option value="2">Français</option>
+                        <option value="3">Español</option>
+                        -->
                     </select>
-                    <label for="floatingSelect"> اللغة الافتراضية</label>
+                    <label for="floatingSelectLanguage"> اللغة الافتراضية</label>
                 </div>
             </div>
 
+            <!-- Widget 02: Countries -->
             <div class="flex-shrink-0 px-3 mt-3">
-
                 <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Select Shipping Countries List">
+                    <select class="form-select" id="floatingSelectCountry" aria-label="Select Country">
                         <option selected>السعودية</option>
                         <option value="1">الكويت</option>
                         <option value="2">الإمارات</option>
                         <option value="3">مصر</option>
                     </select>
-                    <label for="floatingSelect">الشحن إلى</label>
+                    <label for="floatingSelectCountry">الشحن إلى</label>
                 </div>
             </div>
-
-
         </div>
-    </div>
+    </div><!-- #Offcanvas Content -->
 
-
+    <!-- Offcanvas CTA -->
     <div class="px-3 py-3 p-md-3 sticky-bottom bg-light">
         <div class="d-grid gap-2">
-            <!-- <button type="reset" class="btn btn-dark border" data-bs-dismiss="modal">
-            مسح
-        </button> -->
             <button type="button" class="btn btn-primary">
                 <!-- <i class="iconoir-control-slider iconoir-xs"></i> -->
                 حفظ الخيارات
             </button>
         </div>
-    </div>
+    </div> <!-- #Offcanvas CTA -->
 </div>
-<!-- End of OffCanvas Cart -->
+<!-- #Offcanvas: Shipping & Languages -->

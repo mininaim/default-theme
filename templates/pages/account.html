@@ -10,64 +10,46 @@
         </div>
     </div>
 </section>
-<!-- End of Hero  -->
+<!-- #Hero  -->
 
+<!-- Welcome Message  -->
 <section class="py-3 py-md-3 bg-white border-bottom" role="page">
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-between align-items-center">
 
+                <!-- welcome message -->
+                <!-- can add more options or links here -->
                 <ul class="list-group justify-content-start">
                     <li class="list-group-item bg-transparent border-0 px-0 text-muted">
                         <em> مرحبا بك نعيم أشلحي</em>
                     </li>
                 </ul>
+
+                <!-- logout -->
+                <!-- can add more options or links here -->
                 <ul class="list-group list-group-sm list-group-horizontal justify-content-end">
-                    <!-- <li class="list-group-item">
-                        <a href="account.html" class="text-dark">
-                            <i class="iconoir-user-cart fs-5"></i>
-                            <span class="d-none d-md-inline px-1">الملف الشخصي</span>
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="account-addresses.html" class="text-dark">
-                            <i class="iconoir-add-pin-alt fs-5"></i>
-                            <span class="d-none d-md-inline px-1">العناوين</span>
-                        </a>
-                    </li>
-
-                    <li class="list-group-item ">
-                        <a href="account-orders.html" class="text-dark">
-                            <i class="iconoir-consumable fs-5"></i>
-                            <span class="d-none d-md-inline px-1">طلباتي</span>
-                        </a>
-                    </li> -->
-
-                    <!-- logout -->
-
                     <li class="list-group-item animate slideIn border-0">
                         <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#removeAccountModal">
-                            <i class="iconoir-key-alt-remove fs-5"></i>
-                            <span class="d-none d-md-inline px-1">
-                                حذف الحساب
-                            </span>
+                            <i class="iconoir-cancel fs-5"></i>
+                            <span class="d-none d-md-inline px-1">حذف الحساب</span>
                         </a>
                     </li>
                 </ul>
-
-
             </div>
         </div>
     </div>
 </section>
+<!-- #Welcome Message  -->
 
 <!-- Account -->
 <section class="py-4 py-md-4 mb-3 mb-sm-4" role="page">
     <div class="container">
         <div class="row">
             <div class="col">
-
+                <!-- tabs links -->
                 <ul class="nav nav-tabs" id="accountTab" role="tablist">
+                    <!-- account link -->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="account-tab" data-bs-toggle="tab"
                             data-bs-target="#account-tab-pane" type="button" role="tab" aria-controls="account-tab-pane"
@@ -76,6 +58,7 @@
                             <span class="d-none d-md-inline px-1">الملف الشخصي</span>
                         </button>
                     </li>
+                    <!-- account address -->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="address-tab" data-bs-toggle="tab"
                             data-bs-target="#address-tab-pane" type="button" role="tab" aria-controls="address-tab-pane"
@@ -84,301 +67,210 @@
                             <span class="d-none d-md-inline px-1">العناوين</span>
                         </button>
                     </li>
+                    <!-- account orders  -->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders-tab-pane"
                             type="button" role="tab" aria-controls="orders-tab-pane" aria-selected="false">
                             <i class="iconoir-consumable fs-5"></i>
-                            <span class="d-none d-md-inline px-1">طلباتي</span></button>
+                            <span class="d-none d-md-inline px-1">طلباتي</span>
+                        </button>
                     </li>
-
-
-
-
-
-
                 </ul>
+                <!-- tabs content -->
+                <div class="tab-content" id="accountTabContent">
 
+                    <!-- tab account -->
+                    <div class="tab-pane fade show active" id="account-tab-pane" role="tabpanel"
+                        aria-labelledby="account-tab" tabindex="0">
+                        <div class="card border-0 mt-3">
 
+                            <!-- form init -->
+                            <form method="post" action="#">
 
-
-
-            </div>
-
-
-            <div class="tab-content" id="accountTabContent">
-                <div class="tab-pane fade show active" id="account-tab-pane" role="tabpanel"
-                    aria-labelledby="account-tab" tabindex="0">
-                    <div class="card border-0 mt-3">
-                        <form method="post" action="#">
-
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" dir="rtl" id="floatingInputName"
-                                    placeholder="Test Mohamed" value="Test Mohamed">
-                                <label for="floatingInputName">الاسم الكامل</label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control text-start" id="floatingInputEmail"
-                                    placeholder="ayhamkallas@hotmail.com" value="ayhamkallas@hotmail.com">
-                                <label for="floatingInputEmail">البريد الإلكتروني</label>
-                            </div>
-
-
-                            <div class="form-floating mb-3">
-                                <input type="number" class="form-control text-start ps-0" id="floatingInputPhone"
-                                    placeholder="966500000005" value="966500000005" disabled readonly>
-                                <label for="floatingInputPhone"> رقم الهاتف</label>
-                            </div>
-
-                            <div
-                                class="mb-3 border rounded p-3 d-flex flex-wrap justify-content-start justify-content-sm-between align-items-center">
-                                <!-- <div
-                                      class="form-check form-switch d-flex flex-row-reverse justify-content-between align-items-center ps-0">
-                                      <input class="form-check-input" type="checkbox" role="switch"
-                                          id="flexSwitchCheckDefaultMail">
-                                      <label class="form-check-label text-dark" for="flexSwitchCheckDefaultMail">
-                                          <i class="iconoir-mail-in fs-5"></i>
-                                          الاشتراك في النشرة الإخبارية</label>
-                                  </div> -->
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="1"
-                                        id="flexSwitchCheckDefaultMail" checked>
-                                    <label class="form-check-label" for="flexSwitchCheckDefaultMail">
-                                        الاشتراك في النشرة الإخبارية </label>
+                                <!-- input name -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" dir="rtl" id="floatingInputName"
+                                        placeholder="Test Mohamed" value="Test Mohamed">
+                                    <label for="floatingInputName">الاسم الكامل</label>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">
+                                <!-- input email -->
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control text-start" id="floatingInputEmail"
+                                        placeholder="ayhamkallas@hotmail.com" value="ayhamkallas@hotmail.com">
+                                    <label for="floatingInputEmail">البريد الإلكتروني</label>
+                                </div>
 
-                                    <i class="iconoir-design-pencil fs-5"></i>
-                                    <span class="px-1"> حفظ التغييرات</span>
-                                </button>
+                                <!-- input number -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control text-start" id="floatingInputPhone"
+                                        placeholder="966500000005" value="966500000005" disabled readonly>
+                                    <label for="floatingInputPhone"> رقم الهاتف</label>
+                                </div>
 
-
-                            </div>
-
-
-
-                        </form>
-
-
-                    </div>
-
-                    <div class="card bg-primary text-dark bg-opacity-10 border-0">
-                        <h5
-                            class="card-header py-0 bg-transparent border-bottom border-2 border-primary border-opacity-25">
-                            <img src="media/public/store/mazeed-logo.svg" alt="Mazeed Logo" class="img-fluid"
-                                style="width:100px">
-                        </h5>
-                        <div class="card-body">
-
-                            <p class="card-text">بإمكانك متابعة حالة طلبك ومعرفة آخر التحديثات من خلال تطبيق مزيد
-                            </p>
-                            <a href="#" class="btn btn-primary">
-                                <i class="iconoir-download-circled-outline fs-5"></i>
-                                <span class="px-1">تحميل التطبيق</span>
-
-
-                            </a>
+                                <!-- form options -->
+                                <div
+                                    class="mb-3 border rounded p-3 d-flex flex-wrap justify-content-start justify-content-sm-between align-items-center">
+                                    <!-- newsletter checkbox  -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="1"
+                                            id="flexSwitchCheckDefaultMail" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckDefaultMail">
+                                            الاشتراك في النشرة الإخبارية
+                                        </label>
+                                    </div>
+                                    <!-- save button   -->
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="iconoir-design-pencil fs-5"></i>
+                                        <span class="px-1"> حفظ التغييرات</span>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
+
+                        <!-- mazeed integration   -->
+                        <div class="card bg-primary text-dark bg-opacity-10 border-0">
+                            <h5
+                                class="card-header py-0 bg-transparent border-bottom border-2 border-primary border-opacity-25">
+                                <img src="media/public/store/mazeed-logo.svg" alt="Mazeed Logo" class="img-fluid"
+                                    style="width:100px">
+                            </h5>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    بإمكانك متابعة حالة طلبك ومعرفة آخر التحديثات من خلال تطبيق مزيد
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="iconoir-download-circled-outline fs-5"></i> <span class="px-1">تحميل
+                                        التطبيق</span>
+                                </a>
+                            </div>
+                        </div> <!-- #mazeed integration   -->
                     </div>
-                </div>
-                <div class="tab-pane fade" id="address-tab-pane" role="tabpanel" aria-labelledby="address-tab"
-                    tabindex="0">
 
+                    <!-- tab address -->
+                    <div class="tab-pane fade" id="address-tab-pane" role="tabpanel" aria-labelledby="address-tab"
+                        tabindex="0">
+                        <div class="card border-0 mt-3">
 
-                    <div class="card border-0 mt-3">
+                            <!-- can add more details here -->
+                            <div class="card-body p-0">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                                    <!-- loop address -->
+                                    <?php for($i = 1; $i <7; $i++)  { ?>
+                                    <div class="col">
+                                        <div
+                                            class="card card-product border position-relative flex-row align-items-start tools">
+                                            <div class="card-body">
+                                                <h6 class="card-title">عنوان الشحن الافتراضي</h6>
+                                                <p class="card-text">الرياض - العليا - الشارقة - الدور الثاني</p>
 
-                        <!-- <ul class="list-group list-group-flush" hidden>
-                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-                                    <div class="ms-2 me-auto">
-                                        <h5 class="fw-bold">عنوان الشحن الأساسي</h5>
-                                        <div class="fs-6">الإمارات العربية المتحدة</div>
-                                        <span class="text-muted">الرياض - العليا - الشارقة - الدور الثاني</span>
-                                    </div>
-                                    <div class="d-flex gap-2">
-                                        <a href="#" class="btn btn-primary btn-sm">
-                                            <i class="iconoir-edit fs-5"></i>
-                                            <span class="px-1">تعديل</span>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-sm">
-                                            <i class="iconoir-trash fs-5"></i>
-                                            <span class="px-1">حذف</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-                                    <div class="ms-2 me-auto">
-                                        <h5 class="fw-bold">عنوان الشحن الثاني</h5>
-                                        <div class="fs-6">الإمارات العربية المتحدة</div>
-                                        <span class="text-muted">الرياض - العليا - الشارقة - الدور الثاني</span>
-                                    </div>
+                                                <!-- edit icon -->
+                                                <a href="#" class="btn btn-primary">
+                                                    <i class="iconoir-edit fs-5"></i>
+                                                    <span class="px-1">تعديل</span>
+                                                </a>
+                                            </div>
 
-
-
-                                    <div class="d-flex gap-2">
-                                        <a href="#" class="btn btn-primary btn-sm">
-                                            <i class="iconoir-edit fs-5"></i>
-                                            <span class="px-1">تعديل</span>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-sm">
-                                            <i class="iconoir-trash fs-5"></i>
-                                            <span class="px-1">حذف</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-                                    <div class="ms-2 me-auto">
-                                        <h5 class="fw-bold">عنوان الشحن الثالث</h5>
-                                        <div class="fs-6">الإمارات العربية المتحدة</div>
-                                        <span class="text-muted">الرياض - العليا - الشارقة - الدور الثاني</span>
-                                    </div>
-
-
-
-                                    <div class="d-flex gap-2">
-                                        <a href="#" class="btn btn-primary btn-sm">
-                                            <i class="iconoir-edit fs-5"></i>
-                                            <span class="px-1">تعديل</span>
-                                        </a>
-                                        <a href="#" class="btn btn-danger btn-sm">
-                                            <i class="iconoir-trash fs-5"></i>
-                                            <span class="px-1">حذف</span>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul> -->
-
-
-                        <div class="card-body p-0">
-                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
-
-                                <?php for($i = 1; $i <7; $i++)  { ?>
-                                <div class="col">
-                                    <div
-                                        class="card card-product border position-relative flex-row align-items-start tools">
-                                        <div class="card-body">
-                                            <h5 class="card-title">عنوان الشحن الافتراضي</h5>
-                                            <p class="card-text">الرياض - العليا - الشارقة - الدور الثاني</p>
-                                            <a href="#" class="btn btn-primary">
-                                                <i class="iconoir-edit fs-5"></i>
-                                                <span class="px-1">تعديل</span>
+                                            <!-- delete icon -->
+                                            <a href="#"
+                                                class="link-primary btn-sm top-0 start-0 mt-3 me-3 grow tools-hide"
+                                                data-bs-placement="left" data-bs-html="true" data-bs-toggle="tooltip"
+                                                data-bs-title="<small>حذف</small>">
+                                                <i class="iconoir-trash fs-5"></i>
+                                                <span class="px-1 d-none">حذف</span>
                                             </a>
                                         </div>
-                                        <a href="#" class="link-primary btn-sm top-0 start-0 mt-3 me-3 grow tools-hide"
-                                            data-bs-placement="left" data-bs-html="true" data-bs-toggle="tooltip"
-                                            data-bs-title="<small>حذف</small>">
-                                            <i class="iconoir-remove-empty fs-5"></i>
-                                            <span class="px-1 d-none">حذف</span>
-                                        </a>
+                                    </div>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tab orders -->
+                    <div class="tab-pane fade" id="orders-tab-pane" role="tabpanel" aria-labelledby="orders-tab"
+                        tabindex="0">
+                        <div class="card border-0 mt-3">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                                <!-- loop of orders -->
+                                <?php for($i = 1; $i <8; $i++)  { ?>
+                                <div class="col">
+                                    <div class="card card-product">
+                                        <!-- order number -->
+                                        <div class="card-header d-flex justify-content-between bg-transparent">
+                                            <span>رقم الطلب</span>
+                                            <span
+                                                class="badge bg-primary text-primary text-bg-primary bg-opacity-10 rounded-pill user-select-all">
+                                                #16531575
+                                                <span class="btn-clipboard" data-clipboard-text="16531575">
+                                                    <i class="iconoir-copy" title="نسخ">
+                                                    </i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <!-- order details -->
+                                        <div class="card-body">
+                                            <h4 class="card-title text-primary">
+                                                398.25 <sup class="fs-7">SAR</sup>
+                                            </h4>
+                                            <p class="card-text small text-muted">
+                                                2022-09-26 03:16:02 م
+                                            </p>
+                                        </div>
+
+                                        <!-- order status -->
+                                        <div
+                                            class="card-footer bg-transparent small bg-primary text-primary text-bg-primary bg-opacity-10">
+                                            <i class="iconoir-delivery"></i>
+                                            <span class="px-1"> تم التوصيل</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <?php } ?>
                             </div>
-
                         </div>
-
-
                     </div>
-
                 </div>
-                <div class="tab-pane fade" id="orders-tab-pane" role="tabpanel" aria-labelledby="orders-tab"
-                    tabindex="0">
-
-                    <div class="card border-0 mt-3">
-
-
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-
-                            <?php for($i = 1; $i <8; $i++)  { ?>
-                            <div class="col">
-                                <div class="card card-product">
-                                    <div class="card-header d-flex justify-content-between bg-transparent">
-
-                                        <span>رقم الطلب</span>
-
-                                        <span
-                                            class="badge bg-primary text-primary text-bg-primary bg-opacity-10 rounded-pill user-select-all">
-                                            #16531575
-                                            <span class="btn-clipboard" data-clipboard-text="16531575">
-
-                                                <i class="iconoir-copy" title="نسخ">
-
-                                                </i></span>
-                                        </span>
-
-
-
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title text-primary">
-                                            398.25 <sup class="fs-7">SAR</sup>
-                                        </h4>
-                                        <p class="card-text small text-muted">
-                                            2022-09-26 03:16:02 م
-                                        </p>
-
-                                    </div>
-                                    <div
-                                        class="card-footer bg-transparent small bg-primary text-primary text-bg-primary bg-opacity-10">
-                                        <i class="iconoir-delivery"></i>
-                                        <span class="px-1">
-                                            تم التوصيل
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <?php } ?>
-                        </div>
-
-                    </div>
-
-                </div>
-
             </div>
-
-
-
-
         </div>
     </div>
-    </div>
 </section>
-<!-- End of Account -->
+<!--#Account -->
 
 
-<!-- add review form -->
+<!-- Remove Account Modal -->
 <div class="modal fade" id="removeAccountModal" tabindex="-1" aria-labelledby="removeAccountModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+
+            <!-- modal header -->
             <div class="modal-header">
+                <!-- modal title -->
                 <h6 class="modal-title" id="removeAccountModalLabel">
                     <i class="iconoir-message-alert fs-5"></i>
-                    <span class="d-none d-md-inline px-1">
-                        تنبيه
-                    </span>
+                    <span class="d-none d-md-inline px-1">تنبيه</span>
                 </h6>
 
-
+                <!-- close button -->
                 <button type="button" class="btn-none btn-close-rotate p-0" data-bs-dismiss="modal" aria-label="Close">
                     <i class="iconoir-cancel iconoir-md"></i>
                 </button>
-
             </div>
+
+            <!-- modal body -->
             <div class="modal-body">
 
-                <div class="card p-3 bg-light text-dark">
+                <!-- message of deletion -->
+                <div class="card p-3 text-damutedrk">
                     <i class="iconoir-bin-full fs-1"></i>
-                    <span class="px-1">
-                        هل أنت متأكد في الاستمرار في حذف الحساب؟
-
-                    </span>
-
+                    <span class="px-1">هل أنت متأكد في الاستمرار في حذف الحساب؟</h6>
                 </div>
 
-                <div class="list-group list-group-vertical text-start mt-3">
+                <!-- list of call to actions  -->
+                <div class="list-group list-group-sm list-group-vertical text-start mt-3">
                     <a href="#"
                         class="list-group-item list-group-item-action link-secondary d-flex justify-content-between"
                         aria-current="true">
@@ -386,58 +278,43 @@
                             <i class="iconoir-ecology-book fs-5"></i>
                             <span class="px-1"> الأسئلة الشائعة</span>
                         </span>
-
-                        <i class="iconoir-nav-arrow-left fs-5"></i>
+                        <i class="iconoir-nav-arrow-left fs-4"></i>
                     </a>
                     <a href="#"
                         class="list-group-item list-group-item-action link-secondary d-flex justify-content-between">
                         <span>
-
                             <i class="iconoir-send-mail fs-5"></i>
                             <span class="px-1"> تواصل معنا</span>
                         </span>
-                        <i class="iconoir-nav-arrow-left fs-5"></i>
+                        <i class="iconoir-nav-arrow-left fs-4"></i>
                     </a>
                     <a href="#"
                         class="list-group-item list-group-item-action link-secondary d-flex justify-content-between">
                         <span>
-
                             <i class="iconoir-ev-plug-error fs-5"></i>
                             <span class="px-1"> التبليغ عن مشكلة</span>
                         </span>
-                        <i class="iconoir-nav-arrow-left fs-5"></i>
+                        <i class="iconoir-nav-arrow-left fs-4"></i>
                     </a>
-                    <!-- <a href="#" class="list-group-item list-group-item-action">
-                            ماذا سيحدث بعد حذف الحساب؟
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            هل سأفقد الطلبات السابقة؟
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            هل سأفقد العناوين السابقة؟
-                        </a>
-                        <a class="list-group-item list-group-item-action disabled">
-                            هل سأفقد البيانات الشخصية؟
-                        </a> -->
                 </div>
-
-
             </div>
-            <div class="modal-footer">
-                <div class="d-flex gap-2">
 
-                    <button type="button" class="btn btn-outline-dark btn-sm" data-bs-dismiss="modal">
+            <!-- modal footer -->
+            <div class="modal-footer bg-light">
+                <div class="d-flex justify-content-start">
+                    <button type="button" class="btn btn-link link-danger text-decoration-none btn-sm">
                         <i class="iconoir-cancel fs-5"></i>
+                        <span class="px-1"> حذف</span>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">
+
+                        <i class="iconoir-check fs-5"></i>
                         <span class="px-1">أتراجع</span>
                     </button>
 
-                    <button type="button" class="btn btn-danger btn-sm">
-                        <i class="iconoir-check fs-5"></i>
-                        <span class="px-1"> نعم أنا موافق </span>
-                    </button>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
+<!-- #Remove Account Modal -->

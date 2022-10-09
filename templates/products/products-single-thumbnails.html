@@ -4,35 +4,46 @@
         <div class="row d-flex align-items-start">
 
             <!-- product sidebar -->
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 overflow-auto position-relative ltr mb-3">
                 <!-- card -->
                 <div class="card border-0">
                     <!-- main picture -->
-                    <!-- <div class="zoom" onmousemove="zoom(event)"
-                        style="background-image: url(https://media.zid.store/cdn-cgi/image/f=auto/https://media.zid.store/cada0eba-1b92-45dd-92d2-486b3ba9674c/2f12523c-9012-4235-8438-c98f53cc621b.jpg)">
-                        <img src="https://media.zid.store/cdn-cgi/image/f=auto/https://media.zid.store/cada0eba-1b92-45dd-92d2-486b3ba9674c/2f12523c-9012-4235-8438-c98f53cc621b.jpg"
-                            class="card-img-top rounded img-fluid mx-auto mw-100 mh-100" alt=""
-                            style="object-fit: cover;">
-                    </div> -->
                     <!-- #todo: test ratio (ration ratio-4x3 and ration ratio-1x1) -->
-                    <div class="zoom ratio ratio-4x3" onmousemove="zoom(event)"
-                        style="background-image: url(media/test/03.jpg)">
-                        <img src="media/test/03.jpg" class="card-img-top rounded img-fluid mx-auto mw-100 mh-100" alt=""
-                            style="object-fit: cover;">
+                    <div class="product" id="product">
+                        <?php for($i = 1; $i <10; $i++)  { ?>
+                        <div class="zoom" onmousemove="zoom(event)"
+                            style="background-image: url(media/cdn/product-single/01.jpg)">
+                            <img src="media/cdn/product-single/01.jpg" class="img-fluid mx-auto mw-100 mh-100" alt=""
+                                style="object-fit: cover;">
+                        </div>
+                        <?php } ?>
+                    </div>
+
+                    <!-- controls -->
+                    <div class="w-100 controls d-flex justify-content-between my-3 position-absolute top-50 start-50 translate-middle"
+                        id="customize-controls">
+
+                        <button class="btn btn-outline-primary me-3" id="prev">
+                            <i class="iconoir-nav-arrow-left fs-3"></i>
+                        </button>
+                        <button class="btn btn-outline-primary ms-3" id="next">
+                            <i class="iconoir-nav-arrow-right fs-3"></i>
+                        </button>
+
+
                     </div>
                 </div>
-                <!-- #todo: implement thumbnails slider -->
-                <div class="card mt-2 border-0">
-                    <div class="product-tools">
-                        <div class="d-flex justify-content-start gap-2" id="productThumbnails">
-                            <div class="col-3">
-                                <div class="border">
-                                    <img class="rounded"
-                                        src="https://freshcart.codescandy.com/assets/images/products/product-single-img-1.jpg"
-                                        alt="" style="width:130px">
-                                </div>
+
+                <!-- product tools -->
+                <div class="product-tools mt-2" hidden>
+                    <div class="thumbnails row g-1 my-2" id="productThumbnails">
+                        <?php for($i = 1; $i <10; $i++)  { ?>
+                        <div class="col-3 mt-0">
+                            <div class="thumbnails-img">
+                                <img src="media/cdn/product-single/01.jpg" alt="" class="mx-auto d-block">
                             </div>
                         </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div><!-- #product sidebar -->

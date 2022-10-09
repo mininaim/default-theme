@@ -1,14 +1,17 @@
 <!-- Demos Purpose Only -->
-<div class="btn-group dropup position-fixed" style="z-index: 9999 !important">
+<!-- To be removed in Production -->
+<div class="btn-group dropup position-fixed z-index-higher">
     <button type="button"
         class="btn btn-link bg-primary text-primary bg-opacity-10 rounded-1 @dropdown-toggle mb-3 ms-3 position-fixed bottom-0 start-0"
         data-bs-toggle="dropdown" aria-expanded="false">
         <i class="iconoir-playlist-add"></i>
     </button>
     <ul class="dropdown-menu">
-
-        <li><a class="dropdown-item" href="index.php">
-                الرئيسية</a></li>
+        <li>
+            <a class="dropdown-item" href="index.php">
+                الرئيسية
+            </a>
+        </li>
         <li>
             <hr class="dropdown-divider">
         </li>
@@ -19,44 +22,29 @@
         </li>
         <li><a class="dropdown-item" href="?page=products">المنتجات</a></li>
         <li><a class="dropdown-item" href="?page=product">صفحة منتج</a></li>
-
         <li>
             <hr class="dropdown-divider">
-
+        </li>
         <li><a class="dropdown-item" href="?page=cart-view">سلة المشتريات</a></li>
         <li><a class="dropdown-item" href="?page=cart-empty">السلة فارغة</a></li>
-
         <li>
             <hr class="dropdown-divider">
         </li>
         <li><a class="dropdown-item" href="?page=404">صفحة 404</a></li>
         <li><a class="dropdown-item" href="?page=search-results">نتائج البحث</a></li>
         <li><a class="dropdown-item" href="?page=search-no-results">صفحة لا يوجد نتائج</a></li>
-
-
         <li>
             <hr class="dropdown-divider">
         </li>
         <li><a class="dropdown-item" href="?page=shipping">خيارات الدفع والتوصيل</a></li>
         <li><a class="dropdown-item" href="?page=faqs">الأسئلة الشائعة</a></li>
         <li><a class="dropdown-item" href="?page=page-sample">صفحة عامة</a></li>
-
-
-
-        </li>
-
-
-        <!-- <li><a class="dropdown-item disabled" href="?page=product-2">صفحة منتج ٢</a></li>
-        <li><a class="dropdown-item disabled" href="?page=product-3">صفحة منتج ٣</a></li>
-        <li><a class="dropdown-item disabled" href="?page=product-4">صفحة منتج ٤</a></li> -->
-
-
         <li>
             <hr class="dropdown-divider">
         </li>
         <li><a class="dropdown-item" href="?page=account">حسابي</a></li>
     </ul>
-</div>
+</div><!-- Demos Purpose Only -->
 
 <!-- Bootstrap Bundle & Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -64,8 +52,10 @@
     </script>
 
 <!-- jQuery Dependecies -->
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
 <!-- JS Plugins -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -80,14 +70,15 @@
 <script src="https://cdn.jsdelivr.net/npm/rater-js@1.0.1/index.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
 <!-- App & Rest of JS Files -->
+<!-- To Bundle all files into one file, use the following command: see readme.md -->
 <script src="assets/js/app.js"></script>
-<script src="assets/js/swipers.js"></script>
+<script defer src="assets/js/swipers.js"></script>
 <script src="assets/js/ion.rangeSlider-custom.js"></script>
-
-<!-- Labs Demos -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+<script src="assets/js/cookies.js"></script>
+<script src="assets/js/tiny-slider-custom.js"></script>
 
 </body>
 

@@ -1,15 +1,17 @@
 <!-- Best Seller -->
-<section class="p-5 border-top" role="best-seller">
+<section class="py-5 p-sm-5 border-top" role="best-seller">
     <div class="container">
 
         <!-- Section Title -->
-        <div class="d-flex align-items-between align-items-center mb-md-2 mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-md-2 mb-3">
             <div class="flex-grow-1">
                 <h5 class="p-0">
                     <!-- <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> -->
                     الأكثر مبيعا
                 </h5>
             </div>
+
+            <!-- Swipe Controls -->
             <div class="flex-shrink-0 position-relative">
                 <div
                     class="swiper-button-next swiper-button-next-sm swiper-button-next-best-seller link-secondary bg-light rounded-pill custom-link custom-link-7">
@@ -18,18 +20,17 @@
                     class="swiper-button-prev swiper-button-prev-sm swiper-button-prev-best-seller link-secondary bg-light rounded-pill custom-link custom-link-7">
                 </div>
             </div>
-        </div>
+        </div> <!-- #Section Title -->
 
-
-
-
-        <!-- Products Inner -->
+        <!-- Products Swiper -->
         <div class="swiper besetSellerSwiper">
             <div class="swiper-wrapper">
 
+                <!-- Loop of Products -->
                 <?php for($i = 1; $i < 5; $i++)  { ?>
-
                 <div class="swiper-slide card card-product shadow-sm border h-100">
+
+                    <!-- Product Image -->
                     <a href="./product" class="d-inline-block @overflow-hidden">
                         <img src="media/cdn/best-seller/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
                     </a>
@@ -44,15 +45,13 @@
                         <!-- Product Caption -->
                         <p class="card-text text-dark mb-0">
                             <span class="fs-7 text-primary">
-
                                 <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
                                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="currentColor"></rect>
                                 </svg>
-
-                                متوفر بعدة خيارات</span>
+                                متوفر بعدة خيارات
+                            </span>
                         </p>
-
 
                         <!-- Product Price -->
                         <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
@@ -67,36 +66,28 @@
                                 للسلة
                             </button>
                         </div>
-
-
                     </div>
-
                 </div>
 
                 <?php } ?>
+                <!-- #loop of products -->
             </div>
-
-            <!-- <div class="swiper-pagination"></div> -->
         </div>
-        <!-- End of Products Inner -->
+        <!-- #Products Swiper -->
 
         <!-- Link to See All -->
-        <div class="d-flex">
+        <div class="d-flex mt-3">
             <div class="flex-grow-1">
                 <!-- Any data or summary here -->
+                <!-- like number of products or messages -->
             </div>
-            <!-- <div class="flex-shrink-0">
-            <a href="#" class="btn btn-primary" title=""> 
-                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
-            </a>
-        </div> -->
-            <!-- <div class="flex-shrink-0">
-        <a href="#" class="custom-link custom-link-2" title="">
-          تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
-        </a>
-      </div> -->
-        </div>
+            <div class="flex-shrink-0">
+                <a href="#" class="custom-link custom-link-7" title="">
+                    تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
+                </a>
+            </div>
+        </div><!-- #Link to See All -->
 
     </div>
 </section>
-<!-- End of Best Seller -->
+<!-- #Best Seller -->

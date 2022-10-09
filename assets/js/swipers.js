@@ -47,18 +47,19 @@ const swiper2 = new Swiper(".featuredSwiper", {
   lazy: true,
   direction: "horizontal",
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 0,
+  slidesPerView: 2,
+  spaceBetween: 30,
   centeredSlides: true,
   freeMode: true,
   keyboard: {
     enabled: true,
   },
   breakpoints: {
+    // example of centered swiper
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
-      centeredSlides: false,
+      centeredSlides: true,
     },
     768: {
       slidesPerView: 3,

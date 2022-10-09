@@ -1,15 +1,16 @@
 <!-- Featured -->
-<section class="p-5 border-top" role="featured">
+<section class="py-5 p-sm-5 border-top" role="featured">
     <div class="container">
 
         <!-- Section Title -->
-        <div class="d-flex align-items-between align-items-center mb-md-2 mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-md-2 mb-3">
             <div class="flex-grow-1">
                 <h5 class="p-0">
                     <!-- <span class="px-2"><i class="iconoir-bookmark-circled"></i></span> -->
                     منتجات مميزة
                 </h5>
             </div>
+            <!-- Swiper Controls -->
             <div class="flex-shrink-0 position-relative">
                 <div
                     class="swiper-button-next swiper-button-next-sm swiper-button-next-featured link-secondary bg-light rounded-pill custom-link custom-link-7">
@@ -17,26 +18,31 @@
                 <div
                     class="swiper-button-prev swiper-button-prev-sm swiper-button-prev-featured link-secondary bg-light rounded-pill custom-link custom-link-7">
                 </div>
-            </div>
-        </div>
+            </div> <!-- #Swiper Controls -->
+        </div> <!-- #Section Title -->
 
-        <!-- Products Inner -->
+        <!-- Products List -->
         <div class="swiper featuredSwiper">
             <div class="swiper-wrapper">
 
+                <!-- Loop of Products -->
                 <?php for($i = 1; $i < 5; $i++)  { ?>
 
-                <!-- the ideal products list that should be cloned -->
+                <!-- NOTE: The ideal products list that should be cloned -->
                 <div class="swiper-slide card card-product shadow-sm border h-100 position-relative">
+
+                    <!-- Product Image -->
                     <a href="./product" class="d-inline-block @overflow-hidden">
                         <img src="media/cdn/featured/img-<?php echo $i ?>.jpg" alt="" class="card-img-top">
-                    </a>
+                    </a> <!-- #Product Image -->
 
+                    <!-- Product Badge -->
                     <div class="position-absolute top-0 start-0 badge text-bg-primary mt-1 ms-1 px-2 py-1 small">
                         <span class="small"> <span class="px-1"><i class="iconoir-medal"></i></span> مميز</span>
-                    </div>
+                    </div> <!-- #Product Badge -->
 
                     <div class="card-body">
+
                         <!-- Product Title -->
                         <h6 class="card-title py-2 lh-base">
                             <a href="./" title="" class="link-dark text-decoration-none">
@@ -46,15 +52,15 @@
                         <!-- Product Caption -->
                         <p class="card-text text-dark mb-0">
                             <span class="fs-7 text-primary">
-
                                 <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
                                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="currentColor"></rect>
                                 </svg>
-
-                                متوفر بعدة خيارات</span>
+                                متوفر بعدة خيارات
+                            </span>
                         </p>
-                        <!-- rating -->
+
+                        <!-- Product Rating -->
                         <div class="text-primary my-2">
                             <small>
                                 <i class="bi bi-star-fill"></i>
@@ -64,6 +70,7 @@
                                 <i class="bi bi-star"></i></small>
                             <span class="text-muted small">4.5</span>
                         </div>
+
                         <!-- Product Price -->
                         <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
                             <div class="text-start">
@@ -75,11 +82,11 @@
 
                         <!-- Add to Cart -->
                         <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
-
                             <button type="button" class="btn btn-primary">
                                 <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
                                 للسلة
                             </button>
+                            <!-- product is out of stock -->
                             <!-- <button type="button" class="btn btn-primary" disabled>
                                 <span class="px-2"><i class="iconoir-info-empty"></i></span> نفذت
                                 الكمية
@@ -87,31 +94,11 @@
                         </div>
                     </div>
                 </div>
-
                 <?php } ?>
+                <!-- #Loop of Products -->
             </div>
-
-            <!-- <div class="swiper-pagination"></div> -->
         </div>
-        <!-- End of Products Inner -->
-
-        <!-- Link to See All -->
-        <div class="d-flex">
-            <div class="flex-grow-1">
-                <!-- Any data or summary here -->
-            </div>
-            <!-- <div class="flex-shrink-0">
-            <a href="#" class="btn btn-primary" title=""> 
-                تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
-            </a>
-        </div> -->
-            <!-- <div class="flex-shrink-0">
-        <a href="#" class="custom-link custom-link-2" title="">
-          تصفح الكل <span class="px-2"><i data-feather="arrow-left" class="feather-xs"></i></span>
-        </a>
-      </div> -->
-        </div>
-
+        <!-- #Products List -->
     </div>
 </section>
-<!-- End of Featured -->
+<!-- #Featured -->

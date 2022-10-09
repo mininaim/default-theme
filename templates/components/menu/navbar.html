@@ -1,38 +1,30 @@
-<!-- Top Navigation -->
-<nav class="navbar navbar-expand-lg py-2 navbar-sticky" role="navbar">
-  <div class="container-fluid">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg py-2 navbar-sticky" role="navbar" id="navbar">
+  <div class="container">
 
     <!-- Logo -->
-    <a class="navbar-brand ps-3 order-1 order-lg-0" href="./" title="المتجر الإفتراضي">
-      <!-- <img src="assets/img/store-logo.png" alt="المتجر الإفتراضي" style="width:80px"> -->
+    <a class="navbar-brand ps-0 order-1 order-lg-0" href="./" title="المتجر الإفتراضي">
       <img
         src="https://media.zid.store/cdn-cgi/image/h=220,q=100,f=auto/https://media.zid.store/cada0eba-1b92-45dd-92d2-486b3ba9674c/54d3472f-9540-4379-b96c-83f5e46237b5-200x.png"
         alt="" style="width:50px">
-
+      <!-- Store Title -->
       <!-- <span class="text-dark px-2">متجر افتراضي</span> -->
-    </a>
+    </a> <!-- #Logo -->
 
-    <!-- Toggle for Mobile -->
-    <!-- <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-
-
+    <!-- Open Menu in Mobile -->
     <a class="d-block d-lg-none nav-link link-dark position-relative order-0" title="قائمة التصفح"
       data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" href="#offcanvasMenu">
       <i class="iconoir-menu iconoir-md"></i>
-    </a>
+    </a> <!-- #Open Menu in Mobile -->
 
-
+    <!-- Open Cart in Mobile -->
     <a class="me-4 d-block d-lg-none nav-link link-dark position-relative order-2" title="سلة التسوق"
       data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" href="#offcanvasCart">
       <i class="iconoir-cart iconoir-md"></i>
       <span class="position-absolute top-0 start-100 translate-middle-y badge rounded-pill bg-primary">
         6 <span class="visually-hidden">6 منتجات</span>
       </span>
-    </a>
+    </a> <!-- #Open Cart in Mobile -->
 
 
     <!-- Menu Links -->
@@ -43,97 +35,62 @@
         <input class="form-control form-control-no-focus ms-2 rounded-0 border-0" type="search"
           placeholder="ابحث في المتجر" aria-label="Search">
         <button class="btn btn-primary border-0 rounded-0 rounded-end" type="submit">
-          <i data-feather="search"></i>
+          <i class="iconoir-search fs-5"></i>
         </button>
       </form>
-      <!-- End of Search Form -->
+      <!-- #Search Form -->
 
-      <ul class="navbar-nav mb-2 mb-lg-0 me-3">
-        <!--        
-        <li class="nav-item dropdown px-2">
-          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-            title="تغيير اللغة">
-            <i data-feather="globe"></i> <span class="visually-hidden">اللغة</span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0">
-            <li><a class="dropdown-item disabled py-2" href="#" title="">العربية</a></li>
-            <li><a class="dropdown-item py-2" href="#" title="">English</a></li>
-          </ul>
-        </li>  -->
-        <!-- <li class="nav-item dropdown px-1">
-          <a class="nav-link @dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-            title="الشحن">
-            <i class="iconoir-delivery iconoir-md" data-bs-placement="bottom" data-bs-html="true"
-              data-bs-toggle="tooltip" data-bs-title="<small>دولة الشحن</small>"></i> <span
-              class="px-1 visually-hidden">الشحن</span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-en shadow-lg border-0 rounded-0 zindex-fixed animate slideIn">
-            <li>
-              <h6 class="dropdown-header">الشحن إلى</h6>
-            </li>
-            <li><a class="dropdown-item py-2" href="#" title="">مصر</a></li>
-            <li><a class="dropdown-item py-2 active" href="#" title="">
+      <ul class="navbar-nav mb-2 mb-lg-0 me-0">
 
-                المملكة العربية السعودية <span class="px-2"><i class="iconoir-check"></i></span> </a></li>
-            <li><a class="dropdown-item py-2" href="#" title="">سلطة عمان</a></li>
-            <li><a class="dropdown-item py-2" href="#" title="">الإمارات العربية المتحدة</a></li>
-          </ul>
-        </li> -->
-        <!-- login link -->
+        <!-- Login link -->
         <li class="nav-item px-1">
           <a class="nav-link link-dark" href="#">
             <i class="iconoir-log-in iconoir-md" data-bs-placement="bottom" data-bs-html="true" data-bs-toggle="tooltip"
               data-bs-title="<small>تسجيل دخول</small>"></i> <span class="px-1 visually-hidden">تسجيل دخول</span>
           </a>
-        </li>
+        </li> <!-- #Login link -->
 
-        <!-- account link -->
-
-        <!-- <li class="vr mx-2"></li>
-        <li class="nav-item px-1">
-          <a class="nav-link" href="#">
+        <!-- My Account link -->
+        <!-- <li class="nav-item px-1">
+          <a class="nav-link link-dark" href="#">
             <i class="iconoir-user-circle-alt iconoir-md" data-bs-placement="bottom" data-bs-html="true"
               data-bs-toggle="tooltip" data-bs-title="<small>حسابي</small>"></i> <span
               class="px-1 visually-hidden">حسابي</span>
           </a>
         </li> -->
+        <!--# My Account link -->
 
-
-
-
-
-
-        <li class="vr mx-2"></li>
+        <!-- Shipping & Language link -->
         <li class="nav-item px-1">
           <a class="nav-link link-dark position-relative" title="دولة الشحن" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCountries" aria-controls="offcanvasCountries" href="#">
             <i class="iconoir-language iconoir-md" data-bs-placement="bottom" data-bs-html="true"
               data-bs-toggle="tooltip" data-bs-title="<small>اللغة والشحن</small>"></i>
-
           </a>
+        </li> <!-- #Shipping & Language link -->
 
-        </li>
+        <!-- to add a Separator -->
+        <!-- <li class="vr mx-2"></li> -->
 
-
-
-        <li class="vr mx-2"></li>
-        <!-- Anchor to open the OffCanvas -->
-        <li class="nav-item px-1">
-          <a class="nav-link link-dark position-relative" title="سلة التسوق" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" href="#">
-            <i class="iconoir-cart iconoir-md" data-bs-placement="bottom" data-bs-html="true" data-bs-toggle="tooltip"
-              data-bs-title="<small>سلة المشتريات</small>"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-primary">
-              6 <span class="visually-hidden">6 منتجات</span>
-            </span>
+        <!-- Cart link -->
+        <li class="nav-item ps-1">
+          <a class="nav-link link-dark" title="سلة التسوق" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+            aria-controls="offcanvasCart" href="#">
+            <i class="iconoir-cart iconoir-md position-relative" data-bs-placement="bottom" data-bs-html="true"
+              data-bs-toggle="tooltip" data-bs-title="<small>سلة المشتريات</small>">
+              <span class="position-absolute top-0 start-100 translate-middle-y">
+                <!-- 6 <span class="visually-hidden">6 منتجات</span> -->
+                <svg class="rounded-pill me-1 text-primary pulse-grouped" width="8" height="8"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                  focusable="false">
+                  <rect width="100%" height="100%" fill="currentColor"></rect>
+                </svg>
+              </span>
+            </i>
           </a>
-
-        </li>
-
-
+        </li> <!-- #Cart link -->
       </ul>
-
-    </div>
+    </div> <!-- #Menu Links -->
   </div>
 </nav>
-<!-- End of Top Navigation -->
+<!-- #Navbar -->

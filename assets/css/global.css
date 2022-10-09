@@ -1,5 +1,5 @@
 /* global styles */
-:root {
+/* :root {
   --font-primary: "IBM Plex Sans Arabic", "Cairo", "Alkalami", "Amiri", "Changa",
     "Readex Pro", "Almarai", "El Messiri", "Mada", "Baloo Bhaijaan 2",
     "Cairo Play", "Reem Kufi Fun", "Lemonada", "Lalezar", "Amiri Quran",
@@ -7,6 +7,10 @@
     "Vazirmatn", "Harmattan", "Aref Ruqaa", "Katibeh", "Kufam", "Blaka",
     "Jomhuria", "Scheherazade New", "Vibes", "Noto Sans Arabic",
     "Noto Kufi Arabic", "Qahiri", "Noto Naskh Arabic";
+} */
+:root {
+  --font-primary: "Baloo Bhaijaan 2", cursive;
+  --color-foreground: #fff;
 }
 
 body {
@@ -21,6 +25,15 @@ h5,
 h6 {
   font-family: var(--font-primary-bold);
   font-weight: 600;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-foreground);
+}
+::-moz-selection {
+  background-color: var(--color-primary);
+  color: var(--color-foreground);
 }
 
 a {
@@ -76,6 +89,12 @@ a {
   height: 34rem;
 }
 
+@media (max-width: 991.98px) {
+  .carousel-item {
+    height: inherit !important;
+  }
+}
+
 /* carousel caption if any */
 .carousel-caption {
   bottom: 3rem;
@@ -95,11 +114,11 @@ a {
 }
 
 /* w-75 */
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   .w-75 {
     width: 100% !important;
   }
-}
+} */
 
 /* iconoir sizes */
 *[class^="iconoir-"],
@@ -144,25 +163,6 @@ a {
   background: rgb(219, 255, 73);
 }
 
-/* .bg-gradient-between {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background: radial-gradient(
-      circle at 12% 55%,
-      rgba(219, 255, 73, 0.15),
-      hsla(0, 0%, 100%, 0) 35%
-    ),
-    radial-gradient(
-      circle at 85% 33%,
-      rgba(113, 73, 144, 0.175),
-      hsla(0, 0%, 100%, 0) 65%
-    );
-} */
-
 /* #todo: export to a class */
 .bg-primary-dark {
   background: #714990;
@@ -186,10 +186,11 @@ a {
 }
 .bg-overlay {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./../../media/intro/backgrounds/bg.jpg");
+    url("../../media/cdn/intro/backgrounds/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
   color: #ffffff;
 }
 .bg-overlay a {
@@ -318,12 +319,12 @@ a {
   background-color: var(--color-primary) !important;
 }
 
-/* zindex-fixed */
+/* z-index  */
 
-.zindex-fixed {
+.z-index-high {
   z-index: 1030 !important;
 }
-.zindex-fixed-top {
+.z-index-higher {
   z-index: 2000 !important;
 }
 
@@ -344,26 +345,10 @@ a {
   -o-transition: 0.2s;
 }
 
-/* .noUi-connect .noUi-connect {
-  background: var(--color-primary);
-} */
-
 /* logo sizes */
 .logo-xs {
   width: 100px;
 }
-/* 
-.logo-lg {
-  width: 140px;
-}
-
-.logo-md {
-  width: 100px;
-}
-
-.logo-xl {
-  width: 160px;
-} */
 
 .bg-gradient-badge {
   display: flex;
@@ -414,39 +399,6 @@ a {
   width: 3.5rem;
 }
 
-/* zoom */
-.img-zoom {
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-
-.img-zoom img {
-  transition: transform 0.5s ease;
-}
-
-.img-zoom img:hover {
-  transform: scale(1.1);
-}
-
-div.zoom {
-  background-position: 50% 50%;
-  border-radius: 0.5rem;
-  cursor: zoom-in;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-div.zoom img:hover {
-  opacity: 0;
-}
-
-div.zoom img {
-  display: block;
-  transition: opacity 0.5s;
-  width: 100%;
-}
-
 /* navbar-stuck */
 .navbar-sticky.navbar-stuck {
   position: fixed;
@@ -474,25 +426,6 @@ div.zoom img {
   }
 }
 
-/* reveal footer */
-/* main */
-
-/* main {
-  min-height: 65vh !important;
-  position: relative !important;
-  z-index: 1 !important;
-  background-color: white !important;
-}
-
-/* footer */
-/* footer {
-  position: sticky !important;
-  bottom: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  background-color: red !important;
-}  */
-
 /* tools hide:icon */
 .tools .tools-hide {
   opacity: 0 !important;
@@ -511,4 +444,9 @@ div.zoom img {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+/* hide cookies */
+#cookies {
+  display: none;
 }

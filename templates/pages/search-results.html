@@ -4,27 +4,31 @@
         <div class="row">
             <div class="col">
                 <div class="text-white">
+                    <!-- search sentence -->
                     <h1>نتائج البحث عن <q>رمادي</q></h1>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Of Search Hero  -->
+<!-- #Search Hero  -->
 
-<!-- Search Results -->
-<section class="py-4 py-md-4" role="search">
+<!-- Products -->
+<section class="py-4 py-md-4" role="products">
     <div class="container">
-
 
         <!-- filters -->
         <div class="row d-flex justify-content-between g-0">
+
+            <!-- results found -->
             <div
                 class="col-12 col-md-6 col-lg-8 border d-flex align-self-center align-items-center justify-content-center justify-content-sm-start rounded mb-3 mb-md-0">
-                <p class="my-3 ps-2 text-muted text-center text-sm-start">تم ايجاد <strong
-                        class="text-primary">982</strong> منتج</p>
+                <p class="my-3 ps-2 text-muted text-center text-sm-start">
+                    تم ايجاد <strong class="text-primary">982</strong> منتج
+                </p>
             </div>
 
+            <!-- dropdown filter -->
             <div class="col ms-0 ms-md-3">
                 <div class="form-floating">
                     <select class="form-select" id="floatingSelect" aria-label="Floating label select">
@@ -37,40 +41,39 @@
                     <label for="floatingSelect">ترتيب حسب</label>
                 </div>
             </div>
+
+            <!-- offcanvas filter -->
             <div class="col d-grid ms-2 ms-md-3">
-                <button class="btn btn-light border position-relative" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasProductsFilter" aria-controls="offcanvasProductsFilter">
-
+                <button class="btn btn-link text-decoration-none border position-relative" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasProductsFilter"
+                    aria-controls="offcanvasProductsFilter">
                     <i class="iconoir-db-search iconoir-xs"></i>
-                    <span class="px-1"> تصفية
-                        النتائج
-
-
-                        <span class="position-absolute top-0 start-100 translate-middle">
-
-                            <svg class="rounded-pill me-1 text-primary pulse-grouped" width="12" height="12"
-                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    <span class="px-1"> تصفية النتائج
+                        <!-- <span class="position-absolute top-0 start-100 translate-middle d-none d-sm-inline-block">
+                            <svg class="rounded-pill me-1 text-primary text-opacity-50 pulse-grouped" width="12"
+                                height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <rect width="100%" height="100%" fill="currentColor"></rect>
                             </svg>
-                        </span>
+                        </span> -->
                     </span>
-
-
                 </button>
             </div>
-        </div>
+        </div><!-- #filters -->
 
         <!-- products list  -->
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 mt-0">
 
+            <!-- simple loop to show products -->
             <?php for($i = 1; $i <16; $i++)  { ?>
             <div class="col">
                 <div class="card card-product shadow-sm border h-100">
+                    <!-- main image -->
                     <a href="./product" class="d-inline-block @overflow-hidden">
-                        <img src="media/cdn/discount/img-5.jpg" alt="" class="card-img-top">
+                        <img src="media/cdn/discount/img-4.jpg" alt="" class="card-img-top">
                     </a>
 
+                    <!-- append product discount badge -->
                     <div class="position-absolute top-0 start-0 badge text-bg-primary mt-1 ms-1 px-2 py-1 small">
                         <span class="small"> <span class="px-1"><i class="iconoir-medal"></i></span> مميز</span>
                     </div>
@@ -82,17 +85,17 @@
                                 مفرش تغير الحفاظات للأطفال مع جيوب تنظيم متعددة ومكان للمناديل
                             </a>
                         </h6>
-                        <!-- Product Caption -->
+                        <!-- product caption -->
                         <p class="card-text text-dark mb-0">
                             <span class="fs-7 text-primary">
-
                                 <svg class="rounded-pill me-1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"
                                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="currentColor"></rect>
                                 </svg>
-
-                                متوفر بعدة خيارات</span>
+                                متوفر بعدة خيارات
+                            </span>
                         </p>
+
                         <!-- rating -->
                         <div class="text-primary my-2">
                             <small>
@@ -103,34 +106,35 @@
                                 <i class="bi bi-star"></i></small>
                             <span class="text-muted small">4.5</span>
                         </div>
-                        <!-- Product Price -->
+
+                        <!-- product Price -->
                         <small class="text-muted d-flex flex-row justify-content-start align-items-center gap-2">
                             <div class="text-start">
                                 <strong class="fs-6 text-danger">500 رس</strong>
                                 <small><del class="text-decoration-line-through">620 رس</del></small>
                             </div>
-                            <span class="badge bg-danger rounded-pill">وفر 20%</span>
+                            <span class="badge bg-primary text-primary bg-opacity-10 rounded-pill">وفر 20%</span>
                         </small>
 
                         <!-- Add to Cart -->
                         <div class="btn-group btn-group-sm d-grid gap-2 mt-3">
 
-                            <button type="button" class="btn btn-primary">
-                                <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
+                            <!--
+                                <button type="button" class="btn btn-primary">
+                                    <span class="px-2"><i data-feather="shopping-cart" class="feather-xs"></i></span> إضافة
                                 للسلة
+                            </button> 
+                        -->
+                            <button type="button" class="btn btn-primary" disabled>
+                                <span class="px-2"><i class="iconoir-info-empty"></i></span> نفذت الكمية
                             </button>
-                            <!-- <button type="button" class="btn btn-primary" disabled>
-                                <span class="px-2"><i class="iconoir-info-empty"></i></span> نفذت
-                                الكمية
-                            </button> -->
                         </div>
                     </div>
 
                 </div>
             </div>
-
             <?php } ?>
-        </div>
+        </div><!-- #products list  -->
 
         <!-- pagination -->
         <div class="row mt-4 mt-md-5">
@@ -150,9 +154,7 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+        </div><!-- #pagination -->
     </div>
-
-
 </section>
-<!-- End Search Results -->
+<!-- #Products -->

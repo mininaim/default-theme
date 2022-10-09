@@ -1,22 +1,52 @@
-<!-- OffCanvas Cart -->
+<!-- Offcanvas: Menus -->
 <div class="offcanvas offcanvas-start d-block d-lg-none bg-white border-0 shadow-lg" tabindex="-1" data-bs-scroll="true"
     id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header bg-primary">
-        <h6 class="offcanvas-title text-white" id="offcanvasMenuLabel">
+        <h6 class="offcanvas-title text-white ps-2 ps-lg-0" id="offcanvasMenuLabel">
             قائمة التصفح
         </h6>
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
         <button type="button" class="btn-none btn-close-rotate p-0 text-white" data-bs-dismiss="offcanvas"
             aria-label="Close">
             <i class="iconoir-cancel iconoir-md"></i>
         </button>
     </div>
 
-    <!-- Cart Content -->
+    <!-- Offcanvas Content -->
     <div class="offcanvas-body p-0">
         <div>
 
+            <!-- Widget User Login -->
             <div class="flex-shrink-0 p-3">
+                <div class="d-flex align-items-center text-muted border rounded p-3">
+                    <div class="flex-shrink-0">
+                        <i class="iconoir-user-cart fs-1"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h6 class="mb-0 small">مرحباً بعودتك</h6>
+                        <a href="./" class="text-decoration-none text-primary">تسجيل الدخول</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Widget User Logout -->
+            <!-- <div class="flex-shrink-0 px-3 mb-3">
+                <div class="d-flex justify-content-between align-items-center border rounded p-3 bg-light">
+                    <div class="w-75">
+                        <a href="./" class="text-decoration-none text-primary">
+                            <i class="iconoir-user-circle-alt"></i>
+                            محمد باصديق</a>
+                    </div>
+                    <a href="./" class="btn btn-danger btn-sm">
+                        <i class="iconoir-log-out"></i> خروج
+                        <span class="visually-hidden">تسجيل الخروج</span>
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- #Widget User Logout -->
+
+            <!-- Widget Search -->
+            <div class="flex-shrink-0 px-3">
                 <form class="d-flex mx-auto border rounded" role="search">
                     <input class="form-control form-control-no-focus ms-2 rounded-0 border-0" type="search"
                         placeholder="ابحث في المتجر" aria-label="Search">
@@ -25,94 +55,51 @@
                     </button>
                 </form>
             </div>
-            <div class="flex-shrink-0 p-3 pt-0">
-                <div class="list-group">
 
+            <!-- Widget Categories -->
+            <div class="flex-shrink-0 p-3">
+                <div class="list-group">
                     <a class="list-group-item list-group-item-action" href="./" title="">
                         <span class="px-1"><i class="iconoir-home-alt fs-5 text-primary"></i></span>
-                        الرئيسية</a>
+                        الرئيسية
                     </a>
-                    <!-- <a class="border-top my-3"></a> -->
-
-
                     <a class="list-group-item list-group-item-action" href="./" title="">
                         <span class="px-1"><i class="iconoir-view-grid fs-5 text-primary"></i></span>
-                        كل التصانيف </a>
-
-                    <!-- <li class="border-top my-3"></li> -->
-
+                        كل التصانيف
+                    </a>
                     <a class="list-group-item list-group-item-action" href="./" title="">
                         <span class="px-1"><i class="iconoir-open-in-browser fs-5 text-primary"></i></span>
                         كل المنتجات </a>
-
-                    <!-- <li class="border-top my-3"></li> -->
-
                     <a class="list-group-item list-group-item-action" href="./" title="">
                         <span class="px-1"><i class="iconoir-box-iso fs-5 text-primary"></i></span>
                         خيارات الدفع
-                        والتوصيل </a>
-
+                        والتوصيل
+                    </a>
                 </div>
             </div>
-            <div class="flex-shrink-0 px-3">
 
+            <!-- Widget Language & Country -->
+            <div class="flex-shrink-0 px-3">
                 <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Select Shipping Countries List">
+                    <select class="form-select" id="floatingSelectLanguage" aria-label="Select Language">
                         <option selected>العربية</option>
                         <option value="1">English</option>
-                        <!-- <option value="2">Français</option>
-                        <option value="3">Español</option> -->
                     </select>
-                    <label for="floatingSelect"> اللغة الافتراضية</label>
+                    <label for="floatingSelectLanguage">اللغة الافتراضية</label>
                 </div>
             </div>
-
             <div class="flex-shrink-0 px-3 mt-3">
-
                 <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Select Shipping Countries List">
+                    <select class="form-select" id="floatingSelectCountry" aria-label="Select Country">
                         <option selected>السعودية</option>
                         <option value="1">الكويت</option>
                         <option value="2">الإمارات</option>
                         <option value="3">مصر</option>
                     </select>
-                    <label for="floatingSelect">الشحن إلى</label>
+                    <label for="floatingSelectCountry">الشحن إلى</label>
                 </div>
-            </div>
-            <!-- <div class="flex-shrink-0 p-3 ">
-                <ul class="list-group ps-0">
-                    <li class="list-group-item d-flex justify-content-between text-muted">
-                        <span> العضوية</span>
-                        <a class="link-primary text-decoration-none" href="./" title="">
-                            تسجيل الدخول
-                        </a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between text-muted">
-                        <span>تغيير اللغة</span>
-                        <a class="link-primary text-decoration-none" href="./" title="">
-                            English
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="flex-shrink-0 px-3 bg-white">
-
-                <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Select Shipping Countries List">
-                        <option selected>السعودية</option>
-                        <option value="1">الكويت</option>
-                        <option value="2">الإمارات</option>
-                        <option value="3">مصر</option>
-                    </select>
-                    <label for="floatingSelect">الشحن إلى</label>
-                </div>
-            </div> -->
-
+            </div> <!-- #Widget Language & Country -->
         </div>
     </div>
-
-
-
 </div>
-<!-- End of OffCanvas Cart -->
+<!-- #Offcanvas: Menus -->

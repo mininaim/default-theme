@@ -1,9 +1,14 @@
-<!-- OffCanvas Cart -->
-<form method="post" action="">
+<!-- Offcanvas: Filters -->
+
+<!-- form tag (it can be replaced inside the body) -->
+<form method="post" action="#">
+    <!-- hidden inputs with values here -->
+
+    <!-- Init Offcanvas -->
     <div class="offcanvas offcanvas-start border-0 shadow-lg" tabindex="-1" data-bs-scroll="true"
         id="offcanvasProductsFilter" aria-labelledby="offcanvasProductsFilterLabel">
         <div class="offcanvas-header bg-light">
-            <h6 class="offcanvas-title" id="offcanvasProductsFilterLabel">
+            <h6 class="offcanvas-title ps-2 ps-lg-0" id="offcanvasProductsFilterLabel">
                 تصفية النتائج
             </h6>
 
@@ -12,27 +17,26 @@
             </button>
         </div>
 
-        <!-- Sep -->
-
-        <!-- Cart Content -->
-
+        <!-- Offcanvas Content -->
         <div class="offcanvas-body p-0">
             <div>
+
+                <!-- Widget -->
                 <div class="flex-shrink-0 p-3">
+
+                    <!-- Price Range -->
                     <div class="card p-3">
-
-
                         <h6 class="text-dark">السعر</h6>
-
                         <div class="range-slider p-2">
                             <input type="text" class="js-range-slider form-control" value="" />
                         </div>
+                    </div><!-- #Price Range -->
 
-                    </div>
-
+                    <!-- Price Range Inputs -->
                     <div class="card p-3 mt-3">
-
                         <div class="extra-controls row">
+
+                            <!-- Prince From -->
                             <div class="col">
                                 <label for="productMin" class="col-form-label">من</label>
                                 <div class="input-group input-group-sm">
@@ -42,6 +46,7 @@
                                 </div>
                             </div>
 
+                            <!-- Price To -->
                             <div class="col">
                                 <label for="productMax" class="col-form-label">إلى</label>
                                 <div class="input-group input-group-sm">
@@ -50,44 +55,42 @@
                                     <span class="input-group-text">SAR</span>
                                 </div>
                             </div>
-                            <!-- <label for="productMin" class="col-form-label">من</label>
-                                <input type="number" min="0" class="js-input-from form-control" id="productMin"
-                                    placeholder="SAR" value="0" /> -->
-
-
                         </div>
-
                     </div>
+                    <!--#Price Range Inputs -->
 
-
+                    <!-- Show Discounts Only -->
                     <div class="card p-3 mt-3">
                         <div
                             class="form-check form-switch d-flex flex-row-reverse justify-content-between align-items-center ps-0">
                             <input class="form-check-input pulse-grouped" type="checkbox" role="switch"
                                 id="flexSwitchCheckDefaultFilter">
                             <label class="form-check-label text-dark" for="flexSwitchCheckDefaultFilter">
-                                <i class="iconoir-fire-flame fs-5"></i>
-                                عرض التخفيضات فقط</label>
+                                <i class="iconoir-percentage-round fs-5"></i>
+                                <span class="px-1">عرض الخصومات فقط</span>
+                            </label>
                         </div>
-                    </div>
+                    </div><!-- #Show Discounts Only -->
                 </div>
-
-
             </div>
         </div>
 
-        <!-- options -->
+        <!-- Offcanvas Options -->
         <div class="px-3 py-3 p-md-3 sticky-bottom bg-light">
             <div class="d-grid gap-2">
+
+                <!-- Reset Filters -->
                 <!-- <button type="reset" class="btn btn-dark border" data-bs-dismiss="modal">
-                مسح
-            </button> -->
+                    مسح
+                </button> -->
                 <button type="button" class="btn btn-primary">
                     <!-- <i class="iconoir-control-slider iconoir-xs"></i> -->
                     حفظ الفلترة
                 </button>
             </div>
-        </div>
+        </div> <!-- #Offcanvas Options -->
+
     </div>
     <!-- End of OffCanvas Cart -->
 </form>
+<!-- #Offcanvas: Filters -->
