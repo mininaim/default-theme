@@ -62,7 +62,7 @@ switch ($page) {
         require_once 'templates/commons/header-menus.html';
         // specific files
         #require_once 'templates/components/breadcrumb.html';
-        require_once 'templates/products/products-single-thumbnails.html';
+        require_once 'templates/products/products-single.html';
         require_once 'templates/products/products-single-options.html';
         require_once 'templates/products/products-single-tabs.html';
         require_once 'templates/components/related.html';
