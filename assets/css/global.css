@@ -1,5 +1,5 @@
 /* global styles */
-/* :root {
+:root {
   --font-primary: "IBM Plex Sans Arabic", "Cairo", "Alkalami", "Amiri", "Changa",
     "Readex Pro", "Almarai", "El Messiri", "Mada", "Baloo Bhaijaan 2",
     "Cairo Play", "Reem Kufi Fun", "Lemonada", "Lalezar", "Amiri Quran",
@@ -7,9 +7,9 @@
     "Vazirmatn", "Harmattan", "Aref Ruqaa", "Katibeh", "Kufam", "Blaka",
     "Jomhuria", "Scheherazade New", "Vibes", "Noto Sans Arabic",
     "Noto Kufi Arabic", "Qahiri", "Noto Naskh Arabic";
-} */
+}
 :root {
-  --font-primary: "Baloo Bhaijaan 2", cursive;
+  /* --font-primary: "Baloo Bhaijaan 2", cursive; */
   --color-foreground: #fff;
 }
 
