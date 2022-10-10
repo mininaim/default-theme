@@ -10,7 +10,7 @@
 // ability to change to some custom fonts
 const font = document.getElementById("font");
 const setFont = (link, font) => {
-  link.href = `https://fonts.googleapis.com/css?family=${font}&display=swap`;
+  link.href = `https://fonts.googleapis.com/css?family=${font}:wght@400;600&display=swap`;
 };
 if (font) {
   const link = document.head.appendChild(document.createElement("link"));
