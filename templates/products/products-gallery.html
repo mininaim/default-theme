@@ -24,11 +24,46 @@
                         aria-labelledby="pills-slider-tab" tabindex="0">
                         <div class="card p-0 border-0 rounded-0 ltr position-relative overflow-hidden">
 
-                            <div class="my-slider ltr">
-                                <?php for($i=1;$i < 15; $i++)  { ?>
-                                <img src="media/cdn/product-single/gallery/0<?php echo $i ?>.jpg" alt="Product Image"
-                                    class="img-fluid rounded-1">
-                                <?php } ?>
+                            <!-- card -->
+                            <div class="card border-0">
+                                <!-- main picture -->
+                                <!-- #todo: test ratio (ration ratio-4x3 and ration ratio-1x1) -->
+                                <div class="product" id="product">
+                                    <?php for($i = 1; $i <10; $i++)  { ?>
+                                    <div class="zoom" onmousemove="zoom(event)"
+                                        style="background-image: url(media/cdn/product-single/01.jpg)">
+                                        <img src="media/cdn/product-single/01.jpg"
+                                            class="img-fluid mx-auto mw-100 mh-100" alt="" style="object-fit: cover;">
+                                    </div>
+                                    <?php } ?>
+                                </div>
+
+                                <!-- controls -->
+                                <div class="w-100 controls d-flex justify-content-between my-3 position-absolute top-50 start-50 translate-middle"
+                                    id="customize-controls">
+
+                                    <button class="btn btn-outline-primary me-3" id="prev">
+                                        <i class="iconoir-nav-arrow-left fs-3"></i>
+                                    </button>
+                                    <button class="btn btn-outline-primary ms-3" id="next">
+                                        <i class="iconoir-nav-arrow-right fs-3"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+                            <!-- product tools -->
+                            <div class="product-tools mt-2" hidden>
+                                <div class="thumbnails row g-1 my-2" id="productThumbnails">
+                                    <?php for($i = 1; $i <10; $i++)  { ?>
+                                    <div class="col-3 mt-0">
+                                        <div class="thumbnails-img">
+                                            <img src="media/cdn/product-single/01.jpg" alt="" class="mx-auto d-block">
+                                        </div>
+                                    </div>
+                                    <?php } ?>
+                                </div>
                             </div>
                         </div>
                     </div>

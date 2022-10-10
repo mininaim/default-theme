@@ -20,7 +20,6 @@ if (product) {
 
     gutter: 0,
     speed: 400,
-    loop: false,
     responsive: {
       768: {
         items: 1,
