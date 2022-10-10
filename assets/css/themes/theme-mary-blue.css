@@ -41,8 +41,8 @@
 .form-control:focus,
 .form-select:focus,
 .form-check-input:focus {
-  border-color: rgb(0 109 119 / 25%) !important;
-  box-shadow: 0 0 0 0.25rem rgb(0 109 119 / 25%) !important;
+  border-color: rgb(0 109 119 / 25%);
+  box-shadow: 0 0 0 0.25rem rgb(0 109 119 / 25%);
 }
 
 .text-bg-primary {
