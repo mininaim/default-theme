@@ -1,51 +1,262 @@
 <!-- Demos Purpose Only -->
 <!-- To be removed in Production -->
-<div class="btn-group dropup position-fixed z-index-higher">
-    <button type="button"
-        class="btn btn-sm btn-dark rounded-0 @dropdown-toggle mb-3 ms-3 position-fixed bottom-0 start-0"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="iconoir-menu"></i>
-    </button>
-    <ul class="dropdown-menu">
+<div class="mb-2 ms-3 position-fixed bottom-0 start-0 z-index-higher">
+    <div class="btn-group-vertical" role="group">
+        <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-sm btn-primary rounded-0 @dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="iconoir-menu-scale"></i>
+            </button>
+            <ul class="dropdown-menu">
 
-        <li>
-            <a class="dropdown-item" href="index.php">
-                الرئيسية
-            </a>
-        </li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="?page=categories">التصانيف</a></li>
-        <li><a class="dropdown-item" href="?page=category"> صفحة تصنيف</a></li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="?page=products">المنتجات</a></li>
-        <li><a class="dropdown-item" href="?page=product">صفحة منتج</a></li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="?page=cart-view">سلة المشتريات</a></li>
-        <li><a class="dropdown-item" href="?page=cart-empty">السلة فارغة</a></li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="?page=404">صفحة 404</a></li>
-        <li><a class="dropdown-item" href="?page=search-results">نتائج البحث</a></li>
-        <li><a class="dropdown-item" href="?page=search-no-results">صفحة لا يوجد نتائج</a></li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="?page=shipping">خيارات الدفع والتوصيل</a></li>
-        <li><a class="dropdown-item" href="?page=faqs">الأسئلة الشائعة</a></li>
-        <li><a class="dropdown-item" href="?page=page-sample">صفحة عامة</a></li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="?page=account">حسابي</a></li>
-    </ul>
-</div><!-- Demos Purpose Only -->
+                <li>
+                    <a class="dropdown-item" href="index.php">
+                        الرئيسية
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="?page=categories">التصانيف</a></li>
+                <li><a class="dropdown-item" href="?page=category"> صفحة تصنيف</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="?page=products">المنتجات</a></li>
+                <li><a class="dropdown-item" href="?page=product">صفحة منتج</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="?page=cart-view">سلة المشتريات</a></li>
+                <li><a class="dropdown-item" href="?page=cart-empty">السلة فارغة</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="?page=404">صفحة 404</a></li>
+                <li><a class="dropdown-item" href="?page=search-results">نتائج البحث</a></li>
+                <li><a class="dropdown-item" href="?page=search-no-results">صفحة لا يوجد نتائج</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="?page=shipping">خيارات الدفع والتوصيل</a></li>
+                <li><a class="dropdown-item" href="?page=faqs">الأسئلة الشائعة</a></li>
+                <li><a class="dropdown-item" href="?page=page-sample">صفحة عامة</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="?page=account">حسابي</a></li>
+            </ul>
+        </div>
+        <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-sm btn-primary rounded-0 @dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="iconoir-color-picker"></i>
+            </button>
+
+            <ul class="dropdown-menu">
+
+                <li>
+                    <span class="dropdown-item-text">
+                        <i class="iconoir-palette"></i>
+                        <span class="px-1">
+                            إختر لونا
+                        </span>
+                    </span>
+                </li>
+                <li class="bg-transparent">
+                    <span class="dropdown-item-text">
+                        <input data-color="blue" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio1" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio1">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#0d3b66" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="bronze" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio2" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio2">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#5e503f" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="default" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio3" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio3">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#8661a3" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="green" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio4" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio4">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#006d77" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="magic" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio5" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio5">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#588157" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="mary-blue" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio6" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio6">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#006d77" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="orange" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio7" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio7">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#ff7b00" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="pink" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio8" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio8">
+                            <svg width=" 20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#f72585" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="plum" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio9" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio9">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#5f0f40" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="purple" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio10" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio10">
+                            <svg width=" 20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#6f2dbd" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="raspberry" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio11" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio11">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#832161" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="scarlet" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio12" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio12">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#bc4749" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="strom" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio13" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio13">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#335c67" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                        <input data-color="thick-green" type="radio" class="btn-check color-pallete" name="btnradio"
+                            id="btnradio14" autocomplete="off">
+                        <label class="btn btn-link btn-sm grow" for="btnradio14">
+                            <svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 9C3 6.5 4.5 4.25 7.5 1.5C10.5 4.25 12 6.5 12 9C12 11.4853 9.98528 13.5 7.5 13.5C5.01472 13.5 3 11.4853 3 9ZM10.9524 8.30307C9.67347 7.82121 8.2879 8.46208 6.98956 9.06259C5.9327 9.55142 4.93365 10.0135 4.09695 9.82153C4.03357 9.55804 4 9.28294 4 9C4 7.11203 5.02686 5.27195 7.5 2.87357C9.66837 4.97639 10.725 6.65004 10.9524 8.30307Z"
+                                    fill="#8ac926" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </label>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-sm btn-primary rounded-0 @dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="iconoir-missing-font"></i>
+            </button>
+
+            <div class="dropdown-menu p-0 border-0">
+                <div class="btn-group-vertical btn-group-sm w-100" role="group"
+                    aria-label="Vertical radio toggle button group">
+                    <input value="Baloo+Bhaijaan+2" type="radio" class="btn-check" name="font" id="vbtn-radio1"
+                        autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="vbtn-radio1">الخط الإفتراضي </label>
+                    <input value="IBM+Plex+Sans+Arabic" type="radio" class="btn-check" name="font" id="vbtn-radio2"
+                        autocomplete="off">
+                    <label class="btn btn-outline-primary" for="vbtn-radio2">خط IBM Plex</label>
+
+                    <input value="Amiri" type="radio" class="btn-check" name="font" id="vbtn-radio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="vbtn-radio3">أميري</label>
+
+                    <input value="Cairo" type="radio" class="btn-check" name="font" id="vbtn-radio4" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="vbtn-radio4">خط القاهرة</label>
+
+                    <input value="El+Messiri" type="radio" class="btn-check" name="font" id="vbtn-radio5"
+                        autocomplete="off">
+                    <label class="btn btn-outline-primary" for="vbtn-radio5">خط El Messiri</label>
+
+                    <input value="Changa" type="radio" class="btn-check" name="font" id="vbtn-radio6"
+                        autocomplete="off">
+                    <label class="btn btn-outline-primary" for="vbtn-radio6">خط Changa </label>
+
+                </div>
+                <!-- <select data-style="border bg-light" data-live-search="true"
+                    class="form-control form-control-sm custom-select" id="font" name="font">
+                    <option value="Baloo+Bhaijaan+2">الخط الإفتراضي</option>
+                    <option value="IBM+Plex+Sans+Arabic">IBM Plex Sans Arabic</option>
+                    <option value="Amiri">Amiri</option>
+                    <option value="Vazirmatn">Vazirmatn</option>
+                    <option value="El+Messiri">El Messiri</option>
+                    <option value="Changa">Changa</option>
+                    <option value="Cairo">Cairo</option>
+
+                </select> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Demos Purpose Only -->
 
 <!-- Bootstrap Bundle & Popper -->
 <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
@@ -54,7 +265,7 @@
 
 <!-- JS Vendors -->
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/progressbar/progressbar.min.js"></script>
+<!-- <script src="assets/vendor/progressbar/progressbar.min.js"></script> -->
 <script src="assets/vendor/lottie-player/lottie-player.js"></script>
 <script src="assets/vendor/bootstrap-select/bootstrap-select.min.js"></script>
 <script src="assets/vendor/bootstrap-select/defaults-ar_AR.js"></script>
@@ -74,7 +285,7 @@
 <script src="assets/js/ion.rangeSlider-custom.js"></script>
 <script src="assets/js/cookies.js"></script>
 <script src="assets/js/tiny-slider-custom.js"></script>
-<script src="assets/js/tiny-slider-gallery.js"></script>
+
 
 <!-- DEV Purpose -->
 <script src="assets/js/change-theme-font-dev.js"></script>

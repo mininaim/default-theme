@@ -8,7 +8,21 @@
 // observer.observe(stickyElm);
 
 // ability to change to some custom fonts
-const font = document.getElementById("font");
+// const font = document.getElementById("font");
+// const setFont = (link, font) => {
+//   link.href = `https://fonts.googleapis.com/css?family=${font}:wght@400;600&display=swap`;
+// };
+// if (font) {
+//   const link = document.head.appendChild(document.createElement("link"));
+//   link.rel = "stylesheet";
+//   setFont(link, localStorage.getItem("font-family") ?? "Vazirmatn");
+//   font.addEventListener("change", function () {
+//     setFont(link, this.value);
+//     localStorage.setItem("font-family", this.value);
+//   });
+// }
+
+const font = document.querySelectorAll("input[name='font']");
 const setFont = (link, font) => {
   link.href = `https://fonts.googleapis.com/css?family=${font}:wght@400;600&display=swap`;
 };
@@ -16,10 +30,12 @@ if (font) {
   const link = document.head.appendChild(document.createElement("link"));
   link.rel = "stylesheet";
   setFont(link, localStorage.getItem("font-family") ?? "Vazirmatn");
-  font.addEventListener("change", function () {
-    setFont(link, this.value);
-    localStorage.setItem("font-family", this.value);
-  });
+  for (let i = 0; i < font.length; i++) {
+    font[i].addEventListener("change", function () {
+      setFont(link, this.value);
+      localStorage.setItem("font-family", this.value);
+    });
+  }
 }
 
 // append css file when click on color and save it in local storage

@@ -84,21 +84,21 @@ document.addEventListener("DOMContentLoaded", function () {
 feather.replace();
 
 // progress loader
-let primaryColor = getComputedStyle(document.documentElement).getPropertyValue(
-  "--color-primary",
-  "#eeeeee"
-);
+// let primaryColor = getComputedStyle(document.documentElement).getPropertyValue(
+//   "--color-primary",
+//   "#eeeeee"
+// );
 
-let bar = new ProgressBar.Line("#progress", {
-  strokeWidth: 1,
-  easing: "easeInOut",
-  duration: 1400,
-  color: "#444444",
-  trailColor: "#ffffff",
-  trailWidth: 0,
-  svgStyle: { width: "100%", height: "3px" },
-});
-bar.animate(2.0);
+// let bar = new ProgressBar.Line("#progress", {
+//   strokeWidth: 1,
+//   easing: "easeInOut",
+//   duration: 1400,
+//   color: "#444444",
+//   trailColor: "#ffffff",
+//   trailWidth: 0,
+//   svgStyle: { width: "100%", height: "3px" },
+// });
+// bar.animate(2.0);
 
 // add/remove effect on flexSwitchCheckDefaultFilter
 let flexSwitchCheckDefaultFilter = document.getElementById(
