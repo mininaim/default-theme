@@ -233,3 +233,14 @@ if (loadMoreReviewsButton) {
     }, 300);
   });
 }
+
+// init lightbox
+var lightbox = GLightbox({
+  selector: ".glightbox",
+  touchNavigation: true,
+  loop: false,
+  autoplayVideos: true,
+  closeEffect: "fade",
+  skin: "clean",
+  draggable: true,
+});

@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-select/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/vendor/ion-range-slider/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="assets/vendor/tiny-slider/tiny-slider.css">
+    <link rel="stylesheet" href="assets/vendor/glightbox/glightbox.min.css">
 
     <!-- JS Vendors -->
     <script src="assets/vendor/feather/feather.min.js"></script>
@@ -64,7 +65,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
 
     <!-- Theme Link -->
-    <link rel="stylesheet" href="assets/css/themes/theme-mary-blue.css">
+    <link rel="stylesheet" href="assets/css/themes/theme-default.css">
 
     <!-- Title -->
     <title>زد - القالب الإفتراضي</title>
@@ -92,12 +93,59 @@
 
     <!-- Labs: Colors and Fonts -->
     <!-- for Dev Purpose Only -->
-    <section class="py-2 border-bottom" role="colors">
-        <div class="container-fluid d-lg-flex justify-content-between align-items-center">
+    <section class="py-2 bg-primary text-primary border-bottom border-primary border-opacity-10" role="tools"
+        style="--bs-bg-opacity: .05;">
+        <div class="container d-lg-flex justify-content-between align-items-center">
 
+            <span>
+                <i class="iconoir-test-tube"></i>
+                <span class="px-1">
+                    مختبر زد
+                    <sup class="badge bg-primary bg-opacity-10 text-primary small">(Dev)</sup>
+                </span>
+            </span>
+            <!-- Fonts List -->
+            <div class="d-flex flex-row justify-content-end col-12 col-lg-2 my-3 my-lg-0">
+                <select data-style="border bg-light" data-live-search="true"
+                    class="form-control form-control-sm custom-select" id="font" name="font">
+                    <option value="Baloo+Bhaijaan+2">الخط الإفتراضي</option>
+                    <option value="IBM+Plex+Sans+Arabic">IBM Plex Sans Arabic</option>
+                    <option value="Amiri">Amiri</option>
+                    <option value="Vazirmatn">Vazirmatn</option>
+                    <option value="El+Messiri">El Messiri</option>
+                    <option value="Changa">Changa</option>
+                    <option value="Cairo">Cairo</option>
+                    <!-- <option value="Reem+Kufi+Fun">Reem Kufi Fun</option> -->
+                    <!-- <option value="Alkalami">Alkalami</option>
+                    <option value="Readex+Pro">Readex Pro</option>
+                    <option value="Almarai">Almarai</option>
+                    <option value="Mada">Mada</option>
+                    <option value="Cairo+Play">Cairo Play</option> -->
+                    <!-- <option value="Lemonada">Lemonada</option> -->
+                    <!-- <option value="Lalezar">Lalezar</option>
+                    <option value="Amiri+Quran">Amiri Quran</option>
+                    <option value="Markazi+Text">Markazi Text</option>
+                    <option value="Reem+Kufi">Reem Kufi</option>
+                    <option value="Mirza">Mirza</option>
+                    <option value="Rakkas">Rakkas</option> -->
+                    <!-- <option value="Lateef">Lateef</option> -->
+                    <!-- <option value="Gulzar">Gulzar</option>
+                    <option value="Vazirmatn">Vazirmatn</option>
+                    <option value="Harmattan">Harmattan</option>
+                    <option value="Aref+Ruqaa">Aref Ruqaa</option>
+                    <option value="Katibeh">Katibeh</option>
+                    <option value="Kufam">Kufam</option> -->
+                    <!-- <option value="Blaka">Blaka</option> -->
+                    <!-- <option value="Scheherazade+New">Scheherazade New</option> -->
+                    <!-- <option value="Vibes">Vibes</option> -->
+                    <!-- <option value="Noto+Sans+Arabic">Noto Sans Arabic</option>
+                    <option value="Noto+Kufi+Arabic">Noto Kufi Arabic</option> -->
+                    <!-- <option value="Qahiri">Qahiri</option> -->
+                    <!-- <option value="Noto+Naskh+Arabic">Noto Naskh Arabic</option> -->
+                </select>
+            </div> <!-- #Fonts List -->
             <!-- List of Available Themes -->
-            <div
-                class="d-flex flex-row-reverse flex-lg-row justify-content-start justify-content-sm-center border rounded-pill">
+            <div class="d-flex flex-row-reverse flex-lg-row justify-content-start justify-content-sm-center">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                     <input data-color="blue" type="radio" class="btn-check color-pallete" name="btnradio" id="btnradio1"
                         autocomplete="off">
@@ -227,46 +275,5 @@
                     </label>
                 </div>
             </div><!-- #List of Available Themes -->
-
-            <!-- Fonts List -->
-            <div class="d-flex flex-row justify-content-end col-12 col-lg-2 my-3 my-lg-0">
-                <select data-style="border bg-light" data-live-search="true"
-                    class="form-control form-control-sm custom-select" id="font" name="font">
-                    <option value="Baloo+Bhaijaan+2">الخط الإفتراضي</option>
-                    <option value="IBM+Plex+Sans+Arabic">IBM Plex Sans Arabic</option>
-                    <option value="Amiri">Amiri</option>
-                    <option value="Vazirmatn">Vazirmatn</option>
-                    <option value="El+Messiri">El Messiri</option>
-                    <option value="Changa">Changa</option>
-                    <option value="Cairo">Cairo</option>
-                    <!-- <option value="Reem+Kufi+Fun">Reem Kufi Fun</option> -->
-                    <!-- <option value="Alkalami">Alkalami</option>
-                    <option value="Readex+Pro">Readex Pro</option>
-                    <option value="Almarai">Almarai</option>
-                    <option value="Mada">Mada</option>
-                    <option value="Cairo+Play">Cairo Play</option> -->
-                    <!-- <option value="Lemonada">Lemonada</option> -->
-                    <!-- <option value="Lalezar">Lalezar</option>
-                    <option value="Amiri+Quran">Amiri Quran</option>
-                    <option value="Markazi+Text">Markazi Text</option>
-                    <option value="Reem+Kufi">Reem Kufi</option>
-                    <option value="Mirza">Mirza</option>
-                    <option value="Rakkas">Rakkas</option> -->
-                    <!-- <option value="Lateef">Lateef</option> -->
-                    <!-- <option value="Gulzar">Gulzar</option>
-                    <option value="Vazirmatn">Vazirmatn</option>
-                    <option value="Harmattan">Harmattan</option>
-                    <option value="Aref+Ruqaa">Aref Ruqaa</option>
-                    <option value="Katibeh">Katibeh</option>
-                    <option value="Kufam">Kufam</option> -->
-                    <!-- <option value="Blaka">Blaka</option> -->
-                    <!-- <option value="Scheherazade+New">Scheherazade New</option> -->
-                    <!-- <option value="Vibes">Vibes</option> -->
-                    <!-- <option value="Noto+Sans+Arabic">Noto Sans Arabic</option>
-                    <option value="Noto+Kufi+Arabic">Noto Kufi Arabic</option> -->
-                    <!-- <option value="Qahiri">Qahiri</option> -->
-                    <!-- <option value="Noto+Naskh+Arabic">Noto Naskh Arabic</option> -->
-                </select>
-            </div> <!-- #Fonts List -->
         </div>
     </section> <!-- #Labs: Colors and Fonts -->
