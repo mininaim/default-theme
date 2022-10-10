@@ -1,7 +1,7 @@
 # Zid Catalog - Default Theme
 
-[]: # Description: The default theme for Zid Catalog
-[]: # Version: 1.0.0
+- Description: The default theme for Zid Catalog
+- Version: 1.0.1
 
 ## Online Demo
 

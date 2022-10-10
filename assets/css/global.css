@@ -7,8 +7,7 @@
     "Vazirmatn", "Harmattan", "Aref Ruqaa", "Katibeh", "Kufam", "Blaka",
     "Jomhuria", "Scheherazade New", "Vibes", "Noto Sans Arabic",
     "Noto Kufi Arabic", "Qahiri", "Noto Naskh Arabic";
-}
-:root {
+
   /* --font-primary: "Baloo Bhaijaan 2", cursive; */
   --color-foreground: #fff;
 }
@@ -140,13 +139,13 @@ a {
   width: 1.6rem !important;
   height: 1.6rem !important;
 }
-*[class^="iconoir-lg"]::before,
+/* *[class^="iconoir-lg"]::before,
 *[class*=" iconoir-lg"]::before {
   width: 2rem !important;
   height: 2rem !important;
-}
+} */
 
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   *[class^="icon-s"]::before,
   *[class*=" icon-s"]::before {
     width: 1.6rem !important;
@@ -156,7 +155,7 @@ a {
     width: 1.6rem !important;
     height: 1.6rem !important;
   }
-}
+} */
 
 /* backgrounds */
 .bg-overlay {
@@ -182,10 +181,10 @@ a {
   width: 1rem;
   height: 1rem;
 }
-.feather-sm {
+/* .feather-sm {
   width: 1.25rem !important;
   height: 1.25rem !important;
-}
+} */
 .feather-md {
   width: 2rem;
   height: 2rem;
@@ -197,10 +196,10 @@ a {
 }
 
 /* filters  */
-.filter-white {
+/* .filter-white {
   filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(14%)
     hue-rotate(236deg) brightness(103%) contrast(103%);
-}
+} */
 
 /* utilities */
 .ltr {
