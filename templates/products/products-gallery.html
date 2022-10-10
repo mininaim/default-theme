@@ -1,7 +1,7 @@
 <section class="py-5 t">
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-6">
 
                 <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -22,7 +22,15 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-slider" role="tabpanel"
                         aria-labelledby="pills-slider-tab" tabindex="0">
-                        ss
+                        <div class="card p-0 border-0 rounded-0 ltr position-relative overflow-hidden">
+
+                            <div class="my-slider ltr">
+                                <?php for($i=1;$i < 15; $i++)  { ?>
+                                <img src="media/cdn/product-single/gallery/0<?php echo $i ?>.jpg" alt="Product Image"
+                                    class="img-fluid rounded-1">
+                                <?php } ?>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="pills-gallery" role="tabpanel" aria-labelledby="pills-gallery-tab"
                         tabindex="0">
