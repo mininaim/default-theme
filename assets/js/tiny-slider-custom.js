@@ -1,6 +1,10 @@
 // tiny slider custom
-if ($("#product").children().length > 0) {
-  $(".product-tools").removeAttr("hidden");
+
+// hide slider and thumbnail when there is one picture
+if ($("#product").children().length > 1) {
+  $(
+    "#customize-controls button, .product-tools, #pills-tab, #pills-gallery"
+  ).removeAttr("hidden");
 }
 
 let product = document.getElementById("product");

@@ -5,7 +5,7 @@
 
             <!-- product sidebar -->
             <div class="col-12 col-sm-6 mb-3">
-                <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+                <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist" hidden>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-slider-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-slider" type="button" role="tab" aria-controls="pills-slider"
@@ -31,7 +31,7 @@
                                 <!-- main picture -->
                                 <!-- #todo: test ratio (ration ratio-4x3 and ration ratio-1x1) -->
                                 <div class="product" id="product">
-                                    <?php for($i = 1; $i <10; $i++)  { ?>
+                                    <?php for($i = 0; $i <10; $i++)  { ?>
                                     <div class="zoom" onmousemove="zoom(event)"
                                         style="background-image: url(media/cdn/product-single/01.jpg)">
                                         <img src="media/cdn/product-single/01.jpg"
@@ -43,10 +43,10 @@
                                 <!-- controls -->
                                 <div class="w-100 controls d-flex justify-content-between my-3 position-absolute top-50 start-50 translate-middle"
                                     id="customize-controls">
-                                    <button class="btn btn-outline-primary me-3" id="prev">
+                                    <button class="btn btn-outline-primary me-3" id="prev" hidden>
                                         <i class="iconoir-nav-arrow-left fs-3"></i>
                                     </button>
-                                    <button class="btn btn-outline-primary ms-3" id="next">
+                                    <button class="btn btn-outline-primary ms-3" id="next" hidden>
                                         <i class="iconoir-nav-arrow-right fs-3"></i>
                                     </button>
                                 </div>
@@ -54,9 +54,9 @@
 
                             <!-- product tools -->
                             <div class="product-tools mt-2" hidden>
-                                <div class="thumbnails row g-1 my-2" id="productThumbnails">
+                                <div class="thumbnails row g-0 my-2" id="productThumbnails">
                                     <?php for($i = 1; $i <10; $i++)  { ?>
-                                    <div class="col-3 mt-0">
+                                    <div class="col-3 mt-0 g-1">
                                         <div class="thumbnails-img">
                                             <img src="media/cdn/product-single/01.jpg" alt=""
                                                 class="mx-auto d-block rounded-0">
@@ -67,8 +67,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-gallery" role="tabpanel" aria-labelledby="pills-gallery-tab"
-                        tabindex="0">
+                    <div hidden class="tab-pane fade" id="pills-gallery" role="tabpanel"
+                        aria-labelledby="pills-gallery-tab" tabindex="0">
                         <div class="card p-0 border-0 rounded-0">
                             <div class="row row-cols-4 row-cols-lg-6 g-3">
 
